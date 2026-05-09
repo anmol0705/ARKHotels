@@ -54,16 +54,18 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                         {/* =========================================
                             MOBILE LAYOUT: Background Image + Card Overlay
                             ========================================= */}
-                        <div className="flex lg:hidden absolute inset-0 w-full h-full z-0 pointer-events-none">
-                            <Image
-                                src={room.image.src}
-                                alt={room.image.alt}
-                                fill
-                                sizes="100vw"
-                                priority={index === 0}
-                                className="object-cover"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                        <div className="flex lg:hidden absolute inset-0 w-full h-full z-0">
+                            <Link href={`/rooms/${room.slug}`} className="absolute inset-0">
+                                <Image
+                                    src={room.image.src}
+                                    alt={room.image.alt}
+                                    fill
+                                    sizes="100vw"
+                                    priority={index === 0}
+                                    className="object-cover"
+                                />
+                            </Link>
+                            <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent pointer-events-none" />
                         </div>
 
                         <div className="lg:hidden relative z-10 flex flex-col justify-end w-full h-full pb-12 pt-[40vh] px-4 sm:px-8">
@@ -76,9 +78,12 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                 <h3 className="font-display text-[24px] sm:text-[28px] leading-[1.15] text-ink hover:text-brass transition-colors">
                                     <Link href={`/rooms/${room.slug}`}>{room.name}</Link>
                                 </h3>
-                                <p className="mt-2 text-[13px] text-stone-500 tabular-nums">{room.size}</p>
-                                <p className="mt-4 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65]">
-                                    {room.short} {room.description}
+                                <p className="mt-2 text-[13px] text-stone-500">{room.size}</p>
+                                <p className="mt-3 text-[15px] sm:text-[16px] font-medium text-ink leading-[1.5]">
+                                    {room.short}
+                                </p>
+                                <p className="mt-2 text-[14px] sm:text-[15px] text-ink-soft leading-[1.65]">
+                                    {room.description}
                                 </p>
                                 <ul className="mt-5 space-y-2 text-[14px] sm:text-[15px] text-ink-soft">
                                     {room.features.slice(0, 3).map((f) => (
@@ -88,13 +93,19 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                         </li>
                                     ))}
                                 </ul>
-                                <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center">
+                                <div className="mt-8 flex flex-col gap-3">
                                     <Link
                                         href={`/rooms/${room.slug}`}
-                                        className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-brass-deep transition-colors shadow-sm w-full sm:w-auto"
+                                        className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-brass-deep transition-colors shadow-sm w-full"
                                     >
                                         See {room.name.toLowerCase()}
                                     </Link>
+                                    <a
+                                        href={SITE.phone.tel}
+                                        className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-[2px] hover:border-ink hover:bg-stone-50 transition-all shadow-sm w-full"
+                                    >
+                                        Call front desk
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -113,9 +124,12 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                 <h3 className="font-display text-[24px] sm:text-[26px] lg:text-[32px] leading-[1.15] text-ink hover:text-brass transition-colors">
                                     <Link href={`/rooms/${room.slug}`}>{room.name}</Link>
                                 </h3>
-                                <p className="mt-2 text-[13px] text-stone-500 tabular-nums">{room.size}</p>
-                                <p className="mt-5 sm:mt-6 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65] max-w-[44ch]">
-                                    {room.short} {room.description}
+                                <p className="mt-2 text-[13px] text-stone-500">{room.size}</p>
+                                <p className="mt-4 text-[15px] sm:text-[16px] font-medium text-ink leading-[1.5] max-w-[44ch]">
+                                    {room.short}
+                                </p>
+                                <p className="mt-2 text-[14px] sm:text-[15px] text-ink-soft leading-[1.65] max-w-[44ch]">
+                                    {room.description}
                                 </p>
                                 <ul className="mt-5 sm:mt-6 space-y-2 text-[14px] sm:text-[15px] text-ink-soft max-w-[44ch]">
                                     {room.features.slice(0, 3).map((f) => (
@@ -132,12 +146,21 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                     >
                                         See {room.name.toLowerCase()}
                                     </Link>
+                                    <a
+                                        href={SITE.phone.tel}
+                                        className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-sm hover:border-ink hover:bg-stone-50 transition-all shadow-sm"
+                                    >
+                                        Call front desk
+                                    </a>
                                 </div>
                             </div>
 
                             {/* RIGHT COLUMN: Image */}
                             <div className="w-1/2 h-full py-12 pl-12 xl:pl-20 flex items-center justify-center pointer-events-none">
-                                <div className="relative w-full aspect-[4/5] xl:aspect-[5/4] max-h-full overflow-hidden bg-parchment shadow-sm">
+                                <Link
+                                    href={`/rooms/${room.slug}`}
+                                    className="relative w-full aspect-[4/5] xl:aspect-[5/4] max-h-full overflow-hidden bg-parchment shadow-sm block pointer-events-auto hover:opacity-95 transition-opacity duration-300"
+                                >
                                     <Image
                                         src={room.image.src}
                                         alt={room.image.alt}
@@ -146,7 +169,7 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                         priority={index === 0}
                                         className="object-cover"
                                     />
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

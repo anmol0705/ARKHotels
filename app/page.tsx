@@ -33,12 +33,19 @@ export default function HomePage() {
 function IntroParagraph() {
   return (
     <section className="bg-parchment border-y border-stone-100">
-      <div className="container-narrow py-14 lg:py-28">
+      <div className="container-narrow py-14 lg:py-24">
         <Reveal>
-          <Eyebrow tone="moss">Welcome to ARK Hotels</Eyebrow>
-          <p className="mt-5 text-[16px] md:text-[18px] lg:text-[19px] leading-[1.65] text-ink-soft max-w-[64ch]">
-            ARK Hotels is a welcoming hotel in Kokar, conveniently located just fifteen minutes from Birsa Munda Airport. We provide air-conditioned rooms, reliable high-speed WiFi, and an excellent pure vegetarian restaurant. Designed for the busy professional, we ensure fast check-ins, prompt GST invoicing, and secure on-site parking, so you can focus entirely on your trip.
-          </p>
+          <div className="flex flex-col items-center text-center px-4 sm:px-0">
+            <Eyebrow tone="moss">Kokar, Ranchi</Eyebrow>
+            <span className="brass-rule mt-5 mb-7" />
+            <blockquote className="font-display italic text-[22px] sm:text-[28px] lg:text-[34px] leading-[1.3] tracking-[-0.01em] text-ink max-w-[26ch]">
+              Honest rooms, reliable service, and a front desk that never sleeps.
+            </blockquote>
+            <span className="brass-rule mt-7" />
+            <p className="mt-5 text-[12px] uppercase tracking-[0.2em] text-stone-500 font-medium">
+              15 min from Birsa Munda Airport &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free parking
+            </p>
+          </div>
         </Reveal>
       </div>
     </section>
