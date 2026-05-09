@@ -142,7 +142,7 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                 <div className="mt-8 flex flex-wrap gap-4 items-center">
                                     <Link
                                         href={`/rooms/${room.slug}`}
-                                        className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-sm hover:bg-brass-deep transition-colors shadow-sm"
+                                        className="inline-flex items-center justify-center px-7 py-3.5 border border-transparent bg-ink text-paper text-[14px] font-medium tracking-wide rounded-sm hover:bg-brass-deep transition-colors shadow-sm"
                                     >
                                         See {room.name.toLowerCase()}
                                     </Link>

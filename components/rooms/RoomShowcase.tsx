@@ -168,19 +168,21 @@ function RoomBlockMobile({
                         ))}
                     </ul>
 
-                    <div className="mt-8 flex flex-col gap-3">
+                    <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center">
                         <Link
                             href={`/rooms/${room.slug}`}
-                            className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-brass-deep transition-colors shadow-sm w-full"
+                            className="inline-flex items-center justify-center px-7 py-3.5 border border-transparent bg-ink text-paper text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-brass-deep transition-colors shadow-sm w-full sm:w-auto"
                         >
                             {isRoomsPage ? "View this room" : `See ${room.name.toLowerCase()}`}
                         </Link>
-                        <a
-                            href={SITE.phone.tel}
-                            className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-[2px] hover:border-ink hover:bg-stone-50 transition-all shadow-sm w-full"
-                        >
-                            Call front desk
-                        </a>
+                        {isRoomsPage && (
+                            <a
+                                href={SITE.phone.tel}
+                                className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-[2px] hover:border-ink hover:bg-stone-50 transition-all shadow-sm w-full sm:w-auto"
+                            >
+                                Call front desk
+                            </a>
+                        )}
                     </div>
                     {isRoomsPage && (
                         <a
