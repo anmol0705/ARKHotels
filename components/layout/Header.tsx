@@ -19,16 +19,19 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll and manage focus when mobile menu is open
+  // Lock body scroll without jumping to top (overflow:hidden resets scrollY on iOS)
   useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-      closeRef.current?.focus();
-    } else {
-      document.body.style.overflow = "";
-    }
+    if (!open) return;
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = "100%";
+    closeRef.current?.focus();
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      window.scrollTo(0, scrollY);
     };
   }, [open]);
 

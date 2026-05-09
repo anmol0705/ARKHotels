@@ -77,8 +77,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-IN" className={`${fraunces.variable} ${inter.variable} overflow-x-hidden`}>
-      <body className="min-h-dvh flex flex-col bg-paper text-ink overflow-x-hidden">
+    <html lang="en-IN" className={`${fraunces.variable} ${inter.variable}`}>
+      <body className="min-h-dvh flex flex-col bg-paper text-ink">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

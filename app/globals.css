@@ -63,6 +63,7 @@
 
 html {
   background: var(--color-paper);
+  overflow-x: clip;
 }
 
 body {
@@ -71,6 +72,7 @@ body {
   font-family: var(--font-sans);
   font-size: var(--text-body);
   line-height: 1.65;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
