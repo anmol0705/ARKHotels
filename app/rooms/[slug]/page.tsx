@@ -112,7 +112,7 @@ export default async function RoomDetailPage({
                 href={whatsappHref()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-4 border border-ink text-ink text-[15px] font-medium rounded-[2px] hover:bg-ink hover:text-paper transition-colors"
+                className="block w-full text-center px-6 py-4 bg-[#25D366] text-white text-[15px] font-medium rounded-[2px] hover:bg-[#1ebe5d] transition-colors"
               >
                 WhatsApp the front desk
               </a>

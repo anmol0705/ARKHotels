@@ -80,7 +80,7 @@ export default async function OG() {
               maxWidth: 900,
             }}
           >
-            23-room business hotel in Kokar, 9 km from Birsa Munda Airport.
+            Budget business hotel in Kokar, 9 km from Birsa Munda Airport.
           </div>
         </div>
 

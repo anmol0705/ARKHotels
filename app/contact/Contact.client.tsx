@@ -178,7 +178,7 @@ export function ContactClient() {
                 For groups & weddings
               </p>
               <p className="mt-3 text-[15px] text-ink-soft leading-[1.65] max-w-[42ch]">
-                Three rooms or thirty: call the front desk and we&apos;ll work
+                Team booking or a long stay: call the front desk and we&apos;ll work
                 out a block rate over a single phone call.
               </p>
             </motion.div>

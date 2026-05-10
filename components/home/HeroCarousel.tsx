@@ -82,6 +82,7 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
                 alt={slide.alt}
                 fill
                 priority={index === 0}
+                loading={index === 0 ? "eager" : undefined}
                 sizes="100vw"
                 className="object-cover"
               />
@@ -168,7 +169,7 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-paper/55 text-paper text-[15px] font-medium rounded-[2px] hover:bg-paper hover:text-ink transition-colors duration-[180ms]"
                   >
                     <span>Call front desk</span>
-                    <span className="text-paper/65 tabular-nums">
+                    <span className="opacity-65 tabular-nums">
                       · {SITE.phone.display}
                     </span>
                   </a>

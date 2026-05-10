@@ -60,7 +60,7 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                     src={room.image.src}
                                     alt={room.image.alt}
                                     fill
-                                    sizes="100vw"
+                                    sizes="(min-width: 1024px) 0px, 100vw"
                                     priority={index === 0}
                                     className="object-cover"
                                 />

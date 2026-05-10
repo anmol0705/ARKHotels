@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import fs from "fs";
+import path from "path";
 import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { RoomsIndexClient } from "@/components/home/RoomsIndex.client";
-import { ROOMS, NEARBY } from "@/lib/site";
+import { ImageMarquee } from "@/components/shared/ImageMarquee";
+import { ROOMS, NEARBY_BUSINESS, NEARBY_LEISURE } from "@/lib/site";
 import { faqJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export default function HomePage() {
@@ -18,6 +21,7 @@ export default function HomePage() {
       <DiningCallout />
       <BusinessSection />
       <AboutConfession />
+      <GalleryTeaser />
       <PlacePlateDiptych />
       <LocationStrip />
       <script
@@ -60,16 +64,16 @@ function DiningCallout() {
         <div className="grid grid-cols-12 gap-8 sm:gap-6 lg:gap-12 items-end pr-4 sm:pr-6 lg:pr-0">
           <div className="col-span-12 lg:col-span-5">
             <Eyebrow tone="moss">
-              The Restaurant
+              ARK Kitchen
             </Eyebrow>
             <h2 className="mt-4 font-display text-[28px] sm:text-[32px] lg:text-[44px] leading-[1.1] tracking-[-0.015em] text-ink hover:text-brass transition-colors">
               <Link href="/dining">
-                Pure vegetarian, comforting meals,
+                Pure vegetarian, rooftop dining,
                 <br className="hidden lg:block" /> open all day.
               </Link>
             </h2>
             <p className="mt-5 sm:mt-6 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65] max-w-[44ch]">
-              ARK features a dedicated in-house vegetarian restaurant. Enjoy a freshly prepared thali for lunch, regional Jharkhand and North Indian specialties, alongside a thoughtfully curated Indo-Chinese menu. A complimentary breakfast is included with most of our room rates.
+              ARK Kitchen is our in-house vegetarian restaurant, served on the rooftop. North Indian classics, Indo-Chinese favourites, and a complimentary breakfast included with most room rates.
             </p>
             <div className="mt-8">
               <Link
@@ -173,7 +177,7 @@ function AboutConfession() {
         <div className="grid grid-cols-12 gap-8 sm:gap-6 lg:gap-12 items-start pr-4 sm:pr-6 lg:pr-0">
           {/* Image first on mobile (per design spec) */}
           <div className="col-span-12 lg:col-span-5 lg:col-start-8 lg:order-2">
-            <Link href="/about" className="block hover:opacity-95 transition-opacity">
+            <Link href="/gallery" className="block hover:opacity-95 transition-opacity">
               <PlaceholderImage
                 src="/images/ark_out_image.jpg"
                 alt="Lobby corridor at ARK Hotels Ranchi, evening light"
@@ -184,31 +188,74 @@ function AboutConfession() {
           </div>
 
           <div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:order-1">
-            <Eyebrow>About ARK</Eyebrow>
-            <h2 className="mt-4 font-display text-[28px] sm:text-[32px] lg:text-[44px] leading-[1.12] tracking-[-0.015em] text-ink max-w-[20ch] hover:text-brass transition-colors">
-              <Link href="/about">
-                A hotel defined by personal attention and genuine hospitality.
-              </Link>
+            <Eyebrow>ARK Hotels, Kokar</Eyebrow>
+            <h2 className="mt-4 font-display text-[28px] sm:text-[32px] lg:text-[44px] leading-[1.12] tracking-[-0.015em] text-ink max-w-[20ch]">
+              A hotel defined by personal attention and genuine hospitality.
             </h2>
             <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65] max-w-[52ch]">
               <p>
-                A familiar landmark in Kokar, ARK Hotels is a 23-room, owner-run property dedicated to providing a seamless stay. With three well-appointed floors, elevator access, and a dedicated restaurant, we focus entirely on essential comforts.
+                A familiar landmark in Kokar, ARK Hotels is an owner-run budget hotel dedicated to providing a seamless stay. With elevator access, rooftop dining at ARK Kitchen, and free parking, we focus entirely on essential comforts.
               </p>
               <p>
-                Our philosophy is simple: we believe that a business traveler in Ranchi values a spotless room, reliable service, and a front desk that is always ready to assist at any hour. This commitment to genuine, practical hospitality is why our regulars choose to stay with us time and again.
+                We believe that a business traveler in Ranchi values a spotless room, reliable service, and a front desk that is always ready to assist at any hour — day or night.
               </p>
             </div>
             <div className="mt-10">
               <Link
-                href="/about"
+                href="/gallery"
                 className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-sm hover:bg-brass-deep transition-colors shadow-sm"
               >
-                Read the full story
+                See the photos
               </Link>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────  Gallery teaser  ───────────────────────── */
+function GalleryTeaser() {
+  const galleryRoot = path.join(process.cwd(), "public", "images", "gallery");
+  const IMAGE_EXT = /\.(jpg|jpeg|png|webp|avif)$/i;
+  const images: string[] = [];
+
+  try {
+    const entries = fs.readdirSync(galleryRoot, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        const sub = path.join(galleryRoot, entry.name);
+        try {
+          fs.readdirSync(sub)
+            .filter((f) => IMAGE_EXT.test(f))
+            .forEach((f) => images.push(`/images/gallery/${entry.name}/${f}`));
+        } catch { /* skip */ }
+      } else if (IMAGE_EXT.test(entry.name)) {
+        images.push(`/images/gallery/${entry.name}`);
+      }
+    }
+  } catch { /* folder not ready yet */ }
+
+  if (images.length === 0) return null;
+
+  return (
+    <section className="py-2 lg:py-4">
+      <div className="container-page mb-8 flex items-end justify-between gap-4 pr-4 sm:pr-6 lg:pr-0">
+        <div>
+          <Eyebrow>Gallery</Eyebrow>
+          <h2 className="mt-3 font-display text-[24px] sm:text-[28px] lg:text-[36px] leading-[1.15] text-ink">
+            A look around the hotel.
+          </h2>
+        </div>
+        <Link
+          href="/gallery"
+          className="shrink-0 text-[14px] font-medium text-ink-soft underline decoration-brass decoration-1 underline-offset-[6px] hover:text-ink hover:decoration-2 transition-all"
+        >
+          See all photos →
+        </Link>
+      </div>
+      <ImageMarquee images={images} />
     </section>
   );
 }
@@ -240,37 +287,65 @@ function PlacePlateDiptych() {
   );
 }
 
-/* ─────────────────────────  Location strip (factual line)  ───────────────────────── */
+/* ─────────────────────────  Location strip  ───────────────────────── */
 function LocationStrip() {
+  const businessSpot = NEARBY_BUSINESS.slice(0, 6);
+  const leisureSpot  = NEARBY_LEISURE.slice(0, 5);
+
   return (
     <section className="bg-ink text-paper">
-      <div className="container-page py-10 lg:py-16">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 sm:gap-8">
+      <div className="container-page py-14 lg:py-24">
+
+        {/* Header row */}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 pb-10 lg:pb-14 border-b border-paper/10">
           <div>
             <Eyebrow tone="brass">Find us</Eyebrow>
-            <p className="mt-3 font-display text-[22px] sm:text-2xl lg:text-3xl leading-[1.2] max-w-[24ch]">
-              Kokar, north Ranchi. A short drive from the airport, the
-              station, and most meeting blocks.
-            </p>
+            <h2 className="mt-3 font-display text-[26px] sm:text-[32px] lg:text-[40px] leading-[1.1] tracking-[-0.015em] max-w-[28ch]">
+              Kokar, north Ranchi. Close to where business gets done — and a short drive from Jharkhand&apos;s best day trips.
+            </h2>
           </div>
-          <div className="flex flex-wrap gap-x-5 gap-y-3 text-[14px] text-paper/80">
-            {NEARBY.slice(0, 4).map((n, i) => (
-              <span key={n.place} className="inline-flex items-center gap-3">
-                <span className="text-paper">{n.place}</span>
-                <span className="text-paper/60 tabular-nums">{n.distance}</span>
-                {i < 3 && <span className="text-paper/30 hidden md:inline">·</span>}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="mt-10">
           <Link
             href="/location"
-            className="inline-flex items-baseline gap-1 text-paper underline decoration-brass decoration-1 underline-offset-[6px] hover:decoration-2 hover:text-brass transition-all duration-[180ms]"
+            className="shrink-0 inline-flex items-baseline gap-1 text-paper underline decoration-brass decoration-1 underline-offset-[6px] hover:decoration-2 hover:text-brass transition-all duration-[180ms] text-[15px]"
           >
-            Open the location page
+            Full distances & map
             <span aria-hidden>→</span>
           </Link>
+        </div>
+
+        {/* Two columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-16 mt-10 lg:mt-12">
+
+          {/* Business */}
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.2em] text-brass font-medium mb-6">
+              For meetings &amp; work
+            </p>
+            <ul className="divide-y divide-paper/10">
+              {businessSpot.map((n) => (
+                <li key={n.place} className="flex items-baseline justify-between gap-4 py-3.5">
+                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Divider on mobile */}
+          <div className="border-t border-paper/10 mt-10 pt-10 lg:border-t-0 lg:mt-0 lg:pt-0">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-paper/40 font-medium mb-6">
+              For weekends &amp; day trips
+            </p>
+            <ul className="divide-y divide-paper/10">
+              {leisureSpot.map((n) => (
+                <li key={n.place} className="flex items-baseline justify-between gap-4 py-3.5">
+                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>

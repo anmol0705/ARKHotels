@@ -9,7 +9,7 @@ import { RoomShowcase } from "@/components/rooms/RoomShowcase";
 export const metadata: Metadata = {
   title: "Rooms & Tariff",
   description:
-    "Deluxe, Super Deluxe, Executive and Family Suite rooms at ARK Hotels Ranchi. AC, WiFi, work desk, vegetarian breakfast option. From ₹1,784.",
+    "Three room types at ARK Hotels Ranchi — Deluxe Single, Deluxe Double, and Super Double. AC, WiFi, work desk, vegetarian breakfast. Budget-friendly rates, book direct.",
   alternates: { canonical: "/rooms" },
 };
 
@@ -26,7 +26,7 @@ export default function RoomsPage() {
           <div className="col-span-12 lg:col-span-7">
             <Eyebrow>Rooms & tariff</Eyebrow>
             <h1 className="mt-4 font-display text-[34px] sm:text-[52px] lg:text-[64px] leading-[1.06] tracking-[-0.02em] text-ink max-w-[16ch]">
-              Four room types. All air-conditioned, all quiet.
+              Three room types. All air-conditioned, all quiet.
             </h1>
             <p className="mt-6 text-[18px] text-ink-soft max-w-[56ch]">
               All rooms are AC, with work desk, free WiFi, hot water, LCD TV,

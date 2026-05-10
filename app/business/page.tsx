@@ -71,12 +71,14 @@ export default function BusinessPage() {
               Built for the two-night work trip.
             </h1>
             <p className="mt-8 text-[18px] text-ink-soft max-w-[58ch] leading-[1.65]">
-              Most ARK guests are in Ranchi for a reason — a vendor visit in
-              Doranda, a PSU meeting at HEC, two days of training, an audit.
-              The hotel is set up around that. Check-in is fast because the
-              front desk has your details ready. The GST invoice is handed to
-              you at checkout, not chased over email a week later. The basics,
-              done without you having to ask twice.
+              Most ARK guests are in Ranchi for a reason — PSU meetings at
+              HEC, visits to Kokar Industrial Area or Namkum, two days at BIT
+              Mesra, work at the Passport Office, Upper Bazar, Lalpur,
+              Khelgaon, or Dipatoli. Every destination under 25 minutes from
+              the hotel. Check-in is fast because the front desk has your
+              details ready. The GST invoice is handed to you at checkout, not
+              chased over email a week later. The basics, done without you
+              having to ask twice.
             </p>
           </div>
           <div className="hidden lg:block col-span-3 col-start-10 pb-1">
@@ -158,13 +160,13 @@ export default function BusinessPage() {
           <div className="col-span-12 lg:col-span-8">
             <Eyebrow>Group bookings & long stays</Eyebrow>
             <h2 className="mt-4 font-display text-[32px] lg:text-[40px] leading-[1.1] tracking-[-0.015em] text-ink max-w-[22ch]">
-              Three rooms or a fortnight: tell us, we&apos;ll work it out.
+              A team booking or a week-long stay: tell us, we&apos;ll work it out.
             </h2>
             <p className="mt-6 text-ink-soft leading-[1.65] max-w-[58ch]">
               For a team visiting together, an audit running across a week, or
               a wedding-guest block — call the front desk directly. Group
-              rates and stay-for-five-pay-for-four arrangements are handled
-              over a single phone call.
+              rates and extended-stay arrangements are handled over a single
+              phone call.
             </p>
             <p className="mt-8 text-[15px] text-ink-soft leading-[1.65] max-w-[58ch]">
               Call{" "}

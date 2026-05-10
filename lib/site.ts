@@ -53,8 +53,8 @@ export const NAV: ReadonlyArray<{ label: string; href: string }> = [
   { label: "Rooms", href: "/rooms" },
   { label: "The Restaurant", href: "/dining" },
   { label: "For Business Travellers", href: "/business" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Find Us", href: "/location" },
-  { label: "About ARK", href: "/about" },
   { label: "Talk to Us", href: "/contact" },
 ];
 
@@ -65,8 +65,8 @@ export const FOOTER_LINKS = {
     { label: "Talk to the front desk", href: "/contact" },
   ],
   "The hotel": [
-    { label: "About ARK", href: "/about" },
     { label: "The restaurant", href: "/dining" },
+    { label: "Photo gallery", href: "/gallery" },
     { label: "Find us", href: "/location" },
   ],
   Useful: [
@@ -136,13 +136,13 @@ export const ROOMS = [
     index: "03",
     name: "Super Double Room",
     size: "Larger than Deluxe",
-    short: "A larger version of the Deluxe Double with upgraded bedding and a more generous bathroom.",
+    short: "A larger version of the Deluxe Double with more floor space and a more generous bathroom.",
     description:
-      "A good pick for longer stays, or anyone who'd rather not open a suitcase on the floor.",
+      "A good pick for longer stays, or anyone who'd rather not feel cramped after a 12-hour day.",
     features: [
-      "Larger floor area, luggage rack and wardrobe",
-      "Upgraded mattress and linen",
-      "Bathroom with full toiletry set",
+      "Larger floor area with wardrobe",
+      "More spacious bathroom with hot water",
+      "Work desk, free WiFi, LCD TV",
       "Tea and coffee tray, AC and room heater",
     ],
     images: [
@@ -169,20 +169,20 @@ export const HERO_SLIDES = [
       "/images/hotel_image.jpeg",
     alt: "Hotel exterior in Kokar, Ranchi at morning light",
     eyebrow: "Kokar, Ranchi · 9 km from the airport",
-    headline: "A budget hotel in Ranchi that takes business travel seriously.",
+    headline: "A stay in Ranchi that suits your pocket and gets business done.",
     supporting:
-      "Twenty-three rooms, an in-house veg kitchen, free parking, and a front desk that is awake when your flight lands.",
+      "An in-house veg kitchen, free parking, and a front desk that is awake when your flight lands. A comfortable, budget-friendly hotel in the heart of Kokar.",
     primaryHref: "/rooms",
     primaryLabel: "See the rooms",
   },
   {
     image:
       "/images/hotel_image.jpeg",
-    alt: "North Indian vegetarian thali at the in-house restaurant",
-    eyebrow: "Pure veg · open all day",
+    alt: "ARK Kitchen vegetarian restaurant at ARK Hotels, Kokar",
+    eyebrow: "ARK Kitchen · Pure veg · open all day",
     headline: "Home-style food, prepared with quiet care.",
     supporting:
-      "One in-house vegetarian restaurant. Daily thalis, North-Indian classics, and in-room dining through the day.",
+      "One in-house vegetarian restaurant. North-Indian classics, Indo-Chinese favourites, and breakfast served daily.",
     primaryHref: "/dining",
     primaryLabel: "See the restaurant",
   },
@@ -193,7 +193,7 @@ export const HERO_SLIDES = [
     eyebrow: "Built for the two-night work trip",
     headline: "A clean room. A hot meal. An early checkout. Handled.",
     supporting:
-      "Vendor visits in Doranda, PSU meetings at HEC, audits, training programmes — the routines are tuned for that.",
+      "PSU meetings at HEC, visits to Upper Bazar, Lalpur, Khelgaon, Dipatoli or BIT — the routines are tuned for that.",
     primaryHref: "/business",
     primaryLabel: "For business travellers",
   },
@@ -212,13 +212,40 @@ export const HERO_SLIDES = [
 
 export type HeroSlide = (typeof HERO_SLIDES)[number];
 
+export const NEARBY_BUSINESS = [
+  { place: "Kokar Industrial Area",    distance: "~1 km",  time: "5 min",     note: "On the doorstep — walking distance for vendors and suppliers." },
+  { place: "Upper Bazar",              distance: "~3 km",  time: "8–10 min",  note: "Ranchi's main wholesale and retail commercial market." },
+  { place: "Lalpur",                   distance: "~4 km",  time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
+  { place: "Dipatoli",                 distance: "~4 km",  time: "10–12 min", note: "Government offices and administrative zone." },
+  { place: "Passport Office, Doranda", distance: "~5 km",  time: "12–15 min", note: "Regional Passport Office for Jharkhand." },
+  { place: "Ranchi Junction",          distance: "~6 km",  time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
+  { place: "Khelgaon",                 distance: "~6 km",  time: "15 min",    note: "Jharkhand's sports complex — events, training camps, tournaments." },
+  { place: "HEC, Dhurwa",              distance: "~8 km",  time: "20–25 min", note: "Heavy Engineering Corporation — a frequent destination for PSU meetings." },
+  { place: "Birsa Munda Airport",      distance: "9 km",   time: "15–20 min", note: "Direct flights to Delhi, Kolkata, Mumbai, Hyderabad." },
+  { place: "Namkum Industrial Area",   distance: "~18 km", time: "30–35 min", note: "Ranchi's major industrial corridor." },
+  { place: "BIT Mesra",                distance: "~22 km", time: "35–45 min", note: "Premier engineering institution — training programmes and campus visits." },
+] as const;
+
+export const NEARBY_LEISURE = [
+  { place: "Ranchi Lake",                    distance: "~4 km",  time: "10–12 min", note: "A quiet evening walk around the lake — popular with locals." },
+  { place: "Rock Garden",                    distance: "~5 km",  time: "12–15 min", note: "A well-kept terraced park, good for a morning stroll." },
+  { place: "Pahari Mandir",                  distance: "~5 km",  time: "15 min",    note: "The hilltop Shiva temple — quieter at sunrise than on weekends." },
+  { place: "Jagannath Temple",               distance: "~8 km",  time: "20 min",    note: "A 17th-century temple — architecturally worth the detour." },
+  { place: "Nakshatra Van",                  distance: "~10 km", time: "20–25 min", note: "Botanical park, calm and uncrowded on weekday mornings." },
+  { place: "Bhagwan Birsa Biological Park",  distance: "~20 km", time: "35–40 min", note: "Allow half a day. Tigers, leopards, and a good walk through the forest." },
+  { place: "Dassam Falls",                   distance: "~40 km", time: "60–70 min", note: "Wide, layered falls — best right after monsoon." },
+  { place: "Jonha Falls",                    distance: "~40 km", time: "60–75 min", note: "Pair with lunch on the way back to town." },
+  { place: "Hundru Falls",                   distance: "~45 km", time: "75–90 min", note: "Post-monsoon is the better season — significantly more water." },
+] as const;
+
+// Kept for backward compatibility with any component using the combined list
 export const NEARBY = [
-  { place: "Birsa Munda Airport", distance: "9 km", time: "15–20 min" },
-  { place: "Ranchi Junction Railway Station", distance: "~6 km", time: "15–20 min" },
-  { place: "Pahari Mandir", distance: "~5 km", time: "15 min" },
-  { place: "Ranchi Lake", distance: "~4 km", time: "10–12 min" },
-  { place: "Bhagwan Birsa Biological Park", distance: "~20 km", time: "35–40 min" },
-  { place: "Hudru Falls", distance: "~45 km", time: "75–90 min" },
+  ...NEARBY_BUSINESS.filter((n) =>
+    ["Birsa Munda Airport", "Ranchi Junction", "Kokar Industrial Area", "Upper Bazar"].includes(n.place)
+  ),
+  ...NEARBY_LEISURE.filter((n) =>
+    ["Pahari Mandir", "Ranchi Lake", "Bhagwan Birsa Biological Park", "Hundru Falls"].includes(n.place)
+  ),
 ] as const;
 
 export const FAQS = [

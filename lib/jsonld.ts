@@ -10,7 +10,7 @@ export const hotelJsonLd = {
   "@id": `${BASE}/#hotel`,
   name: SITE.name,
   description:
-    "23-room budget business hotel in Kokar, Ranchi, 9 km from Birsa Munda Airport. Free WiFi, free parking, on-site vegetarian restaurant.",
+    "Budget business hotel in Kokar, Ranchi, 9 km from Birsa Munda Airport. Free WiFi, free parking, on-site vegetarian restaurant.",
   url: `${BASE}/`,
   telephone: SITE.phone.e164,
   priceRange: "₹₹",
