@@ -290,7 +290,7 @@ function PlacePlateDiptych() {
 /* ─────────────────────────  Location strip  ───────────────────────── */
 function LocationStrip() {
   const businessSpot = NEARBY_BUSINESS.slice(0, 6);
-  const leisureSpot  = NEARBY_LEISURE.slice(0, 5);
+  const leisureSpot = NEARBY_LEISURE.slice(0, 5);
 
   return (
     <section className="bg-ink text-paper">
