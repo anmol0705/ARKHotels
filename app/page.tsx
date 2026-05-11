@@ -91,7 +91,7 @@ function DiningCallout() {
                 src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80"
                 alt="North Indian vegetarian thali at ARK Hotels restaurant, Kokar"
                 ratio="3/2"
-                caption="Today's thali — dal, two seasonal sabzi, rice, four rotis, curd, salad, sweet."
+                // caption="Today's thali — dal, two seasonal sabzi, rice, four rotis, curd, salad, sweet."
               />
             </Link>
           </div>
@@ -268,7 +268,7 @@ function PlacePlateDiptych() {
         <div className="col-span-12 lg:col-span-5 flex flex-col">
           <Eyebrow tone="moss">From a recent guest</Eyebrow>
           <blockquote className="mt-4 sm:mt-6 font-display italic text-[24px] sm:text-[28px] lg:text-[40px] leading-[1.2] tracking-[-0.015em] text-ink max-w-[20ch]">
-            &ldquo;Hygiene and cleanliness was really good.&rdquo;
+            &ldquo;Wonderful experience and excellent service. Hygiene and cleanliness was really good.&rdquo;
           </blockquote>
           <p className="mt-5 sm:mt-6 text-[13px] text-stone-500">
             — Verified guest, MakeMyTrip
@@ -289,9 +289,6 @@ function PlacePlateDiptych() {
 
 /* ─────────────────────────  Location strip  ───────────────────────── */
 function LocationStrip() {
-  const businessSpot = NEARBY_BUSINESS.slice(0, 6);
-  const leisureSpot = NEARBY_LEISURE.slice(0, 5);
-
   return (
     <section className="bg-ink text-paper">
       <div className="container-page py-14 lg:py-24">
@@ -308,7 +305,7 @@ function LocationStrip() {
             href="/location"
             className="shrink-0 inline-flex items-baseline gap-1 text-paper underline decoration-brass decoration-1 underline-offset-[6px] hover:decoration-2 hover:text-brass transition-all duration-[180ms] text-[15px]"
           >
-            Full distances & map
+            Full distances &amp; map
             <span aria-hidden>→</span>
           </Link>
         </div>
@@ -322,10 +319,13 @@ function LocationStrip() {
               For meetings &amp; work
             </p>
             <ul className="divide-y divide-paper/10">
-              {businessSpot.map((n) => (
-                <li key={n.place} className="flex items-baseline justify-between gap-4 py-3.5">
-                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
-                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
+              {NEARBY_BUSINESS.map((n) => (
+                <li key={n.place} className="flex items-start justify-between gap-4 py-4">
+                  <div className="min-w-0">
+                    <span className="block text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                    <span className="block text-[12px] text-paper/40 leading-[1.5] mt-0.5">{n.note}</span>
+                  </div>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0 pt-[2px]">{n.distance} · {n.time}</span>
                 </li>
               ))}
             </ul>
@@ -333,14 +333,17 @@ function LocationStrip() {
 
           {/* Divider on mobile */}
           <div className="border-t border-paper/10 mt-10 pt-10 lg:border-t-0 lg:mt-0 lg:pt-0">
-            <p className="text-[11px] uppercase tracking-[0.2em] text-paper/40 font-medium mb-6">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-paper/60 font-medium mb-6">
               For weekends &amp; day trips
             </p>
             <ul className="divide-y divide-paper/10">
-              {leisureSpot.map((n) => (
-                <li key={n.place} className="flex items-baseline justify-between gap-4 py-3.5">
-                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
-                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
+              {NEARBY_LEISURE.map((n) => (
+                <li key={n.place} className="flex items-start justify-between gap-4 py-4">
+                  <div className="min-w-0">
+                    <span className="block text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                    <span className="block text-[12px] text-paper/40 leading-[1.5] mt-0.5">{n.note}</span>
+                  </div>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0 pt-[2px]">{n.distance} · {n.time}</span>
                 </li>
               ))}
             </ul>

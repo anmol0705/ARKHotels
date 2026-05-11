@@ -217,7 +217,6 @@ export const NEARBY_BUSINESS = [
   { place: "Upper Bazar", distance: "~3 km", time: "8–10 min", note: "Ranchi's main wholesale and retail commercial market." },
   { place: "Lalpur", distance: "~4 km", time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
   { place: "Dipatoli", distance: "~4 km", time: "10–12 min", note: "Government offices and administrative zone." },
-  { place: "Passport Office, Doranda", distance: "~5 km", time: "12–15 min", note: "Regional Passport Office for Jharkhand." },
   { place: "Ranchi Junction", distance: "~6 km", time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
   { place: "Khelgaon", distance: "~6 km", time: "15 min", note: "Jharkhand's sports complex — events, training camps, tournaments." },
   { place: "HEC, Dhurwa", distance: "~8 km", time: "20–25 min", note: "Heavy Engineering Corporation — a frequent destination for PSU meetings." },
