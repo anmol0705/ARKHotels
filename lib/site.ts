@@ -28,7 +28,7 @@ export const SITE = {
     region: "Jharkhand",
     postalCode: "834001",
     country: "IN",
-    short: "Kokar, Ranchi  ·  Off Old HB Road",
+    short: "Kokar, Ranchi · Old HB Road",
     full: "Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi, Jharkhand 834001",
     googleMaps: "https://www.google.com/maps?q=ARK+Hotels+Kokar+Ranchi",
     // Approximate Kokar coordinates — verify with property pin before launch.
@@ -166,9 +166,9 @@ export type Room = (typeof ROOMS)[number];
 export const HERO_SLIDES = [
   {
     image:
-      "/images/hotel_image.jpeg",
+      "/images/hero_carousel/ark_out_image.jpg",
     alt: "Hotel exterior in Kokar, Ranchi at morning light",
-    eyebrow: "Kokar, Ranchi · 9 km from the airport",
+    eyebrow: "Kokar, Ranchi · 15 min from the airport",
     headline: "A stay in Ranchi that suits your pocket and gets business done.",
     supporting:
       "An in-house veg kitchen, free parking, and a front desk that is awake when your flight lands. A comfortable, budget-friendly hotel in the heart of Kokar.",
@@ -177,7 +177,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "/images/hotel_image.jpeg",
+      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80",
     alt: "ARK Kitchen vegetarian restaurant at ARK Hotels, Kokar",
     eyebrow: "ARK Kitchen · Pure veg · open all day",
     headline: "Home-style food, prepared with quiet care.",
@@ -188,18 +188,18 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "/images/room_image.jpeg",
+      "/images/hero_carousel/room_image.jpeg",
     alt: "Executive room work setup at ARK Hotels",
     eyebrow: "Built for the two-night work trip",
     headline: "A clean room. A hot meal. An early checkout. Handled.",
     supporting:
-      "PSU meetings at HEC, visits to Upper Bazar, Lalpur, Khelgaon, Dipatoli or BIT — the routines are tuned for that.",
+      "Meetings at HEC, visits to Lalpur, Khelgaon, Dipatoli or BIT Mesra — the routines are tuned for that.",
     primaryHref: "/business",
     primaryLabel: "For business travellers",
   },
   {
     image:
-      "/images/reception_image.jpeg",
+      "/images/hero_carousel/reception_image.jpeg",
     alt: "Lobby corridor at ARK Hotels in the evening",
     eyebrow: "Front desk · 24 hours",
     headline: "An early flight, a late check-in. Both handled.",
@@ -213,29 +213,29 @@ export const HERO_SLIDES = [
 export type HeroSlide = (typeof HERO_SLIDES)[number];
 
 export const NEARBY_BUSINESS = [
-  { place: "Kokar Industrial Area",    distance: "~1 km",  time: "5 min",     note: "On the doorstep — walking distance for vendors and suppliers." },
-  { place: "Upper Bazar",              distance: "~3 km",  time: "8–10 min",  note: "Ranchi's main wholesale and retail commercial market." },
-  { place: "Lalpur",                   distance: "~4 km",  time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
-  { place: "Dipatoli",                 distance: "~4 km",  time: "10–12 min", note: "Government offices and administrative zone." },
-  { place: "Passport Office, Doranda", distance: "~5 km",  time: "12–15 min", note: "Regional Passport Office for Jharkhand." },
-  { place: "Ranchi Junction",          distance: "~6 km",  time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
-  { place: "Khelgaon",                 distance: "~6 km",  time: "15 min",    note: "Jharkhand's sports complex — events, training camps, tournaments." },
-  { place: "HEC, Dhurwa",              distance: "~8 km",  time: "20–25 min", note: "Heavy Engineering Corporation — a frequent destination for PSU meetings." },
-  { place: "Birsa Munda Airport",      distance: "9 km",   time: "15–20 min", note: "Direct flights to Delhi, Kolkata, Mumbai, Hyderabad." },
-  { place: "Namkum Industrial Area",   distance: "~18 km", time: "30–35 min", note: "Ranchi's major industrial corridor." },
-  { place: "BIT Mesra",                distance: "~22 km", time: "35–45 min", note: "Premier engineering institution — training programmes and campus visits." },
+  { place: "Kokar Industrial Area", distance: "~1 km", time: "5 min", note: "On the doorstep — walking distance for vendors and suppliers." },
+  { place: "Upper Bazar", distance: "~3 km", time: "8–10 min", note: "Ranchi's main wholesale and retail commercial market." },
+  { place: "Lalpur", distance: "~4 km", time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
+  { place: "Dipatoli", distance: "~4 km", time: "10–12 min", note: "Government offices and administrative zone." },
+  { place: "Passport Office, Doranda", distance: "~5 km", time: "12–15 min", note: "Regional Passport Office for Jharkhand." },
+  { place: "Ranchi Junction", distance: "~6 km", time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
+  { place: "Khelgaon", distance: "~6 km", time: "15 min", note: "Jharkhand's sports complex — events, training camps, tournaments." },
+  { place: "HEC, Dhurwa", distance: "~8 km", time: "20–25 min", note: "Heavy Engineering Corporation — a frequent destination for PSU meetings." },
+  { place: "Birsa Munda Airport", distance: "9 km", time: "15–20 min", note: "Direct flights to Delhi, Kolkata, Mumbai, Hyderabad." },
+  { place: "Namkum Industrial Area", distance: "~18 km", time: "30–35 min", note: "Ranchi's major industrial corridor." },
+  { place: "BIT Mesra", distance: "~22 km", time: "35–45 min", note: "Premier engineering institution — training programmes and campus visits." },
 ] as const;
 
 export const NEARBY_LEISURE = [
-  { place: "Ranchi Lake",                    distance: "~4 km",  time: "10–12 min", note: "A quiet evening walk around the lake — popular with locals." },
-  { place: "Rock Garden",                    distance: "~5 km",  time: "12–15 min", note: "A well-kept terraced park, good for a morning stroll." },
-  { place: "Pahari Mandir",                  distance: "~5 km",  time: "15 min",    note: "The hilltop Shiva temple — quieter at sunrise than on weekends." },
-  { place: "Jagannath Temple",               distance: "~8 km",  time: "20 min",    note: "A 17th-century temple — architecturally worth the detour." },
-  { place: "Nakshatra Van",                  distance: "~10 km", time: "20–25 min", note: "Botanical park, calm and uncrowded on weekday mornings." },
-  { place: "Bhagwan Birsa Biological Park",  distance: "~20 km", time: "35–40 min", note: "Allow half a day. Tigers, leopards, and a good walk through the forest." },
-  { place: "Dassam Falls",                   distance: "~40 km", time: "60–70 min", note: "Wide, layered falls — best right after monsoon." },
-  { place: "Jonha Falls",                    distance: "~40 km", time: "60–75 min", note: "Pair with lunch on the way back to town." },
-  { place: "Hundru Falls",                   distance: "~45 km", time: "75–90 min", note: "Post-monsoon is the better season — significantly more water." },
+  { place: "Ranchi Lake", distance: "~4 km", time: "10–12 min", note: "A quiet evening walk around the lake — popular with locals." },
+  { place: "Rock Garden", distance: "~5 km", time: "12–15 min", note: "A well-kept terraced park, good for a morning stroll." },
+  { place: "Pahari Mandir", distance: "~5 km", time: "15 min", note: "The hilltop Shiva temple — quieter at sunrise than on weekends." },
+  { place: "Jagannath Temple", distance: "~8 km", time: "20 min", note: "A 17th-century temple — architecturally worth the detour." },
+  { place: "Nakshatra Van", distance: "~10 km", time: "20–25 min", note: "Botanical park, calm and uncrowded on weekday mornings." },
+  { place: "Bhagwan Birsa Biological Park", distance: "~20 km", time: "35–40 min", note: "Allow half a day. Tigers, leopards, and a good walk through the forest." },
+  { place: "Dassam Falls", distance: "~40 km", time: "60–70 min", note: "Wide, layered falls — best right after monsoon." },
+  { place: "Jonha Falls", distance: "~40 km", time: "60–75 min", note: "Pair with lunch on the way back to town." },
+  { place: "Hundru Falls", distance: "~45 km", time: "75–90 min", note: "Post-monsoon is the better season — significantly more water." },
 ] as const;
 
 // Kept for backward compatibility with any component using the combined list
