@@ -213,16 +213,18 @@ export const HERO_SLIDES = [
 export type HeroSlide = (typeof HERO_SLIDES)[number];
 
 export const NEARBY_BUSINESS = [
-  { place: "Kokar Industrial Area", distance: "~1 km", time: "5 min", note: "On the doorstep — walking distance for vendors and suppliers." },
+  { place: "Samford Hospital", distance: "~1 km", time: "3–5 min", note: "Major multi-speciality hospital on Old HB Road — the closest referral facility to the hotel." },
+  { place: "Kokar Industrial Area", distance: "~1 km", time: "5 min", note: "On the doorstep — walking distance for vendors, suppliers, and factory visits." },
   { place: "Upper Bazar", distance: "~3 km", time: "8–10 min", note: "Ranchi's main wholesale and retail commercial market." },
   { place: "Lalpur", distance: "~4 km", time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
   { place: "Dipatoli", distance: "~4 km", time: "10–12 min", note: "Government offices and administrative zone." },
+  { place: "Passport Office", distance: "~5 km", time: "12–15 min", note: "Regional Passport Seva Kendra, Ranchi — for applicant visits and official delegations." },
   { place: "Ranchi Junction", distance: "~6 km", time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
-  { place: "Khelgaon", distance: "~6 km", time: "15 min", note: "Jharkhand's sports complex — events, training camps, tournaments." },
-  { place: "HEC, Dhurwa", distance: "~8 km", time: "20–25 min", note: "Heavy Engineering Corporation — a frequent destination for PSU meetings." },
+  { place: "Khelgaon", distance: "~6 km", time: "15 min", note: "Jharkhand's sports complex — events, national training camps, and tournaments." },
+  { place: "PSU Belt — HEC & MECON, Dhurwa", distance: "~8 km", time: "20–25 min", note: "Heavy Engineering Corporation and MECON headquarters — the primary PSU corridor in Ranchi." },
   { place: "Birsa Munda Airport", distance: "9 km", time: "15–20 min", note: "Direct flights to Delhi, Kolkata, Mumbai, Hyderabad." },
-  { place: "Namkum Industrial Area", distance: "~18 km", time: "30–35 min", note: "Ranchi's major industrial corridor." },
-  { place: "BIT Mesra", distance: "~22 km", time: "35–45 min", note: "Premier engineering institution — training programmes and campus visits." },
+  { place: "Namkum Industrial Area", distance: "~18 km", time: "30–35 min", note: "Ranchi's major industrial corridor — SAIL, ancillary units, and manufacturing facilities." },
+  { place: "BIT Mesra", distance: "~22 km", time: "35–45 min", note: "Premier engineering institution — training programmes, campus visits, and faculty stays." },
 ] as const;
 
 export const NEARBY_LEISURE = [

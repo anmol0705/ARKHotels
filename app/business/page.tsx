@@ -71,14 +71,13 @@ export default function BusinessPage() {
               Built for the two-night work trip.
             </h1>
             <p className="mt-8 text-[18px] text-ink-soft max-w-[58ch] leading-[1.65]">
-              Most ARK guests are in Ranchi for a reason — PSU meetings at
-              HEC, visits to Kokar Industrial Area or Namkum, two days at BIT
-              Mesra, work at the Passport Office, Upper Bazar, Lalpur,
-              Khelgaon, or Dipatoli. Every destination under 25 minutes from
-              the hotel. Check-in is fast because the front desk has your
-              details ready. The GST invoice is handed to you at checkout, not
-              chased over email a week later. The basics, done without you
-              having to ask twice.
+              Most ARK guests are in Ranchi for a reason — PSU work at HEC or
+              MECON in Dhurwa, visits to Kokar Industrial Area, Namkum, or the
+              Passport Office, two days at BIT Mesra, events at Khelgaon, or
+              accompanying a patient to Samford Hospital, just one kilometre
+              down the road. Every destination under 25 minutes. Check-in is
+              fast, the GST invoice is handed over at checkout, and the basics
+              are done without you having to ask twice.
             </p>
           </div>
           <div className="hidden lg:block col-span-3 col-start-10 pb-1">
