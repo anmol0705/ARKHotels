@@ -49,6 +49,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [{ url: "/images/logo/LOGO.jpeg", type: "image/jpeg" }],
+    apple: "/images/logo/LOGO.jpeg",
+    shortcut: "/images/logo/LOGO.jpeg",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -57,12 +62,21 @@ export const metadata: Metadata = {
     title: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
     description:
       "Budget business hotel in Kokar, 15 minutes from Birsa Munda Airport. Free WiFi, free parking, in-house veg restaurant.",
+    images: [
+      {
+        url: "/images/hero_carousel/ark_out_image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
     description:
       "Budget business hotel in Kokar, 15 minutes from Birsa Munda Airport. Free WiFi, free parking, in-house veg restaurant.",
+    images: ["/images/hero_carousel/ark_out_image.jpg"],
   },
   robots: { index: true, follow: true },
 };

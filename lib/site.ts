@@ -14,9 +14,8 @@ export const SITE = {
     tel: "tel:+916513100536",
   },
   whatsapp: {
-    display: "+91 98351 36981",
-    e164: "+919835136981",
-    // Pre-filled enquiry — keep short; long pre-fills get deleted on mobile.
+    display: "+91 99558 88780",
+    e164: "+919955888780",
     message:
       "Hello ARK Hotels, I'd like to enquire about a room. My dates are [arrival] to [departure], for [number] guests. Please share availability and rate. Thanks.",
   },
