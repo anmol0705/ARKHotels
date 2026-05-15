@@ -102,7 +102,7 @@ export function Header() {
           className="flex items-center"
         >
           <Image
-            src="/images/logo/LOGO_header.png"
+            src="/images/logo/LOGO_header.webp"
             alt="ARK Hotels"
             width={180}
             height={60}
@@ -159,7 +159,7 @@ export function Header() {
             className="flex items-center"
           >
             <Image
-              src="/images/logo/LOGO_header.png"
+              src="/images/logo/LOGO_header.webp"
               alt="ARK Hotels"
               width={180}
               height={60}

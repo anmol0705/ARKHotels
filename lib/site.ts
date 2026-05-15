@@ -53,8 +53,8 @@ export const NAV: ReadonlyArray<{ label: string; href: string }> = [
   { label: "The Restaurant", href: "/dining" },
   { label: "For Business Travellers", href: "/business" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Find Us", href: "/location" },
-  { label: "Talk to Us", href: "/contact" },
+  { label: "Explore Ranchi", href: "/explore" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const FOOTER_LINKS = {
@@ -66,7 +66,7 @@ export const FOOTER_LINKS = {
   "The hotel": [
     { label: "The restaurant", href: "/dining" },
     { label: "Photo gallery", href: "/gallery" },
-    { label: "Find us", href: "/location" },
+    { label: "Explore Ranchi", href: "/explore" },
   ],
   Useful: [
     { label: "FAQs", href: "/contact#faqs" },
@@ -96,12 +96,12 @@ export const ROOMS = [
     ],
     images: [
       {
-        src: "/images/rooms/delux_single_room.jpeg",
+        src: "/images/rooms/delux_single_room.webp",
         alt: "Deluxe Single room, ARK Hotels Ranchi",
       }
     ],
     image: {
-      src: "/images/rooms/delux_single_room.jpeg",
+      src: "/images/rooms/delux_single_room.webp",
       alt: "Deluxe Single room, ARK Hotels Ranchi",
     },
   },
@@ -121,12 +121,12 @@ export const ROOMS = [
     ],
     images: [
       {
-        src: "/images/rooms/delux_double_room.jpeg",
+        src: "/images/rooms/delux_double_room.webp",
         alt: "Deluxe Double room, ARK Hotels Ranchi",
       }
     ],
     image: {
-      src: "/images/rooms/delux_double_room.jpeg",
+      src: "/images/rooms/delux_double_room.webp",
       alt: "Deluxe Double room, ARK Hotels Ranchi",
     },
   },
@@ -146,12 +146,12 @@ export const ROOMS = [
     ],
     images: [
       {
-        src: "/images/rooms/super_double_room.jpeg",
+        src: "/images/rooms/super_double_room.webp",
         alt: "Super Double room, ARK Hotels Ranchi",
       }
     ],
     image: {
-      src: "/images/rooms/super_double_room.jpeg",
+      src: "/images/rooms/super_double_room.webp",
       alt: "Super Double room, ARK Hotels Ranchi",
     },
   },
@@ -165,7 +165,7 @@ export type Room = (typeof ROOMS)[number];
 export const HERO_SLIDES = [
   {
     image:
-      "/images/hero_carousel/ark_out_image.jpg",
+      "/images/hero_carousel/ark_out_image.webp",
     alt: "Hotel exterior in Kokar, Ranchi at morning light",
     eyebrow: "Kokar, Ranchi · 15 min from the airport",
     headline: "A stay in Ranchi that suits your pocket and gets business done.",
@@ -187,7 +187,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "/images/hero_carousel/room_image.jpeg",
+      "/images/hero_carousel/room_image.webp",
     alt: "Executive room work setup at ARK Hotels",
     eyebrow: "Built for the two-night work trip",
     headline: "A clean room. A hot meal. An early checkout. Handled.",
@@ -198,7 +198,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "/images/hero_carousel/reception_image.jpeg",
+      "/images/hero_carousel/reception_image.webp",
     alt: "Lobby corridor at ARK Hotels in the evening",
     eyebrow: "Front desk · 24 hours",
     headline: "An early flight, a late check-in. Both handled.",
@@ -218,6 +218,7 @@ export const NEARBY_BUSINESS = [
   { place: "Lalpur", distance: "~4 km", time: "10–12 min", note: "Key offices, banks, and the commercial hub of central Ranchi." },
   { place: "Dipatoli", distance: "~4 km", time: "10–12 min", note: "Government offices and administrative zone." },
   { place: "Passport Office", distance: "~5 km", time: "12–15 min", note: "Regional Passport Seva Kendra, Ranchi — for applicant visits and official delegations." },
+  { place: "Khadgarha Bus Stand", distance: "~3 km", time: "8–10 min", note: "ISBT Khadgarha — connects Ranchi to all major districts in Jharkhand, Bihar, and West Bengal." },
   { place: "Ranchi Junction", distance: "~6 km", time: "15–20 min", note: "Main railway station — direct trains to Delhi, Mumbai, Kolkata." },
   { place: "Khelgaon", distance: "~6 km", time: "15 min", note: "Jharkhand's sports complex — events, national training camps, and tournaments." },
   { place: "PSU Belt — HEC & MECON, Dhurwa", distance: "~8 km", time: "20–25 min", note: "Heavy Engineering Corporation and MECON headquarters — the primary PSU corridor in Ranchi." },
@@ -230,12 +231,17 @@ export const NEARBY_LEISURE = [
   { place: "Ranchi Lake", distance: "~4 km", time: "10–12 min", note: "A quiet evening walk around the lake — popular with locals." },
   { place: "Rock Garden", distance: "~5 km", time: "12–15 min", note: "A well-kept terraced park, good for a morning stroll." },
   { place: "Pahari Mandir", distance: "~5 km", time: "15 min", note: "The hilltop Shiva temple — quieter at sunrise than on weekends." },
+  { place: "Tagore Hill", distance: "~6 km", time: "12–15 min", note: "The hill where Rabindranath Tagore wrote, overlooking the city. A short climb, good views, and a pleasant hour." },
   { place: "Jagannath Temple", distance: "~8 km", time: "20 min", note: "A 17th-century temple — architecturally worth the detour." },
   { place: "Nakshatra Van", distance: "~10 km", time: "20–25 min", note: "Botanical park, calm and uncrowded on weekday mornings." },
   { place: "Bhagwan Birsa Biological Park", distance: "~20 km", time: "35–40 min", note: "Allow half a day. Tigers, leopards, and a good walk through the forest." },
+  { place: "Patratu Valley", distance: "~38 km", time: "50–60 min", note: "A scenic gorge around the Patratu Dam — good for a late afternoon drive, best in the cooler months." },
   { place: "Dassam Falls", distance: "~40 km", time: "60–70 min", note: "Wide, layered falls — best right after monsoon." },
   { place: "Jonha Falls", distance: "~40 km", time: "60–75 min", note: "Pair with lunch on the way back to town." },
   { place: "Hundru Falls", distance: "~45 km", time: "75–90 min", note: "Post-monsoon is the better season — significantly more water." },
+  { place: "Sun Temple, Bundu", distance: "~48 km", time: "60–75 min", note: "A Surya Mandir on the Ranchi–Tata highway — clean architecture and far less crowded than the city temples." },
+  { place: "McCluskieganj", distance: "~60 km", time: "90–110 min", note: "Anglo-Indian heritage village — a quiet, colonial-era retreat unlike anywhere else in Jharkhand." },
+  { place: "Netarhat", distance: "~150 km", time: "3–3.5 hrs", note: "The 'Queen of Chotanagpur' — a hill resort at 3,622 ft, best known for sunrise from Magnolia Point. Plan for a full day or an overnight." },
 ] as const;
 
 // Kept for backward compatibility with any component using the combined list

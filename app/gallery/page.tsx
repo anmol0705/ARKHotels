@@ -30,7 +30,7 @@ function readGallery(): { images: GalleryImage[]; categories: string[] } {
 
     // Subfolders → categories
     for (const entry of entries) {
-      if (entry.isDirectory()) {
+      if (entry.isDirectory() && !entry.name.startsWith("old_")) {
         const slug = entry.name;
         const label = CATEGORY_LABELS[slug] ?? slug.replace(/-/g, " ");
         const subDir = path.join(galleryRoot, slug);

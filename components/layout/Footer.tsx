@@ -14,7 +14,7 @@ export function Footer() {
           </p>
           <div className="mt-10 space-y-3 text-[14px] text-paper/80">
             <Image
-              src="/images/logo/LOGO_footer.jpeg"
+              src="/images/logo/LOGO_footer.webp"
               alt="ARK Hotels"
               width={900}
               height={500}

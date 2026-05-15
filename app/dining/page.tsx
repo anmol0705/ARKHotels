@@ -93,7 +93,7 @@ export default function DiningPage() {
       {/* ── Hero image ── */}
       <section className="container-page pb-0">
         <PlaceholderImage
-          src="/images/DSC01243.jpg"
+          src="/images/DSC01243.webp"
           alt="ARK Kitchen rooftop dining area at ARK Hotels, Kokar Ranchi"
           ratio="21/9"
           priority

@@ -91,7 +91,7 @@ function DiningCallout() {
                 src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80"
                 alt="North Indian vegetarian thali at ARK Hotels restaurant, Kokar"
                 ratio="3/2"
-                // caption="Today's thali — dal, two seasonal sabzi, rice, four rotis, curd, salad, sweet."
+              // caption="Today's thali — dal, two seasonal sabzi, rice, four rotis, curd, salad, sweet."
               />
             </Link>
           </div>
@@ -179,7 +179,7 @@ function AboutConfession() {
           <div className="col-span-12 lg:col-span-5 lg:col-start-8 lg:order-2">
             <Link href="/gallery" className="block hover:opacity-95 transition-opacity">
               <PlaceholderImage
-                src="/images/ark_out_image.jpg"
+                src="/images/ark_out_image.webp"
                 alt="Lobby corridor at ARK Hotels Ranchi, evening light"
                 ratio="3/4"
                 caption="Lobby desk, monsoon evening."
@@ -194,7 +194,7 @@ function AboutConfession() {
             </h2>
             <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65] max-w-[52ch]">
               <p>
-                A familiar landmark in Kokar, ARK Hotels is an owner-run budget hotel dedicated to providing a seamless stay. With elevator access, rooftop dining at ARK Kitchen, and free parking, we focus entirely on essential comforts.
+                A familiar landmark in Kokar, ARK Hotels is an owner-run budget hotel dedicated to providing a seamless stay. With rooftop dining at ARK Kitchen, and free parking, we focus entirely on essential comforts.
               </p>
               <p>
                 We believe that a business traveler in Ranchi values a spotless room, reliable service, and a front desk that is always ready to assist at any hour — day or night.
