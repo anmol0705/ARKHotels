@@ -29,7 +29,8 @@ export const SITE = {
     country: "IN",
     short: "Kokar, Ranchi · Old HB Road",
     full: "Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi, Jharkhand 834001",
-    googleMaps: "https://www.google.com/maps?q=ARK+Hotels+Kokar+Ranchi",
+    googleMaps: "https://www.google.com/maps/place/ARK+Hotels/@23.3709389,85.3518747,17z",
+    directions: "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
     // Approximate Kokar coordinates — verify with property pin before launch.
     geo: { lat: 23.4053, lng: 85.3344 },
   },

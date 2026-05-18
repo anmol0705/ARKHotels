@@ -3,10 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { SITE } from "@/lib/site";
 
-const QUERY = encodeURIComponent("ARK Hotels Don Bosco School Lane Kokar Ranchi");
-
 const EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.477447443871!2d85.35187467472818!3d23.370938978931125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1001d7f224b%3A0x347c7991c5d10f31!2sARK%20Hotels!5e0!3m2!1sen!2sin!4v1778268930855!5m2!1sen!2sin";
-const DIRECT = `https://www.google.com/maps/dir/?api=1&destination=${QUERY}`;
 
 type Props = {
   ratio?: "16/9" | "21/9" | "5/4" | "1/1";
@@ -69,7 +66,7 @@ export function Map({ ratio = "21/9", showCaption = true, className }: Props) {
               <span aria-hidden>↗</span>
             </a>
             <a
-              href={DIRECT}
+              href={SITE.address.directions}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 bg-brass text-paper text-[14px] font-medium rounded-[2px] hover:bg-brass-deep transition-colors"

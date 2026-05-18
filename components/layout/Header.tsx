@@ -56,26 +56,28 @@ export function Header() {
             : "bg-parchment/80 lg:bg-transparent"
         )}
       >
-        {/* Utility bar — desktop only */}
-        <div className="hidden lg:block border-b border-stone-200/40">
+        {/* Utility bar — all screen sizes */}
+        <div className="border-b border-stone-200/40">
           <div className="container-page flex h-9 items-center justify-between text-[13px]">
             <a
               href={SITE.phone.tel}
               className="inline-flex items-center gap-2 text-ink-soft hover:text-brass-deep transition-colors"
             >
-              <span className="uppercase tracking-[0.18em] text-[11px] font-medium">
+              <span className="hidden sm:inline uppercase tracking-[0.18em] text-[11px] font-medium">
                 Front desk, 24 hours
               </span>
               <span className="font-medium tabular-nums">{SITE.phone.display}</span>
             </a>
-            <span className="text-stone-500/80">{SITE.address.short}</span>
+            <span className="hidden lg:block text-stone-500/80">{SITE.address.short}</span>
             <a
-              href={SITE.address.googleMaps}
+              href={SITE.address.directions}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-ink-soft hover:text-brass-deep transition-colors"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-brass text-paper text-[11px] font-medium uppercase tracking-[0.12em] hover:bg-brass-deep transition-colors"
             >
-              Get directions <span aria-hidden>↗</span>
+              <span className="hidden sm:inline">Get directions</span>
+              <span className="sm:hidden">Directions</span>
+              <span aria-hidden>↗</span>
             </a>
           </div>
         </div>
