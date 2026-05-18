@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/cn";
 
@@ -10,7 +11,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const closeRef = useRef<HTMLButtonElement>(null);
+  const reduce = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -19,23 +20,12 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll without jumping to top (overflow:hidden resets scrollY on iOS)
+  // Scroll lock without page jump — overflow on <html> doesn't reflow
   useEffect(() => {
-    if (!open) return;
-    const scrollY = window.scrollY;
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.width = "100%";
-    closeRef.current?.focus();
-    return () => {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      window.scrollTo(0, scrollY);
-    };
+    document.documentElement.style.overflow = open ? "hidden" : "";
+    return () => { document.documentElement.style.overflow = ""; };
   }, [open]);
 
-  // Close on Escape key and return focus to trigger
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -48,166 +38,202 @@ export function Header() {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
-  function close() {
+  const close = () => {
     setOpen(false);
     triggerRef.current?.focus();
-  }
+  };
+
+  const spring = { type: "spring" as const, stiffness: 320, damping: 32 };
+  const fade = { duration: reduce ? 0 : 0.18 };
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 w-full transition-[background-color,box-shadow,backdrop-filter] duration-[280ms] ease-[var(--ease-in-out-soft)]",
-        scrolled
-          ? "bg-paper/95 backdrop-blur-[8px] border-b border-stone-200/50 shadow-sm"
-          : "bg-parchment/80 lg:bg-transparent"
-      )}
-    >
-      {/* Utility Bar (Phone & Directions) */}
-      <div
+    <>
+      <header
         className={cn(
-          "w-full border-b transition-colors duration-[280ms]",
-          scrolled ? "border-stone-200/50" : "border-stone-200/30 lg:border-stone-300/40 lg:bg-parchment"
+          "sticky top-0 z-40 w-full transition-[background-color,border-color,box-shadow] duration-300",
+          scrolled
+            ? "bg-paper/95 backdrop-blur-sm border-b border-stone-200 shadow-sm"
+            : "bg-parchment/80 lg:bg-transparent"
         )}
       >
-        <div className="container-page flex h-9 items-center justify-between text-[13px]">
-          <a
-            href={SITE.phone.tel}
-            className="inline-flex items-center gap-2 hover:text-ink transition-colors text-ink-soft hover:text-brass-deep"
-          >
-            <span className="hidden sm:inline uppercase tracking-[0.18em] text-[11px] font-medium">
-              Front desk, 24 hours
-            </span>
-            <span className="font-medium tabular-nums">{SITE.phone.display}</span>
-          </a>
-
-          <span className="hidden md:block text-stone-500/80">{SITE.address.short}</span>
-
-          <a
-            href={SITE.address.googleMaps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-1 hover:text-ink transition-colors text-ink-soft hover:text-brass-deep"
-          >
-            <span>Get directions</span>
-            <span aria-hidden>↗</span>
-          </a>
-        </div>
-      </div>
-
-      {/* Main Navigation */}
-      <div className="container-page flex h-15 items-center justify-between">
-        <Link
-          href="/"
-          aria-label="ARK Hotels — home"
-          className="flex items-center"
-        >
-          <Image
-            src="/images/logo/LOGO_header.webp"
-            alt="ARK Hotels"
-            width={180}
-            height={60}
-            className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
-            style={{ width: "auto" }}
-          />
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="relative text-[15px] whitespace-nowrap font-medium text-ink hover:text-brass-deep transition-colors after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-0 after:bg-brass hover:after:w-full after:transition-all after:duration-[220ms]"
+        {/* Utility bar — desktop only */}
+        <div className="hidden lg:block border-b border-stone-200/40">
+          <div className="container-page flex h-9 items-center justify-between text-[13px]">
+            <a
+              href={SITE.phone.tel}
+              className="inline-flex items-center gap-2 text-ink-soft hover:text-brass-deep transition-colors"
             >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+              <span className="uppercase tracking-[0.18em] text-[11px] font-medium">
+                Front desk, 24 hours
+              </span>
+              <span className="font-medium tabular-nums">{SITE.phone.display}</span>
+            </a>
+            <span className="text-stone-500/80">{SITE.address.short}</span>
+            <a
+              href={SITE.address.googleMaps}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-ink-soft hover:text-brass-deep transition-colors"
+            >
+              Get directions <span aria-hidden>↗</span>
+            </a>
+          </div>
+        </div>
 
-        {/* Mobile menu trigger */}
-        <button
-          ref={triggerRef}
-          type="button"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-          className="lg:hidden -mr-3 px-3 py-3 text-[13px] font-medium uppercase tracking-[0.18em] text-ink hover:text-brass-deep transition-colors"
-        >
-          Menu
-        </button>
-      </div>
-
-      {/* Mobile drawer */}
-      <div
-        id="mobile-menu"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Navigation menu"
-        aria-hidden={!open}
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        inert={!open ? true : undefined}
-        className={cn(
-          "fixed inset-0 z-[60] lg:hidden bg-paper overflow-y-auto transition-transform duration-[280ms] ease-[var(--ease-out-soft)]",
-          open ? "translate-x-0" : "translate-x-full",
-        )}
-      >
-        <div className="flex h-20 items-center justify-between container-page border-b border-stone-100">
-          <Link
-            href="/"
-            onClick={close}
-            className="flex items-center"
-          >
+        {/* Main bar */}
+        <div className="container-page flex h-16 items-center justify-between">
+          <Link href="/" aria-label="ARK Hotels — home" className="flex items-center">
             <Image
               src="/images/logo/LOGO_header.webp"
               alt="ARK Hotels"
               width={180}
               height={60}
-              className="h-12 sm:h-14 w-auto object-contain"
+              className="h-11 sm:h-13 lg:h-14 w-auto object-contain"
               style={{ width: "auto" }}
             />
           </Link>
+
+          {/* Desktop nav */}
+          <nav className="hidden lg:flex items-center gap-8">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="relative text-[15px] whitespace-nowrap font-medium text-ink hover:text-brass-deep transition-colors after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-0 after:bg-brass hover:after:w-full after:transition-all after:duration-200"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Hamburger */}
           <button
-            ref={closeRef}
+            ref={triggerRef}
             type="button"
-            onClick={close}
-            className="-mr-3 px-3 py-3 text-[13px] font-medium uppercase tracking-[0.18em] text-ink hover:text-brass-deep transition-colors"
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((v) => !v)}
+            className="lg:hidden -mr-2 flex h-10 w-10 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
           >
-            Close
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden>
+              <motion.rect
+                x="0" y="0" width="22" height="2" rx="1" fill="currentColor"
+                animate={open ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+                transition={spring}
+                style={{ originX: "11px", originY: "1px" }}
+              />
+              <motion.rect
+                x="0" y="7" width="22" height="2" rx="1" fill="currentColor"
+                animate={open ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+                transition={fade}
+              />
+              <motion.rect
+                x="0" y="14" width="22" height="2" rx="1" fill="currentColor"
+                animate={open ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+                transition={spring}
+                style={{ originX: "11px", originY: "15px" }}
+              />
+            </svg>
           </button>
         </div>
+      </header>
 
-        <nav className="container-page py-10 flex flex-col gap-6">
-          {NAV.map((item, i) => (
-            <Link
-              key={item.href}
-              href={item.href}
+      {/* Mobile overlay + drawer — outside <header> to avoid sticky stacking context */}
+      <AnimatePresence>
+        {open && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              key="backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={fade}
+              className="fixed inset-0 z-50 bg-black/25 lg:hidden"
+              aria-hidden
               onClick={close}
-              className="font-display text-3xl text-ink hover:text-brass-deep transition-colors"
-              style={{
-                opacity: open ? 1 : 0,
-                transform: open ? "translateX(0)" : "translateX(8px)",
-                transition: `opacity 280ms ease, transform 280ms ease`,
-                transitionDelay: open ? `${i * 40}ms` : "0ms",
-              }}
-            >
-              {item.label}
-            </Link>
-          ))}
+            />
 
-          <div className="pt-10 border-t border-stone-100">
-            <p className="text-[11px] uppercase font-medium tracking-[0.18em] text-stone-500 mb-2">
-              Front desk, 24 hours
-            </p>
-            <a
-              href={SITE.phone.tel}
-              className="font-display text-3xl text-brass-deep tabular-nums"
+            {/* Drawer */}
+            <motion.div
+              key="drawer"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={reduce ? { duration: 0 } : spring}
+              className="fixed top-0 right-0 bottom-0 z-50 w-full max-w-xs bg-paper shadow-2xl overflow-y-auto lg:hidden flex flex-col"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Navigation menu"
             >
-              {SITE.phone.display}
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
+              {/* Drawer header */}
+              <div className="flex h-16 items-center justify-between px-6 border-b border-stone-100 shrink-0">
+                <Link href="/" onClick={close} className="flex items-center">
+                  <Image
+                    src="/images/logo/LOGO_header.webp"
+                    alt="ARK Hotels"
+                    width={140}
+                    height={48}
+                    className="h-10 w-auto object-contain"
+                    style={{ width: "auto" }}
+                  />
+                </Link>
+                <button
+                  type="button"
+                  onClick={close}
+                  className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
+                  aria-label="Close menu"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
+                    <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Nav links */}
+              <nav className="flex flex-col px-6 py-8 gap-1">
+                {NAV.map((item, i) => (
+                  <motion.div
+                    key={item.href}
+                    initial={{ opacity: 0, x: 16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={reduce ? { duration: 0 } : { duration: 0.25, delay: 0.06 + i * 0.04, ease: [0.22, 0.61, 0.36, 1] }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={close}
+                      className="block py-3 font-display text-[26px] text-ink hover:text-brass-deep transition-colors border-b border-stone-100 last:border-0"
+                    >
+                      {item.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </nav>
+
+              {/* Footer contact */}
+              <div className="mt-auto px-6 py-8 border-t border-stone-100">
+                <p className="text-[11px] uppercase font-medium tracking-[0.18em] text-stone-400 mb-3">
+                  Front desk · 24 hours
+                </p>
+                <a
+                  href={SITE.phone.tel}
+                  className="block font-display text-[28px] text-brass-deep tabular-nums hover:text-brass transition-colors"
+                >
+                  {SITE.phone.display}
+                </a>
+                <a
+                  href={SITE.address.googleMaps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-1 text-[13px] text-ink-soft hover:text-ink transition-colors"
+                >
+                  Get directions <span aria-hidden>↗</span>
+                </a>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

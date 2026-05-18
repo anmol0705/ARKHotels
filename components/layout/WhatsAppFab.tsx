@@ -1,34 +1,13 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { whatsappHref } from "@/lib/site";
-import { cn } from "@/lib/cn";
 
-// Floating WhatsApp action — single persistent CTA other than the phone bar.
-// Appears after a short scroll so it doesn't compete with the hero.
 export function WhatsAppFab() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 80);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <a
       href={whatsappHref()}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Message ARK Hotels on WhatsApp"
-      className={cn(
-        "fixed z-40 bottom-5 right-5 lg:bottom-8 lg:right-8 group",
-        "transition-all duration-[280ms] ease-[var(--ease-out-soft)]",
-        visible
-          ? "opacity-100 translate-y-0 pointer-events-auto"
-          : "opacity-0 translate-y-2 pointer-events-none",
-      )}
+      className="fixed z-40 bottom-5 right-5 lg:bottom-8 lg:right-8 group"
     >
       <div className="flex items-center gap-3 bg-ink text-paper rounded-[2px] pl-3 pr-5 py-3 shadow-[0_24px_48px_-28px_rgba(27,26,23,0.55)] hover:bg-brass-deep transition-colors">
         <span className="flex h-8 w-8 items-center justify-center rounded-[2px] bg-[#25D366]">
