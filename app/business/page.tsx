@@ -91,7 +91,7 @@ export default function BusinessPage() {
               {SITE.phone.display}
             </a>
             <p className="mt-3 text-[13px] text-stone-500 leading-relaxed">
-              For company-billed bookings, ask for the corporate desk.
+              For company-billed bookings, ask at the desk.
             </p>
           </div>
         </div>

@@ -163,7 +163,7 @@ export function ContactClient() {
                 For company-billed bookings
               </p>
               <p className="mt-3 text-[15px] text-ink-soft leading-[1.65] max-w-[42ch]">
-                Mention &ldquo;corporate desk&rdquo; when you call. Share your
+                Mention &ldquo;corporate booking&rdquo; when you call. Share your
                 company name and GSTIN at the time of booking; we hold the room
                 against an email confirmation and accept payment by NEFT or UPI
                 within an agreed window.
