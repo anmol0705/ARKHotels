@@ -182,13 +182,13 @@ function AboutConfession() {
                 src="/images/ark_out_image.webp"
                 alt="Lobby corridor at ARK Hotels Ranchi, evening light"
                 ratio="3/4"
-                caption="Lobby desk, monsoon evening."
+              // caption="Lobby desk, monsoon evening."
               />
             </Link>
           </div>
 
           <div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:order-1">
-            <Eyebrow>ARK Hotels, Kokar</Eyebrow>
+            <Eyebrow>ARK Hotels, Ranchi</Eyebrow>
             <h2 className="mt-4 font-display text-[28px] sm:text-[32px] lg:text-[44px] leading-[1.12] tracking-[-0.015em] text-ink max-w-[20ch]">
               A hotel defined by personal attention and genuine hospitality.
             </h2>
@@ -279,7 +279,7 @@ function PlacePlateDiptych() {
             src="https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=1400&q=80"
             alt="Breakfast service at ARK Hotels Kokar"
             ratio="3/2"
-            caption="Breakfast service, 7:30 AM."
+            // caption="Breakfast service, 7:30 AM."
           />
         </div>
       </div>

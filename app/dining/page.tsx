@@ -97,7 +97,7 @@ export default function DiningPage() {
           alt="ARK Kitchen rooftop dining area at ARK Hotels, Kokar Ranchi"
           ratio="21/9"
           priority
-          caption="ARK Kitchen — rooftop dining, open all day."
+          // caption="ARK Kitchen — rooftop dining, open all day."
         />
       </section>
 

@@ -147,7 +147,7 @@ export default function BusinessPage() {
                 src="/images/rooms/delux_double_room.jpeg"
                 alt="Work desk in Executive room, ARK Hotels Ranchi"
                 ratio="3/2"
-                caption="Executive room work setup — desk lamp, two power points within reach."
+                // caption="Executive room work setup — desk lamp, two power points within reach."
               />
             </div>
           </div>

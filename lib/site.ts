@@ -95,13 +95,11 @@ export const ROOMS = [
       "Private bath with hot water and fresh towels daily",
     ],
     images: [
-      {
-        src: "/images/rooms/delux_single_room.webp",
-        alt: "Deluxe Single room, ARK Hotels Ranchi",
-      }
+      { src: "/images/rooms/delux_single_room/delux_single_room.webp", alt: "Deluxe Single room at ARK Hotels Ranchi" },
+      { src: "/images/rooms/delux_single_room/DSC01112.webp",           alt: "Deluxe Single room detail, ARK Hotels Ranchi" },
     ],
     image: {
-      src: "/images/rooms/delux_single_room.webp",
+      src: "/images/rooms/delux_single_room/delux_single_room.webp",
       alt: "Deluxe Single room, ARK Hotels Ranchi",
     },
   },
@@ -120,13 +118,11 @@ export const ROOMS = [
       "Private bath with hot water and fresh towels daily",
     ],
     images: [
-      {
-        src: "/images/rooms/delux_double_room.webp",
-        alt: "Deluxe Double room, ARK Hotels Ranchi",
-      }
+      { src: "/images/rooms/delux_double_room/delux_double_room.webp", alt: "Deluxe Double room at ARK Hotels Ranchi" },
+      { src: "/images/rooms/delux_double_room/DSC01112.webp",          alt: "Deluxe Double room detail, ARK Hotels Ranchi" },
     ],
     image: {
-      src: "/images/rooms/delux_double_room.webp",
+      src: "/images/rooms/delux_double_room/delux_double_room.webp",
       alt: "Deluxe Double room, ARK Hotels Ranchi",
     },
   },
@@ -145,13 +141,12 @@ export const ROOMS = [
       "Tea and coffee tray, AC and room heater",
     ],
     images: [
-      {
-        src: "/images/rooms/super_double_room.webp",
-        alt: "Super Double room, ARK Hotels Ranchi",
-      }
+      { src: "/images/rooms/super_delux_room/super_double_room.webp", alt: "Super Double room at ARK Hotels Ranchi" },
+      { src: "/images/rooms/super_delux_room/DSC01112.webp",          alt: "Super Double room detail, ARK Hotels Ranchi" },
+      { src: "/images/rooms/super_delux_room/DSC01123.webp",          alt: "Super Double room view, ARK Hotels Ranchi" },
     ],
     image: {
-      src: "/images/rooms/super_double_room.webp",
+      src: "/images/rooms/super_delux_room/super_double_room.webp",
       alt: "Super Double room, ARK Hotels Ranchi",
     },
   },

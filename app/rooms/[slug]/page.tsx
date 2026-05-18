@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { RoomCarousel } from "@/components/ui/RoomCarousel";
 import { ROOMS, SITE, whatsappHref } from "@/lib/site";
 import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
 
@@ -58,16 +58,7 @@ export default async function RoomDetailPage({
       </section>
 
       <section className="container-page pb-20 lg:pb-28">
-        <div className="relative w-full aspect-[4/5] lg:aspect-[16/9] overflow-hidden">
-          <Image
-            src={room.image.src}
-            alt={room.image.alt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-        </div>
+        <RoomCarousel images={room.images} />
 
         <div className="grid grid-cols-12 gap-6 lg:gap-12 mt-16 lg:mt-24">
           <div className="col-span-12 lg:col-span-7">
