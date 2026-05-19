@@ -7,10 +7,10 @@ import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
 import { RoomShowcase } from "@/components/rooms/RoomShowcase";
 
 export const metadata: Metadata = {
-  title: "Rooms & Tariff",
+  title: "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
   description:
-    "Three room types at ARK Hotels Ranchi — Deluxe Single, Deluxe Double, and Super Double. AC, WiFi, work desk, vegetarian breakfast. Budget-friendly rates, book direct.",
-  alternates: { canonical: "/rooms" },
+    "Three AC room types at ARK Hotels, Kokar — Deluxe Single, Deluxe Double, and Super Double. Free WiFi, work desk, hot water, vegetarian breakfast. Book direct, no fees.",
+  alternates: { canonical: `${SITE.url}/rooms` },
 };
 
 export default function RoomsPage() {

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
 export const runtime = "edge";
-export const alt = "ARK Hotels Ranchi — Budget Business Hotel in Kokar";
+export const alt = "ARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -59,7 +59,7 @@ export default async function OG() {
               color: "#A8814B",
             }}
           >
-            01 — A budget business hotel
+            01 — Smart stay for the business traveller
           </div>
           <div
             style={{
@@ -80,7 +80,7 @@ export default async function OG() {
               maxWidth: 900,
             }}
           >
-            Budget business hotel in Kokar, 9 km from Birsa Munda Airport.
+            Hotel in Kokar, Ranchi · 9 km from Airport · 100% Pure Veg Restaurant
           </div>
         </div>
 

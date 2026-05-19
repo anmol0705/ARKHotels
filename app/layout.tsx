@@ -10,6 +10,7 @@ import {
   localBusinessJsonLd,
   organizationJsonLd,
   restaurantJsonLd,
+  webSiteJsonLd,
   jsonLdScript,
 } from "@/lib/jsonld";
 
@@ -31,23 +32,28 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
-    template: "%s — ARK Hotels Ranchi",
+    default: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    template: "%s | ARK Hotels Ranchi",
   },
   description:
-    "Budget business hotel in Kokar, 9 km from Birsa Munda Airport. AC rooms, free WiFi, free parking, in-house veg restaurant. GST invoice on checkout.",
+    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing. Book direct, no fees.",
   applicationName: "ARK Hotels Ranchi",
   authors: [{ name: "ARK Hotels" }],
   keywords: [
     "ARK Hotels Ranchi",
-    "budget hotel Ranchi",
-    "business hotel Ranchi",
-    "hotel near Birsa Munda Airport",
     "hotel in Kokar Ranchi",
+    "hotel near Birsa Munda Airport",
+    "business hotel Ranchi",
+    "budget hotel Ranchi",
+    "pure veg hotel Ranchi",
+    "vegetarian hotel Ranchi",
+    "hotel Old HB Road Kokar",
+    "hotel near Ranchi airport",
     "vegetarian restaurant Kokar",
+    "GST hotel Ranchi",
   ],
   alternates: {
-    canonical: "/",
+    canonical: `${SITE.url}/`,
   },
   icons: {
     icon: [{ url: "/images/logo/LOGO.webp", type: "image/webp" }],
@@ -58,24 +64,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: SITE.url,
-    siteName: SITE.name,
-    title: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
+    siteName: "ARK Hotels Ranchi",
+    title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
     description:
-      "Budget business hotel in Kokar, 15 minutes from Birsa Munda Airport. Free WiFi, free parking, in-house veg restaurant.",
+      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi & parking. GST invoicing. Book direct.",
     images: [
       {
         url: "/images/hero_carousel/ark_out_image.webp",
         width: 1200,
         height: 630,
-        alt: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
+        alt: "ARK Hotels — hotel exterior in Kokar, Ranchi",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARK Hotels Ranchi — Budget Business Hotel in Kokar",
+    title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
     description:
-      "Budget business hotel in Kokar, 15 minutes from Birsa Munda Airport. Free WiFi, free parking, in-house veg restaurant.",
+      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure veg restaurant, AC rooms, free WiFi & parking. Book direct.",
     images: ["/images/hero_carousel/ark_out_image.webp"],
   },
   robots: { index: true, follow: true },
@@ -97,6 +103,11 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFab />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={jsonLdScript(webSiteJsonLd)}
+        />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger

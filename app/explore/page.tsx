@@ -4,9 +4,10 @@ import { SITE } from "@/lib/site";
 import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Explore Ranchi | Local Guide to Business Hubs & Leisure",
-  description: "Discover nearby business districts, government offices, waterfalls, temples, and transit hubs just minutes from ARK Hotels in Kokar, Ranchi.",
-  alternates: { canonical: "/explore" },
+  title: "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+  description:
+    "Near ARK Hotels, Kokar Ranchi: Dassam Falls, Hundru Falls, Pahari Mandir, Patratu Valley, Netarhat. Business hubs: HEC, MECON, Passport Office — all within 90 min.",
+  alternates: { canonical: `${SITE.url}/explore` },
 };
 
 export default function ExplorePage() {
@@ -17,6 +18,7 @@ export default function ExplorePage() {
 
   return (
     <>
+      <h1 className="sr-only">Explore Ranchi — Places to Visit Near ARK Hotels, Kokar</h1>
       <ExploreClient />
       <script
         type="application/ld+json"

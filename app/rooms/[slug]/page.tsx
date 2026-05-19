@@ -4,7 +4,7 @@ import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RoomCarousel } from "@/components/ui/RoomCarousel";
 import { ROOMS, SITE, whatsappHref } from "@/lib/site";
-import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
+import { breadcrumbJsonLd, hotelRoomJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export function generateStaticParams() {
   return ROOMS.map((r) => ({ slug: r.slug }));
@@ -21,9 +21,9 @@ export async function generateMetadata({
   const room = ROOMS.find((r) => r.slug === slug);
   if (!room) return {};
   return {
-    title: `${room.name} Room`,
-    description: `${room.short} at ARK Hotels Ranchi, Kokar. Call ${SITE.phone.display} to book direct.`,
-    alternates: { canonical: `/rooms/${room.slug}` },
+    title: `${room.name} in Kokar, Ranchi | ARK Hotels`,
+    description: `${room.name} at ARK Hotels, Kokar, Ranchi. ${room.short} AC room with free WiFi, work desk, hot water & vegetarian breakfast. Book direct on ${SITE.phone.display}.`,
+    alternates: { canonical: `${SITE.url}/rooms/${room.slug}` },
   };
 }
 
@@ -140,6 +140,11 @@ export default async function RoomDetailPage({
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={jsonLdScript(hotelRoomJsonLd(room))}
       />
     </>
   );

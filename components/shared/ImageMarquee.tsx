@@ -7,6 +7,13 @@ type Props = {
   images: string[];
 };
 
+function altFromSrc(src: string): string {
+  if (src.includes("/gallery/hotel"))      return "ARK Hotels exterior — Kokar, Ranchi";
+  if (src.includes("/gallery/restaurant")) return "ARK Kitchen pure vegetarian restaurant — ARK Hotels Ranchi";
+  if (src.includes("/gallery/rooms"))      return "Guest room at ARK Hotels, Kokar Ranchi";
+  return "ARK Hotels Ranchi";
+}
+
 export function ImageMarquee({ images }: Props) {
   const reduce = useReducedMotion();
 
@@ -37,7 +44,7 @@ export function ImageMarquee({ images }: Props) {
           >
             <Image
               src={src}
-              alt={`Property gallery ${i}`}
+              alt={altFromSrc(src)}
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 80vw"

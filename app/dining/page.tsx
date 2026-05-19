@@ -7,10 +7,10 @@ import { SITE } from "@/lib/site";
 import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "ARK Kitchen — Vegetarian Restaurant in Kokar, Ranchi",
+  title: "ARK Kitchen — 100% Pure Veg Restaurant in Kokar, Ranchi",
   description:
-    "ARK Kitchen at ARK Hotels Ranchi. Pure-vegetarian rooftop dining — North Indian, Indo-Chinese, and vegetarian breakfast. Open daily for business travellers.",
-  alternates: { canonical: "/dining" },
+    "ARK Kitchen — 100% pure vegetarian restaurant at ARK Hotels, Kokar, Ranchi. Rooftop dining with North Indian, Indo-Chinese, veg breakfast. Open daily. Walk-ins welcome.",
+  alternates: { canonical: `${SITE.url}/dining` },
 };
 
 const HIGHLIGHTS = [

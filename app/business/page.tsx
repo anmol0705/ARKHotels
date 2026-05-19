@@ -22,10 +22,10 @@ const BUSINESS_FAQ = [
 ];
 
 export const metadata: Metadata = {
-  title: "Business Hotel in Ranchi, Near Airport",
+  title: "Business Hotel in Ranchi | Near Airport, GST Invoice, Free Parking",
   description:
-    "Free WiFi, work desks, power backup, free parking, 24-hr front desk. 9 km from Birsa Munda Airport. Corporate rates and GST invoicing available.",
-  alternates: { canonical: "/business" },
+    "Business hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. Free WiFi, work desk, free parking, 24-hr front desk. GST invoice on checkout. Near HEC, MECON, BIT Mesra.",
+  alternates: { canonical: `${SITE.url}/business` },
 };
 
 const SERVICES = [
@@ -134,18 +134,18 @@ export default function BusinessPage() {
                 position in the building.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <LinkArrow href="/rooms/super-deluxe">
-                  See Super Deluxe
+                <LinkArrow href="/rooms/super-double">
+                  See Super Double
                 </LinkArrow>
-                <LinkArrow href="/rooms/premium-executive">
-                  Or Executive
+                <LinkArrow href="/rooms/deluxe-double">
+                  Or Deluxe Double
                 </LinkArrow>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6 lg:col-start-7">
               <PlaceholderImage
-                src="/images/rooms/delux_double_room.jpeg"
-                alt="Work desk in Executive room, ARK Hotels Ranchi"
+                src="/images/rooms/delux_double_room/delux_double_room.webp"
+                alt="Work desk and double bed in Deluxe Double room, ARK Hotels Ranchi"
                 ratio="3/2"
                 // caption="Executive room work setup — desk lamp, two power points within reach."
               />

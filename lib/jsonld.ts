@@ -2,6 +2,14 @@ import { SITE, FAQS } from "./site";
 
 type FAQItem = { q: string; a: string };
 
+type RoomInput = {
+  slug: string;
+  name: string;
+  description: string;
+  features: ReadonlyArray<string>;
+  image: { src: string; alt: string };
+};
+
 const BASE = SITE.url;
 
 export const hotelJsonLd = {
@@ -10,11 +18,15 @@ export const hotelJsonLd = {
   "@id": `${BASE}/#hotel`,
   name: SITE.name,
   description:
-    "Budget business hotel in Kokar, Ranchi, 9 km from Birsa Munda Airport. Free WiFi, free parking, on-site vegetarian restaurant.",
+    "Professional hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking, 24-hour front desk.",
   url: `${BASE}/`,
   telephone: SITE.phone.e164,
+  email: SITE.email,
   priceRange: "₹₹",
-  starRating: { "@type": "Rating", ratingValue: String(SITE.hotel.starRating) },
+  currenciesAccepted: "INR",
+  paymentAccepted: "Cash, Credit Card, UPI, Bank Transfer",
+  starRating: { "@type": "Rating", ratingValue: SITE.hotel.starRating, bestRating: 5, worstRating: 1 },
+  image: `${BASE}/images/hero_carousel/ark_out_image.webp`,
   address: {
     "@type": "PostalAddress",
     streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
@@ -39,11 +51,15 @@ export const hotelJsonLd = {
     { "@type": "LocationFeatureSpecification", name: "Air conditioning", value: true },
     { "@type": "LocationFeatureSpecification", name: "Power backup", value: true },
     { "@type": "LocationFeatureSpecification", name: "24-hour front desk", value: true },
-    { "@type": "LocationFeatureSpecification", name: "On-site vegetarian restaurant", value: true },
+    { "@type": "LocationFeatureSpecification", name: "100% pure vegetarian restaurant", value: true },
     { "@type": "LocationFeatureSpecification", name: "Room service", value: true },
     { "@type": "LocationFeatureSpecification", name: "Laundry service", value: true },
     { "@type": "LocationFeatureSpecification", name: "Luggage storage", value: true },
     { "@type": "LocationFeatureSpecification", name: "Airport shuttle (paid)", value: true },
+    { "@type": "LocationFeatureSpecification", name: "GST invoice on checkout", value: true },
+  ],
+  sameAs: [
+    SITE.address.googleMaps,
   ],
   // aggregateRating intentionally omitted until a verified review count is
   // available from Google Business Profile or the OTA aggregate. Inventing one
@@ -174,6 +190,35 @@ export function faqPageJsonLd(items: ReadonlyArray<FAQItem>) {
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
+  };
+}
+
+export const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${BASE}/#website`,
+  name: SITE.name,
+  url: `${BASE}/`,
+  description:
+    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing.",
+  inLanguage: "en-IN",
+};
+
+export function hotelRoomJsonLd(room: RoomInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HotelRoom",
+    "@id": `${BASE}/rooms/${room.slug}#room`,
+    name: room.name,
+    description: room.description,
+    url: `${BASE}/rooms/${room.slug}`,
+    image: `${BASE}${room.image.src}`,
+    amenityFeature: room.features.map((f) => ({
+      "@type": "LocationFeatureSpecification",
+      name: f,
+      value: true,
+    })),
+    containedInPlace: { "@id": `${BASE}/#hotel` },
   };
 }
 

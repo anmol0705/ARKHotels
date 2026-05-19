@@ -4,9 +4,9 @@ import { SITE } from "@/lib/site";
 import { breadcrumbJsonLd, faqJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Talk to ARK Hotels Ranchi",
-  description: `Call ${SITE.phone.display} or WhatsApp ${SITE.whatsapp.display}. ARK Hotels, Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001.`,
-  alternates: { canonical: "/contact" },
+  title: "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+  description: `Book a room or ask a question — call ${SITE.phone.display} or WhatsApp ${SITE.whatsapp.display}. ARK Hotels, Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001. Direct bookings only, no fees.`,
+  alternates: { canonical: `${SITE.url}/contact` },
 };
 
 export default function ContactPage() {

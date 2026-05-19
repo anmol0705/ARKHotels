@@ -1,13 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
 import fs from "fs";
 import path from "path";
-import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { RoomsIndexClient } from "@/components/home/RoomsIndex.client";
+import { BookingWidget } from "@/components/home/BookingWidget";
 import { ImageMarquee } from "@/components/shared/ImageMarquee";
 import { ROOMS, NEARBY_BUSINESS, NEARBY_LEISURE } from "@/lib/site";
 import { faqJsonLd, jsonLdScript } from "@/lib/jsonld";
@@ -15,7 +14,9 @@ import { faqJsonLd, jsonLdScript } from "@/lib/jsonld";
 export default function HomePage() {
   return (
     <>
+      <h1 className="sr-only">ARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport</h1>
       <HeroCarousel />
+      <BookingWidget />
       <IntroParagraph />
       <RoomsIndexClient rooms={ROOMS} />
       <DiningCallout />
@@ -47,7 +48,7 @@ function IntroParagraph() {
             </blockquote>
             <span className="brass-rule mt-7" />
             <p className="mt-5 text-[12px] uppercase tracking-[0.2em] text-stone-500 font-medium">
-              15 min from Birsa Munda Airport &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free parking
+              100% Pure Veg &nbsp;·&nbsp; 15 min from Airport &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free Parking
             </p>
           </div>
         </Reveal>
@@ -194,7 +195,7 @@ function AboutConfession() {
             </h2>
             <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5 text-[15px] sm:text-[16px] text-ink-soft leading-[1.65] max-w-[52ch]">
               <p>
-                A familiar landmark in Kokar, ARK Hotels is an owner-run budget hotel dedicated to providing a seamless stay. With rooftop dining at ARK Kitchen, and free parking, we focus entirely on essential comforts.
+                A familiar landmark in Kokar, ARK Hotels is an owner-run property dedicated to a disciplined, professional stay. With rooftop vegetarian dining at ARK Kitchen and free parking, we focus entirely on what business travellers and families actually need.
               </p>
               <p>
                 We believe that a business traveler in Ranchi values a spotless room, reliable service, and a front desk that is always ready to assist at any hour — day or night.
@@ -302,7 +303,7 @@ function LocationStrip() {
             </h2>
           </div>
           <Link
-            href="/location"
+            href="/explore"
             className="shrink-0 inline-flex items-baseline gap-1 text-paper underline decoration-brass decoration-1 underline-offset-[6px] hover:decoration-2 hover:text-brass transition-all duration-[180ms] text-[15px]"
           >
             Full distances &amp; map
@@ -319,13 +320,17 @@ function LocationStrip() {
               For meetings &amp; work
             </p>
             <ul className="divide-y divide-paper/10">
-              {NEARBY_BUSINESS.map((n) => (
-                <li key={n.place} className="flex items-start justify-between gap-4 py-4">
-                  <div className="min-w-0">
-                    <span className="block text-[15px] text-paper leading-[1.4]">{n.place}</span>
-                    <span className="block text-[12px] text-paper/40 leading-[1.5] mt-0.5">{n.note}</span>
-                  </div>
-                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0 pt-[2px]">{n.distance} · {n.time}</span>
+              {NEARBY_BUSINESS.filter(n => [
+                "Birsa Munda Airport",
+                "Ranchi Junction",
+                "Khadgarha Bus Stand",
+                "PSU Belt — HEC & MECON, Dhurwa",
+                "Dipatoli",
+                "BIT Mesra",
+              ].includes(n.place)).map((n) => (
+                <li key={n.place} className="flex items-center justify-between gap-4 py-3.5">
+                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
                 </li>
               ))}
             </ul>
@@ -337,13 +342,16 @@ function LocationStrip() {
               For weekends &amp; day trips
             </p>
             <ul className="divide-y divide-paper/10">
-              {NEARBY_LEISURE.map((n) => (
-                <li key={n.place} className="flex items-start justify-between gap-4 py-4">
-                  <div className="min-w-0">
-                    <span className="block text-[15px] text-paper leading-[1.4]">{n.place}</span>
-                    <span className="block text-[12px] text-paper/40 leading-[1.5] mt-0.5">{n.note}</span>
-                  </div>
-                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0 pt-[2px]">{n.distance} · {n.time}</span>
+              {NEARBY_LEISURE.filter(n => [
+                "Pahari Mandir",
+                "Ranchi Lake",
+                "Hundru Falls",
+                "Dassam Falls",
+                "Netarhat",
+              ].includes(n.place)).map((n) => (
+                <li key={n.place} className="flex items-center justify-between gap-4 py-3.5">
+                  <span className="text-[15px] text-paper leading-[1.4]">{n.place}</span>
+                  <span className="text-[13px] text-paper/50 tabular-nums shrink-0">{n.distance} · {n.time}</span>
                 </li>
               ))}
             </ul>

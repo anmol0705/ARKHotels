@@ -164,9 +164,9 @@ export const HERO_SLIDES = [
       "/images/hero_carousel/ark_out_image.webp",
     alt: "Hotel exterior in Kokar, Ranchi at morning light",
     eyebrow: "Kokar, Ranchi · 15 min from the airport",
-    headline: "A stay in Ranchi that suits your pocket and gets business done.",
+    headline: "A smart, professional stay in Ranchi — handled with care.",
     supporting:
-      "An in-house veg kitchen, free parking, and a front desk that is awake when your flight lands. A comfortable, budget-friendly hotel in the heart of Kokar.",
+      "100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.",
     primaryHref: "/rooms",
     primaryLabel: "See the rooms",
   },

@@ -7,10 +7,10 @@ import { SITE } from "@/lib/site";
 import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Photo Gallery — ARK Hotels Ranchi",
+  title: "Hotel Photos — Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
   description:
-    "Photos of ARK Hotels Ranchi — rooms, ARK Kitchen rooftop restaurant, lobby, and the hotel exterior in Kokar.",
-  alternates: { canonical: "/gallery" },
+    "Browse photos of ARK Hotels, Kokar Ranchi — AC rooms, ARK Kitchen 100% pure veg rooftop restaurant, hotel lobby, and exterior. 23 rooms across 3 floors in Kokar.",
+  alternates: { canonical: `${SITE.url}/gallery` },
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
