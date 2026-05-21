@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Check } from "lucide-react";
 import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RoomCarousel } from "@/components/ui/RoomCarousel";
@@ -115,6 +116,31 @@ export default async function RoomDetailPage({
           </div>
         </div>
       </section>
+
+      {'amenities' in room && (
+        <section className="container-page py-16 lg:py-20 border-t border-stone-100">
+          <h2 className="font-display text-[26px] lg:text-[32px] leading-[1.15] text-ink mb-10 lg:mb-14">
+            Room Amenities
+          </h2>
+          <div className="space-y-10 lg:space-y-12">
+            {(room as typeof room & { amenities: { category: string; items: string[] }[] }).amenities.map((group) => (
+              <div key={group.category}>
+                <h3 className="text-[13px] font-semibold uppercase tracking-[0.12em] text-ink mb-5">
+                  {group.category}
+                </h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-3">
+                  {group.items.map((item) => (
+                    <li key={item} className="flex items-center gap-2.5 text-[15px] text-ink-soft">
+                      <Check size={14} strokeWidth={2.5} className="shrink-0 text-stone-400" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="bg-parchment border-y border-stone-100">
         <div className="container-page py-20 lg:py-24">

@@ -95,6 +95,54 @@ export const ROOMS = [
       "Work desk, free WiFi, LCD TV",
       "Private bath with hot water and fresh towels daily",
     ],
+    amenities: [
+      {
+        category: "Popular with Guests",
+        items: [
+          "Smoking Room",
+          "Housekeeping",
+          "Air Conditioning",
+          "Mineral Water — additional charge",
+          "In-room Dining",
+          "Room Service",
+          "Bathroom",
+          "Laundry Service",
+        ],
+      },
+      {
+        category: "Room Features",
+        items: [
+          "Full-Length Mirror",
+          "Telephone",
+          "Charging Points",
+          "Sofa",
+          "Closet",
+          "Chair",
+          "Work Desk",
+          "Blackout Curtains",
+        ],
+      },
+      {
+        category: "Basic Facilities",
+        items: ["Kettle"],
+      },
+      {
+        category: "Media and Entertainment",
+        items: ["TV"],
+      },
+      {
+        category: "Bathroom",
+        items: [
+          "Dental Kit",
+          "Geyser/Water Heater",
+          "Western Toilet Seat",
+          "Hot & Cold Water",
+          "Jetspray",
+          "Toiletries",
+          "Towels",
+        ],
+      },
+    ],
     images: [
       { src: "/images/rooms/delux_single_room/delux_single_room.webp", alt: "Deluxe Single room at ARK Hotels Ranchi" },
       { src: "/images/rooms/delux_single_room/DSC01112.webp",           alt: "Deluxe Single room detail, ARK Hotels Ranchi" },
@@ -118,6 +166,54 @@ export const ROOMS = [
       "Work desk, free WiFi, LCD TV, tea/coffee tray",
       "Private bath with hot water and fresh towels daily",
     ],
+    amenities: [
+      {
+        category: "Popular with Guests",
+        items: [
+          "Smoking Room",
+          "Housekeeping",
+          "Air Conditioning",
+          "Mineral Water — additional charge",
+          "In-room Dining",
+          "Room Service",
+          "Bathroom",
+          "Laundry Service",
+        ],
+      },
+      {
+        category: "Room Features",
+        items: [
+          "Full-Length Mirror",
+          "Telephone",
+          "Charging Points",
+          "Sofa",
+          "Closet",
+          "Chair",
+          "Work Desk",
+          "Blackout Curtains",
+        ],
+      },
+      {
+        category: "Basic Facilities",
+        items: ["Kettle"],
+      },
+      {
+        category: "Media and Entertainment",
+        items: ["TV"],
+      },
+      {
+        category: "Bathroom",
+        items: [
+          "Dental Kit",
+          "Geyser/Water Heater",
+          "Western Toilet Seat",
+          "Hot & Cold Water",
+          "Jetspray",
+          "Toiletries",
+          "Towels",
+        ],
+      },
+    ],
     images: [
       { src: "/images/rooms/delux_double_room/delux_double_room.webp", alt: "Deluxe Double room at ARK Hotels Ranchi" },
       { src: "/images/rooms/delux_double_room/DSC01112.webp",          alt: "Deluxe Double room detail, ARK Hotels Ranchi" },
@@ -140,6 +236,55 @@ export const ROOMS = [
       "More spacious bathroom with hot water",
       "Work desk, free WiFi, LCD TV",
       "Tea and coffee tray, AC and room heater",
+    ],
+    amenities: [
+      {
+        category: "Popular with Guests",
+        items: [
+          "Smoking Room",
+          "Housekeeping",
+          "Air Conditioning",
+          "Wi-Fi",
+          "Mineral Water — additional charge",
+          "In-room Dining",
+          "Room Service",
+          "Bathroom",
+          "Laundry Service",
+        ],
+      },
+      {
+        category: "Room Features",
+        items: [
+          "Full-Length Mirror",
+          "Telephone",
+          "Charging Points",
+          "Sofa",
+          "Closet",
+          "Chair",
+          "Work Desk",
+          "Blackout Curtains",
+        ],
+      },
+      {
+        category: "Basic Facilities",
+        items: ["Kettle"],
+      },
+      {
+        category: "Media and Technology",
+        items: ["TV"],
+      },
+      {
+        category: "Bathroom",
+        items: [
+          "Dental Kit",
+          "Geyser/Water Heater",
+          "Western Toilet Seat",
+          "Hot & Cold Water",
+          "Jetspray",
+          "Toiletries",
+          "Towels",
+        ],
+      },
     ],
     images: [
       { src: "/images/rooms/super_delux_room/super_double_room.webp", alt: "Super Double room at ARK Hotels Ranchi" },
