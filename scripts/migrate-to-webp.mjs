@@ -48,7 +48,7 @@ function processFolder(folderPath) {
 
         console.log(`  🔄 Converting: ${file} -> ${outputName}`);
         try {
-          execSync(`npx --package sharp node scripts/simple-convert.js "${inputPath}" "${outputPath}"`, { stdio: 'inherit' });
+          execSync(`node scripts/simple-convert.cjs "${inputPath}" "${outputPath}"`, { stdio: 'inherit' });
           fs.renameSync(inputPath, archivePath);
           console.log(`  ✓ Done & Archived: ${file}`);
         } catch (err) {
@@ -71,7 +71,7 @@ function processFolder(folderPath) {
         if (!fs.existsSync(outputPath)) {
           console.log(`  🔄 Converting from archive: ${file} -> ${outputName}`);
           try {
-            execSync(`npx --package sharp node scripts/simple-convert.js "${inputPath}" "${outputPath}"`, { stdio: 'inherit' });
+            execSync(`node scripts/simple-convert.cjs "${inputPath}" "${outputPath}"`, { stdio: 'inherit' });
             console.log(`  ✓ Done: ${file}`);
           } catch (err) {
             console.error(`  ✗ Failed archive: ${file} - ${err.message}`);

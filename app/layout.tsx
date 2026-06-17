@@ -102,7 +102,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-IN" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en-IN" className={`${fraunces.variable} ${inter.variable}`} data-scroll-behavior="smooth">
       <body className="min-h-screen flex flex-col bg-paper text-ink">
         <ScrollReset />
         <Header />

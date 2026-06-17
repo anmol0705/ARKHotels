@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
@@ -169,46 +170,66 @@ export default function DiningPage() {
         </div>
       </section>
 
-      {/* ── Review + CTA — one combined section ── */}
-      <section className="container-page py-16 lg:py-24">
-        <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
-          <div className="col-span-12 lg:col-span-6">
-            <Eyebrow>From a recent guest</Eyebrow>
-            <blockquote className="mt-6 font-display italic text-[26px] sm:text-[30px] lg:text-[38px] leading-[1.2] tracking-[-0.015em] text-ink max-w-[22ch]">
-              &ldquo;Wonderful experience and excellent service. Hygiene and
-              cleanliness was really good.&rdquo;
-            </blockquote>
-            <p className="mt-5 text-[13px] text-stone-500">
-              — Verified guest, MakeMyTrip
-            </p>
-            <p className="mt-3 text-[13px] text-stone-400">
-              Rated 4.8 on MakeMyTrip &nbsp;·&nbsp; 8.5 on Booking.com &nbsp;·&nbsp; 4.7 on JustDial
-            </p>
-          </div>
+      {/* ── Review + image + CTA ── */}
+      <section className="border-t border-stone-100">
+        <div className="container-page py-16 lg:py-24">
+          <div className="grid grid-cols-12 gap-10 lg:gap-16 items-center">
 
-          <div className="col-span-12 lg:col-span-5 lg:col-start-8 flex flex-col gap-4">
-            <Eyebrow tone="moss">Ready to dine?</Eyebrow>
-            <p className="mt-1 font-display text-[22px] sm:text-[26px] lg:text-[30px] leading-[1.15] tracking-[-0.01em] text-ink max-w-[22ch]">
-              Walk in, or ask the front desk to reserve your table.
-            </p>
-            <p className="text-[14px] text-ink-soft max-w-[36ch] leading-[1.65]">
-              Open to hotel guests and walk-in diners. Call ahead for large
-              groups or event bookings.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 mt-2">
-              <a
-                href={SITE.phone.tel}
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-sm hover:bg-brass-deep transition-colors shadow-sm"
-              >
-                Call the restaurant
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-300 text-ink text-[14px] font-medium tracking-wide rounded-sm hover:border-ink transition-colors"
-              >
-                Send an enquiry
-              </Link>
+            {/* Image — shown above text on mobile, left column on desktop */}
+            <div className="col-span-12 lg:col-span-5 order-first lg:order-none">
+              <div className="relative w-full overflow-hidden rounded-[2px] aspect-[4/3]">
+                <Image
+                  src="/images/gallery/restaurant/restro4.webp"
+                  alt="Dining atmosphere at ARK Kitchen, ARK Hotels Kokar Ranchi"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                />
+              </div>
             </div>
+
+            {/* Review + CTA */}
+            <div className="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col gap-8">
+              <div>
+                <Eyebrow>From a recent guest</Eyebrow>
+                <blockquote className="mt-6 font-display italic text-[24px] sm:text-[28px] lg:text-[34px] leading-[1.2] tracking-[-0.015em] text-ink max-w-[22ch]">
+                  &ldquo;Wonderful experience and excellent service. Hygiene and
+                  cleanliness was really good.&rdquo;
+                </blockquote>
+                <p className="mt-5 text-[13px] text-stone-500">
+                  — Verified guest, MakeMyTrip
+                </p>
+                <p className="mt-2 text-[13px] text-stone-400">
+                  Rated 4.8 on MakeMyTrip &nbsp;·&nbsp; 8.5 on Booking.com &nbsp;·&nbsp; 4.7 on JustDial
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <Eyebrow tone="moss">Ready to dine?</Eyebrow>
+                <p className="font-display text-[20px] sm:text-[24px] lg:text-[28px] leading-[1.15] tracking-[-0.01em] text-ink max-w-[22ch]">
+                  Walk in, or ask the front desk to reserve your table.
+                </p>
+                <p className="text-[14px] text-ink-soft max-w-[36ch] leading-[1.65]">
+                  Open to hotel guests and walk-in diners. Call ahead for large
+                  groups or event bookings.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 mt-1">
+                  <a
+                    href={SITE.phone.tel}
+                    className="inline-flex items-center justify-center px-7 py-3.5 bg-ink text-paper text-[14px] font-medium tracking-wide rounded-sm hover:bg-brass-deep transition-colors shadow-sm"
+                  >
+                    Call the restaurant
+                  </a>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-300 text-ink text-[14px] font-medium tracking-wide rounded-sm hover:border-ink transition-colors"
+                  >
+                    Send an enquiry
+                  </Link>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

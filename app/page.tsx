@@ -1,6 +1,4 @@
 import Link from "next/link";
-import fs from "fs";
-import path from "path";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
@@ -87,7 +85,7 @@ function DiningCallout() {
           <div className="col-span-12 lg:col-span-6 lg:col-start-7">
             <Link href="/dining" className="block hover:opacity-95 transition-opacity">
               <PlaceholderImage
-                src="/images/gallery/restaurant/restro.jpg"
+                src="/images/gallery/restaurant/restro2.webp"
                 alt="ARK Kitchen rooftop restaurant at ARK Hotels, Kokar Ranchi"
                 ratio="3/2"
               />
@@ -216,29 +214,22 @@ function AboutConfession() {
 }
 
 /* ─────────────────────────  Gallery teaser  ───────────────────────── */
+const MARQUEE_IMAGES = [
+  "/images/gallery/hotel/ark_out_image.webp",
+  "/images/gallery/rooms/delux_double_room.webp",
+  "/images/gallery/restaurant/restro2.webp",
+  "/images/gallery/hotel/ark_reception-2.webp",
+  "/images/gallery/rooms/DSC01123.webp",
+  "/images/gallery/restaurant/restaurant-ambiance-03.webp",
+  "/images/gallery/hotel/IMG_6254.webp",
+  "/images/gallery/rooms/DSC01112.webp",
+  "/images/gallery/restaurant/restro4.webp",
+  "/images/gallery/hotel/DSC01228.webp",
+  "/images/gallery/rooms/super_double_room.webp",
+  "/images/gallery/restaurant/paneer_butter_masala.webp",
+];
+
 function GalleryTeaser() {
-  const galleryRoot = path.join(process.cwd(), "public", "images", "gallery");
-  const IMAGE_EXT = /\.(jpg|jpeg|png|webp|avif)$/i;
-  const images: string[] = [];
-
-  try {
-    const entries = fs.readdirSync(galleryRoot, { withFileTypes: true });
-    for (const entry of entries) {
-      if (entry.isDirectory()) {
-        const sub = path.join(galleryRoot, entry.name);
-        try {
-          fs.readdirSync(sub)
-            .filter((f) => IMAGE_EXT.test(f))
-            .forEach((f) => images.push(`/images/gallery/${entry.name}/${f}`));
-        } catch { /* skip */ }
-      } else if (IMAGE_EXT.test(entry.name)) {
-        images.push(`/images/gallery/${entry.name}`);
-      }
-    }
-  } catch { /* folder not ready yet */ }
-
-  if (images.length === 0) return null;
-
   return (
     <section className="border-t border-stone-100 py-14 lg:py-20">
       <div className="container-page mb-8 flex items-end justify-between gap-4 pr-4 sm:pr-6 lg:pr-0">
@@ -255,7 +246,7 @@ function GalleryTeaser() {
           See all photos →
         </Link>
       </div>
-      <ImageMarquee images={images} />
+      <ImageMarquee images={MARQUEE_IMAGES} />
     </section>
   );
 }
@@ -277,7 +268,7 @@ function PlacePlateDiptych() {
         </div>
         <div className="col-span-12 lg:col-span-7 lg:col-start-6">
           <PlaceholderImage
-            src="/images/gallery/restaurant/food.jpg"
+            src="/images/gallery/restaurant/food.webp"
             alt="Vegetarian food at ARK Kitchen, ARK Hotels Kokar Ranchi"
             ratio="3/2"
           />

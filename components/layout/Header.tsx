@@ -110,6 +110,8 @@ export function Header() {
               alt="ARK Hotels"
               width={180}
               height={60}
+              loading="eager"
+              priority
               className="h-11 sm:h-13 lg:h-14 w-auto object-contain"
               style={{ width: "auto" }}
             />

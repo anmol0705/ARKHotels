@@ -75,7 +75,7 @@ const CURATED_GALLERY: GalleryImage[] = [
     height: 900,
   },
   {
-    src: "/images/gallery/rooms/room_image.jpg",
+    src: "/images/gallery/rooms/room_image.webp",
     alt: "Double room with seating at ARK Hotels Ranchi",
     caption: "In-room seating — a place to sit that is not the bed",
     category: "Rooms",
@@ -123,12 +123,20 @@ const CURATED_GALLERY: GalleryImage[] = [
     height: 3376,
   },
   {
-    src: "/images/gallery/restaurant/restro.jpg",
+    src: "/images/gallery/restaurant/restro2.webp",
     alt: "Restaurant seating at ARK Kitchen Ranchi",
     caption: "ARK Kitchen indoor section — good for a working lunch or an early dinner",
     category: "ARK Kitchen",
-    width: 252,
-    height: 336,
+    width: 1080,
+    height: 1080,
+  },
+  {
+    src: "/images/gallery/restaurant/restro4.webp",
+    alt: "Dining area at ARK Kitchen, ARK Hotels Kokar Ranchi",
+    caption: "ARK Kitchen — warm lighting, relaxed pace, pure vegetarian menu",
+    category: "ARK Kitchen",
+    width: 1080,
+    height: 1080,
   },
   {
     src: "/images/DSC01243.webp",
@@ -147,7 +155,7 @@ const CURATED_GALLERY: GalleryImage[] = [
     height: 183,
   },
   {
-    src: "/images/gallery/restaurant/food.jpg",
+    src: "/images/gallery/restaurant/food.webp",
     alt: "Paneer tikka platter at ARK Kitchen Ranchi",
     caption: "Paneer tikka — marinated overnight, grilled to order, not pre-made",
     category: "ARK Kitchen",
@@ -171,7 +179,7 @@ const CURATED_GALLERY: GalleryImage[] = [
     height: 375,
   },
   {
-    src: "/images/gallery/restaurant/paneer_tikka.jpg",
+    src: "/images/gallery/restaurant/paneer_tikka.webp",
     alt: "Paneer tikka served at ARK Kitchen Ranchi",
     caption: "Paneer tikka skewers — smoky, not dry",
     category: "ARK Kitchen",

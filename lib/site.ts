@@ -338,7 +338,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "/images/gallery/restaurant/restro2.png",
+      "/images/gallery/restaurant/restro2.webp",
     alt: "ARK Kitchen vegetarian restaurant at ARK Hotels, Kokar",
     eyebrow: "ARK Kitchen · Pure veg · open all day",
     headline: "Home-style food, prepared with quiet care.",
