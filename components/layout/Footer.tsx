@@ -24,8 +24,11 @@ export function Footer() {
             <p className="pt-2">{SITE.address.full}</p>
           </div>
           <div className="mt-6 space-y-1 text-[14px]">
+            <p className="text-paper/70">
+              To check room availability, call or WhatsApp the front desk.
+            </p>
             <p>
-              <span className="text-paper/60 mr-2">Front desk</span>
+              <span className="text-paper/60 mr-2">Call to book</span>
               <a
                 href={SITE.phone.tel}
                 className="text-paper hover:text-brass transition-colors tabular-nums"
@@ -34,7 +37,7 @@ export function Footer() {
               </a>
             </p>
             <p>
-              <span className="text-paper/60 mr-2">WhatsApp</span>
+              <span className="text-paper/60 mr-2">WhatsApp to book</span>
               <a
                 href={`https://wa.me/${SITE.whatsapp.e164.replace("+", "")}`}
                 target="_blank"

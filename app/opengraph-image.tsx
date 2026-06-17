@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
-export const runtime = "edge";
+export const dynamic = "force-static";
 export const alt = "ARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -31,12 +31,14 @@ export default async function OG() {
         >
           <div
             style={{
+              display: "flex",
+              gap: 8,
               fontSize: 28,
               fontWeight: 500,
               letterSpacing: "-0.01em",
             }}
           >
-            ARK <span style={{ color: "#8A6736" }}>Hotels</span>
+            ARK Hotels
           </div>
           <div
             style={{
@@ -94,7 +96,7 @@ export default async function OG() {
           }}
         >
           <div style={{ fontSize: 18, color: "#3A3833" }}>
-            Front desk · {SITE.phone.display}
+            {`Front desk · ${SITE.phone.display}`}
           </div>
           <div style={{ fontSize: 16, color: "#7A7468" }}>
             arkhotelsranchi.in

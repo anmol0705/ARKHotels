@@ -4,8 +4,68 @@ import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { HERO_SLIDES, SITE, type HeroSlide } from "@/lib/site";
+import { HERO_SLIDES, TRUST_SIGNALS, SITE, whatsappHref, type HeroSlide } from "@/lib/site";
+import { trackEvent, GA_EVENTS } from "@/lib/analytics";
 import { cn } from "@/lib/cn";
+
+function isoDateOffset(days: number) {
+  const date = new Date();
+  date.setDate(date.getDate() + days);
+  return date.toISOString().split("T")[0];
+}
+
+function MobileBookingPanel() {
+  const [today] = useState(() => isoDateOffset(0));
+  const [tomorrow] = useState(() => isoDateOffset(1));
+  const [checkin, setCheckin] = useState("");
+  const [checkout, setCheckout] = useState("");
+
+  const handleTap = () => {
+    const parts: string[] = [];
+    if (checkin) parts.push(`Check-in: ${checkin}`);
+    if (checkout) parts.push(`Check-out: ${checkout}`);
+    const msg = ["Hi, I'd like to check room availability.", ...parts, "Please share rates. Thanks."].join(" ");
+    const url = `https://wa.me/${SITE.whatsapp.e164.replace("+", "")}?text=${encodeURIComponent(msg)}`;
+    trackEvent(GA_EVENTS.BOOKING_ENQUIRY, { has_checkin: checkin ? "yes" : "no", has_checkout: checkout ? "yes" : "no", guests: "1" });
+    trackEvent(GA_EVENTS.WHATSAPP_CLICK, { page: "hero_mobile_panel" });
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <div className="md:hidden bg-paper border-b border-stone-200 px-5 py-4">
+      <div className="grid grid-cols-2 gap-3 mb-3">
+        <div className="flex flex-col gap-1">
+          <label htmlFor="hm-checkin" className="text-[10px] uppercase tracking-[0.18em] font-medium text-stone-400">Check-in</label>
+          <input
+            id="hm-checkin"
+            type="date"
+            min={today}
+            value={checkin}
+            onChange={(e) => { setCheckin(e.target.value); if (checkout && e.target.value >= checkout) setCheckout(""); }}
+            className="h-11 px-3 border border-stone-200 rounded-sm text-[13px] text-ink bg-paper focus:outline-none focus:border-brass transition-colors"
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label htmlFor="hm-checkout" className="text-[10px] uppercase tracking-[0.18em] font-medium text-stone-400">Check-out</label>
+          <input
+            id="hm-checkout"
+            type="date"
+            min={checkin || tomorrow}
+            value={checkout}
+            onChange={(e) => setCheckout(e.target.value)}
+            className="h-11 px-3 border border-stone-200 rounded-sm text-[13px] text-ink bg-paper focus:outline-none focus:border-brass transition-colors"
+          />
+        </div>
+      </div>
+      <button
+        onClick={handleTap}
+        className="w-full h-12 bg-[#25D366] text-white text-[14px] font-medium rounded-sm hover:bg-[#1ebe5d] transition-colors"
+      >
+        Ask rate on WhatsApp
+      </button>
+    </div>
+  );
+}
 
 const INTERVAL_MS = 6800;
 const EASE = [0.22, 0.61, 0.36, 1] as const;
@@ -48,14 +108,11 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
     <section
       aria-roledescription="carousel"
       aria-label="ARK Hotels — featured story"
-      className="relative isolate w-full"
-      // Pause only on keyboard focus (accessibility). Hover does NOT pause —
-      // the rotation is the experience. Use the on-screen pause button for
-      // explicit control.
+      className="hero-bleed relative isolate w-full"
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <div className="relative w-full h-[calc(100svh-116px)] min-h-[460px] sm:min-h-[540px] max-h-[920px] overflow-hidden bg-ink">
+      <div className="h-hero relative w-full overflow-hidden bg-ink">
         {/* Image stack — crossfade with slow Ken Burns */}
         <AnimatePresence initial={false}>
           <motion.div
@@ -90,36 +147,29 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
             {/* Vignette + bottom gradient for text legibility */}
             <div
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/35 to-ink/10"
+              className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/30 to-ink/10"
             />
+            {/* Left-side gradient for hero text panel */}
             <div
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-r from-ink/45 via-transparent to-transparent"
+              className="absolute inset-0 bg-gradient-to-r from-ink/40 via-transparent to-transparent"
+            />
+            {/* Top gradient — ensures the transparent desktop header (logo + nav)
+                is always legible against the hero image on lg+ viewports */}
+            <div
+              aria-hidden
+              className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/55 to-transparent hidden lg:block"
             />
           </motion.div>
         </AnimatePresence>
 
-        {/* Top-right chrome — atmospheric line. Hidden under lg so it
-            doesn't collide with the mobile/tablet "Menu" button. */}
-        <div className="absolute top-6 lg:top-10 right-6 lg:right-10 z-10 hidden lg:flex items-center gap-3 text-paper/85">
-          <span className="h-px w-6 bg-paper/60" aria-hidden />
-          <span className="text-[11px] uppercase tracking-[0.22em]">
-            Front desk · 24 hours · {SITE.phone.display}
-          </span>
-        </div>
 
-        {/* Top-left brand mark — kept light so the regular header layers cleanly above it */}
-        <div className="absolute top-6 lg:top-10 left-6 lg:left-10 z-10 hidden md:block text-paper/0 select-none">
-          {/* spacer — header above provides the wordmark; this is a hook for future overlays */}
-        </div>
-
-        {/* Text panel — flex justify-end with a hard top padding so the
-            content can never overflow upward into the sticky chrome, no
-            matter how tall the headline gets on a given slide. */}
+        {/* Text panel — pinned to the bottom of the hero image via justify-end.
+            Top padding prevents content from ever touching the absolute top
+            on short viewports. On desktop (lg+), pt-36 > header height (101px)
+            so content is always clear of the transparent fixed header overlay. */}
         <div className="absolute inset-0 z-10 flex pointer-events-none">
-          {/* Top padding ≥ sticky chrome (TopBar 36 + Header 80 = 116px) so
-              the headline can never overflow upward into it on tall slides. */}
-          <div className="container-page w-full flex flex-col justify-end pt-32 lg:pt-36 pb-20 sm:pb-16 lg:pb-24">
+          <div className="container-page w-full flex flex-col justify-end pt-16 md:pt-28 lg:pt-36 pb-8 md:pb-16 lg:pb-24">
             <AnimatePresence mode="wait">
               <motion.div
                 key={`text-${index}`}
@@ -127,10 +177,10 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.7, ease: EASE }}
-                className="max-w-[64ch] pointer-events-auto"
+                className="max-w-[60ch] pointer-events-auto"
               >
-                <p className="flex flex-wrap items-center gap-3 text-[11px] font-medium uppercase tracking-[0.22em] text-paper/85">
-                  <span className="h-px w-6 bg-brass" aria-hidden />
+                <p className="flex flex-wrap items-center gap-2 text-[10px] md:text-[11px] font-medium uppercase tracking-[0.22em] text-paper/80">
+                  <span className="h-px w-5 bg-brass shrink-0" aria-hidden />
                   <span>{slide.eyebrow}</span>
                 </p>
 
@@ -138,16 +188,17 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
                   initial={{ opacity: 0, y: 14 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.08, ease: EASE }}
-                  className="mt-5 font-display text-[30px] sm:text-[44px] lg:text-[58px] leading-[1.08] tracking-[-0.02em] text-paper"
+                  className="mt-3 md:mt-4 font-display text-[clamp(1.65rem,5vw,3.625rem)] leading-[1.1] tracking-[-0.02em] text-paper"
                 >
                   {slide.headline}
                 </motion.h1>
 
+                {/* Supporting text — only on desktop where there is ample height */}
                 <motion.p
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.16, ease: EASE }}
-                  className="mt-5 text-[15px] lg:text-[17px] leading-[1.6] text-paper/85 max-w-[56ch]"
+                  className="hidden lg:block mt-5 text-[17px] leading-[1.65] text-paper/80 max-w-[52ch]"
                 >
                   {slide.supporting}
                 </motion.p>
@@ -156,23 +207,48 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.24, ease: EASE }}
-                  className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4"
+                  className="mt-5 md:mt-7 flex flex-row flex-wrap gap-2 md:gap-3"
                 >
-                  <Link
-                    href={slide.primaryHref}
-                    className="inline-flex items-center justify-center px-6 py-3 bg-brass text-paper text-[15px] font-medium tracking-tight rounded-[2px] hover:bg-brass-deep transition-colors duration-[180ms]"
+                  <a
+                    href={whatsappHref()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 bg-brass text-paper text-[13px] md:text-[15px] font-medium tracking-tight rounded-[2px] hover:bg-brass-deep transition-colors duration-[180ms] whitespace-nowrap"
                   >
-                    {slide.primaryLabel}
+                    WhatsApp to Book
+                  </a>
+                  <Link
+                    href="/rooms"
+                    className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 border border-paper/50 text-paper text-[13px] md:text-[15px] font-medium rounded-[2px] hover:bg-paper hover:text-ink transition-colors duration-[180ms] whitespace-nowrap"
+                  >
+                    View Rooms
                   </Link>
                   <a
                     href={SITE.phone.tel}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-paper/55 text-paper text-[15px] font-medium rounded-[2px] hover:bg-paper hover:text-ink transition-colors duration-[180ms]"
+                    className="hidden lg:inline-flex items-center justify-center gap-2 px-6 py-3 border border-paper/50 text-paper text-[15px] font-medium rounded-[2px] hover:bg-paper hover:text-ink transition-colors duration-[180ms]"
                   >
-                    <span>Call front desk</span>
-                    <span className="opacity-65 tabular-nums">
-                      · {SITE.phone.display}
-                    </span>
+                    <span>Call Front Desk</span>
+                    <span className="opacity-60 tabular-nums">· {SITE.phone.display}</span>
                   </a>
+                </motion.div>
+
+                {/* Compact trust strip — visible on mobile only; TrustStrip component
+                    handles the full version in the page body below the hero */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.7, delay: 0.35, ease: EASE }}
+                  className="mt-4 lg:hidden flex flex-wrap items-center gap-x-3 gap-y-1"
+                >
+                  {TRUST_SIGNALS.map((s, i) => (
+                    <span key={s.label} className="flex items-center gap-1">
+                      <span className="text-[12px] font-semibold text-paper tabular-nums">{s.value}</span>
+                      <span className="text-[10px] uppercase tracking-[0.1em] text-paper/50">{s.label}</span>
+                      {i < TRUST_SIGNALS.length - 1 && (
+                        <span className="text-paper/25 select-none" aria-hidden> · </span>
+                      )}
+                    </span>
+                  ))}
                 </motion.div>
               </motion.div>
             </AnimatePresence>
@@ -270,6 +346,23 @@ export function HeroCarousel({ slides = HERO_SLIDES }: Props) {
           ))}
         </div>
       </div>
+
+      {/* Hotel identity rail — brief facts visible between hero and booking panel on mobile */}
+      <div className="md:hidden bg-parchment border-b border-stone-200 px-5 py-2.5 overflow-x-auto no-scrollbar">
+        <div className="flex items-center gap-0 whitespace-nowrap text-[11px]">
+          <span className="font-medium text-stone-600">Kokar, Ranchi</span>
+          <span className="mx-3 text-stone-200 select-none" aria-hidden>|</span>
+          <span className="font-semibold text-brass-deep tabular-nums">9 km</span>
+          <span className="ml-1 text-stone-400"> airport</span>
+          <span className="mx-3 text-stone-200 select-none" aria-hidden>|</span>
+          <span className="text-stone-500">Pure veg kitchen</span>
+          <span className="mx-3 text-stone-200 select-none" aria-hidden>|</span>
+          <span className="font-semibold text-brass-deep tabular-nums">23</span>
+          <span className="ml-1 text-stone-400"> rooms</span>
+        </div>
+      </div>
+
+      <MobileBookingPanel />
 
       {/* Live region for screen readers — announces slide changes */}
       <span aria-live="polite" className="sr-only">

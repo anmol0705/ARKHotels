@@ -3,8 +3,11 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { LinkArrow } from "@/components/ui/Buttons";
+import { DirectBookingNotes } from "@/components/shared/DirectBookingNotes";
 import { SITE, whatsappHref } from "@/lib/site";
-import { breadcrumbJsonLd, faqPageJsonLd, jsonLdScript } from "@/lib/jsonld";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { breadcrumbJsonLd, faqPageJsonLd } from "@/lib/jsonld";
+import { createPageMetadata } from "@/lib/seo";
 
 const BUSINESS_FAQ = [
   {
@@ -21,12 +24,14 @@ const BUSINESS_FAQ = [
   },
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Business Hotel in Ranchi | Near Airport, GST Invoice, Free Parking",
   description:
     "Business hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. Free WiFi, work desk, free parking, 24-hr front desk. GST invoice on checkout. Near HEC, MECON, BIT Mesra.",
-  alternates: { canonical: `${SITE.url}/business` },
-};
+  path: "/business",
+  image: "/images/rooms/delux_double_room/delux_double_room.webp",
+  imageAlt: "Work desk and double bed in a room at ARK Hotels Ranchi",
+});
 
 const SERVICES = [
   {
@@ -95,6 +100,7 @@ export default function BusinessPage() {
             </p>
           </div>
         </div>
+        <DirectBookingNotes className="mt-10 max-w-[32ch]" />
       </section>
 
       <section className="container-page pb-24 lg:pb-32">
@@ -182,7 +188,7 @@ export default function BusinessPage() {
                 rel="noopener noreferrer"
                 className="text-ink underline decoration-brass decoration-1 underline-offset-[6px] hover:decoration-2 hover:text-brass-deep transition-all"
               >
-                WhatsApp the front desk
+                WhatsApp to Book
               </a>
               .
             </p>
@@ -190,17 +196,8 @@ export default function BusinessPage() {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
-      />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(faqPageJsonLd(BUSINESS_FAQ))}
-      />
+      <JsonLd id="business-breadcrumb-jsonld" data={breadcrumbs} />
+      <JsonLd id="business-faq-jsonld" data={faqPageJsonLd(BUSINESS_FAQ)} />
     </>
   );
 }
-

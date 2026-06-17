@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
-export const runtime = "edge";
+export const dynamic = "force-static";
 export const alt = "ARK Hotels Ranchi — AC Rooms in Kokar, 9 km from Airport";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -23,8 +23,8 @@ export default async function OG() {
         }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontSize: 28, fontWeight: 500, letterSpacing: "-0.01em", color: "#F5F1EA" }}>
-            ARK <span style={{ color: "#A8814B" }}>Hotels</span>
+          <div style={{ display: "flex", gap: 8, fontSize: 28, fontWeight: 500, letterSpacing: "-0.01em", color: "#F5F1EA" }}>
+            ARK Hotels
           </div>
           <div style={{ fontSize: 14, letterSpacing: "0.18em", textTransform: "uppercase", color: "#7A7468" }}>
             Rooms &amp; Tariff
@@ -45,7 +45,7 @@ export default async function OG() {
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", borderTop: "1px solid #3A3833", paddingTop: 24 }}>
           <div style={{ fontSize: 18, color: "#9A9490" }}>
-            Book direct · {SITE.phone.display}
+            {`Call to book · ${SITE.phone.display}`}
           </div>
           <div style={{ fontSize: 16, color: "#5A5650" }}>
             arkhotelsranchi.in/rooms

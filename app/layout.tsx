@@ -1,17 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
+import { ScrollReset } from "@/components/layout/ScrollReset";
 import { SITE } from "@/lib/site";
+import { JsonLd } from "@/components/shared/JsonLd";
 import {
   hotelJsonLd,
-  localBusinessJsonLd,
   organizationJsonLd,
   restaurantJsonLd,
   webSiteJsonLd,
-  jsonLdScript,
 } from "@/lib/jsonld";
 
 const fraunces = Fraunces({
@@ -36,22 +37,9 @@ export const metadata: Metadata = {
     template: "%s | ARK Hotels Ranchi",
   },
   description:
-    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing. Book direct, no fees.",
+    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing. Call or WhatsApp to book.",
   applicationName: "ARK Hotels Ranchi",
   authors: [{ name: "ARK Hotels" }],
-  keywords: [
-    "ARK Hotels Ranchi",
-    "hotel in Kokar Ranchi",
-    "hotel near Birsa Munda Airport",
-    "business hotel Ranchi",
-    "budget hotel Ranchi",
-    "pure veg hotel Ranchi",
-    "vegetarian hotel Ranchi",
-    "hotel Old HB Road Kokar",
-    "hotel near Ranchi airport",
-    "vegetarian restaurant Kokar",
-    "GST hotel Ranchi",
-  ],
   alternates: {
     canonical: `${SITE.url}/`,
   },
@@ -67,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "ARK Hotels Ranchi",
     title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
     description:
-      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi & parking. GST invoicing. Book direct.",
+      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi & parking. GST invoicing. Call or WhatsApp to book.",
     images: [
       {
         url: "/images/hero_carousel/ark_out_image.webp",
@@ -81,16 +69,33 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
     description:
-      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure veg restaurant, AC rooms, free WiFi & parking. Book direct.",
+      "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure veg restaurant, AC rooms, free WiFi & parking. Call or WhatsApp to book.",
     images: ["/images/hero_carousel/ark_out_image.webp"],
   },
   robots: { index: true, follow: true },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F5F1EA",
+  /*
+   * Match the header's bg-parchment colour (#EBE4D6) exactly — not the
+   * slightly lighter bg-paper (#F5F1EA).  On iPhone 15, iOS uses theme-color
+   * to tint the status-bar / Dynamic Island chrome, so a mismatch between
+   * theme-color and the actual header background creates a visible seam.
+   */
+  themeColor: "#EBE4D6",
   width: "device-width",
   initialScale: 1,
+  /*
+   * viewport-fit=cover: the rendered viewport extends edge-to-edge behind the
+   * Dynamic Island and home-indicator bar.  We then push the header's content
+   * down with env(safe-area-inset-top) padding so nothing is obscured.
+   * Without this, iOS renders a gap between the Dynamic Island and the header
+   * that shows the bare html background — the "broken" look on iPhone 15.
+   */
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -98,38 +103,21 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-IN" className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="min-h-dvh flex flex-col bg-paper text-ink">
+      <body className="min-h-screen flex flex-col bg-paper text-ink">
+        <ScrollReset />
         <Header />
+        {/* Spacer — header is position:fixed so it's out of normal flow.
+            This div holds the header's height so page content starts below it. */}
+        <div style={{ height: "var(--header-h)" }} className="shrink-0" aria-hidden="true" />
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFab />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={jsonLdScript(webSiteJsonLd)}
-        />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={jsonLdScript(organizationJsonLd)}
-        />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={jsonLdScript(hotelJsonLd)}
-        />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={jsonLdScript(restaurantJsonLd)}
-        />
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={jsonLdScript(localBusinessJsonLd)}
-        />
+        <GoogleAnalytics gaId="G-5TEWHW5WG6" />
+        <JsonLd id="website-jsonld" data={webSiteJsonLd} />
+        <JsonLd id="organization-jsonld" data={organizationJsonLd} />
+        <JsonLd id="hotel-jsonld" data={hotelJsonLd} />
+        <JsonLd id="restaurant-jsonld" data={restaurantJsonLd} />
       </body>
     </html>
   );
 }
-

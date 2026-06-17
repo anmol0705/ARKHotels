@@ -6,7 +6,10 @@ import Image from "next/image";
 export type GalleryImage = {
   src: string;
   alt: string;
+  caption?: string;
   category: string;
+  width?: number;
+  height?: number;
 };
 
 type Props = {
@@ -56,7 +59,7 @@ export function GalleryGrid({ images, categories }: Props) {
             <button
               key={tab}
               onClick={() => { setActive(tab); setLightbox(null); }}
-              className={`px-5 py-2 text-[13px] font-medium tracking-wide rounded-[2px] transition-colors ${
+              className={`px-5 py-2 min-h-[44px] text-[13px] font-medium tracking-wide rounded-[2px] transition-colors ${
                 active === tab
                   ? "bg-ink text-paper"
                   : "border border-stone-200 text-ink-soft hover:border-ink hover:text-ink"
@@ -84,13 +87,16 @@ export function GalleryGrid({ images, categories }: Props) {
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  width={800}
-                  height={600}
+                  width={img.width ?? 800}
+                  height={img.height ?? 600}
                   className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 />
                 <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/10 transition-colors duration-300 rounded-[2px]" />
               </div>
+              <p className="mt-1.5 text-[11px] text-stone-500 leading-snug text-left px-0.5">
+                {img.caption ?? img.alt}
+              </p>
             </button>
           ))}
         </div>
@@ -128,8 +134,8 @@ export function GalleryGrid({ images, categories }: Props) {
               <Image
                 src={filtered[lightbox].src}
                 alt={filtered[lightbox].alt}
-                width={1200}
-                height={900}
+                width={filtered[lightbox].width ?? 1200}
+                height={filtered[lightbox].height ?? 900}
                 className="max-h-[80vh] w-auto object-contain rounded-[2px]"
                 sizes="100vw"
                 priority
@@ -149,8 +155,8 @@ export function GalleryGrid({ images, categories }: Props) {
             >
               ←
             </button>
-            <p className="text-paper/40 text-[13px] max-w-[40ch] text-center leading-snug hidden sm:block">
-              {filtered[lightbox].alt}
+            <p className="text-paper/40 text-[13px] max-w-[40ch] text-center leading-snug">
+              {filtered[lightbox].caption ?? filtered[lightbox].alt}
             </p>
             <button
               onClick={next}

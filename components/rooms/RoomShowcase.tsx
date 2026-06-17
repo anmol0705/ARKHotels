@@ -58,7 +58,7 @@ export function RoomShowcase({ rooms, isRoomsPage = false }: { rooms: readonly R
 
                 {/* RIGHT COLUMN: Changed to h-screen and added pt-[80px] to offset your navbar. 
                     This ensures the flexbox perfectly centers the image in the visible screen space. */}
-                <div className="hidden lg:flex w-1/2 h-screen sticky top-0 pt-[80px] pb-12 pl-12 xl:pl-20 flex-col justify-center pointer-events-none">
+                <div className="hidden lg:flex w-1/2 h-screen sticky top-0 pb-12 pl-12 xl:pl-20 flex-col justify-center pointer-events-none" style={{ paddingTop: "var(--header-h)" }}>
 
                     {/* Constrained max-height to 75vh so it never hits the top/bottom edges of the screen */}
                     <div className="relative w-full aspect-[4/5] xl:aspect-[5/4] max-h-[75vh] overflow-hidden bg-parchment rounded-[4px] shadow-sm">
@@ -92,7 +92,6 @@ export function RoomShowcase({ rooms, isRoomsPage = false }: { rooms: readonly R
 
 function RoomBlockMobile({
     room,
-    index: _index,
     onInView,
     isRoomsPage
 }: {
@@ -113,7 +112,7 @@ function RoomBlockMobile({
     const images = 'images' in room && Array.isArray(room.images) ? room.images : [room.image];
 
     return (
-        <div ref={ref} className="w-full px-4 sm:px-8">
+        <div ref={ref} className="w-full" style={{ paddingInline: "var(--gutter)" }}>
             <div className="bg-paper shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-[4px] border border-stone-100 relative overflow-hidden flex flex-col">
 
                 {/* Image Carousel (Top) */}
@@ -180,7 +179,7 @@ function RoomBlockMobile({
                                 href={SITE.phone.tel}
                                 className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-[2px] hover:border-ink hover:bg-stone-50 transition-all shadow-sm w-full sm:w-auto"
                             >
-                                Call front desk
+                                Call Front Desk
                             </a>
                         )}
                     </div>
@@ -192,7 +191,7 @@ function RoomBlockMobile({
                             className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#25D366] text-white text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-[#1ebe5d] transition-colors shadow-sm w-full"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="h-4 w-4 fill-white shrink-0" aria-hidden><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 01-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 01-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.795 1.23 1.82 2.508 3.41 4.5 4.402.616.287 2.137.844 2.81.844.36 0 .547-.057.806-.188.616-.31.997-.687 1.082-1.318a.7.7 0 00.07-.357c0-.286-2.094-1.218-2.434-1.218zm-2.97-15.205C9.42 2 4 7.42 4 14.14c0 2.286.626 4.5 1.808 6.43L4 28l7.59-1.99c1.852.98 3.93 1.51 6.04 1.51 6.72 0 12.14-5.42 12.14-12.14C29.77 8.66 24.35 3.24 17.63 3.24z"/></svg>
-                            WhatsApp us
+                            Ask Room Availability on WhatsApp
                         </a>
                     )}
                 </div>
@@ -203,7 +202,6 @@ function RoomBlockMobile({
 
 function RoomBlockDesktop({
     room,
-    index: _index,
     onInView,
     isRoomsPage
 }: {
@@ -262,7 +260,7 @@ function RoomBlockDesktop({
                     href={SITE.phone.tel}
                     className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-sm hover:border-ink hover:bg-stone-50 transition-all shadow-sm"
                 >
-                    Call front desk
+                    Call Front Desk
                 </a>
             </div>
             {isRoomsPage && (
@@ -273,7 +271,7 @@ function RoomBlockDesktop({
                     className="mt-4 inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#25D366] text-white text-[14px] font-medium tracking-wide rounded-[2px] hover:bg-[#1ebe5d] transition-colors shadow-sm"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="h-4 w-4 fill-white shrink-0" aria-hidden><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 01-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 01-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.795 1.23 1.82 2.508 3.41 4.5 4.402.616.287 2.137.844 2.81.844.36 0 .547-.057.806-.188.616-.31.997-.687 1.082-1.318a.7.7 0 00.07-.357c0-.286-2.094-1.218-2.434-1.218zm-2.97-15.205C9.42 2 4 7.42 4 14.14c0 2.286.626 4.5 1.808 6.43L4 28l7.59-1.99c1.852.98 3.93 1.51 6.04 1.51 6.72 0 12.14-5.42 12.14-12.14C29.77 8.66 24.35 3.24 17.63 3.24z"/></svg>
-                    WhatsApp us
+                    Ask Room Availability on WhatsApp
                 </a>
             )}
         </div>

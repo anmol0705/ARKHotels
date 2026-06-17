@@ -4,8 +4,13 @@ import { Check } from "lucide-react";
 import { LinkArrow } from "@/components/ui/Buttons";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { RoomCarousel } from "@/components/ui/RoomCarousel";
-import { ROOMS, SITE, whatsappHref } from "@/lib/site";
-import { breadcrumbJsonLd, hotelRoomJsonLd, jsonLdScript } from "@/lib/jsonld";
+import { RoomCTAs } from "@/components/rooms/RoomCTAs";
+import { TrustStrip } from "@/components/shared/TrustStrip";
+import { DirectBookingNotes } from "@/components/shared/DirectBookingNotes";
+import { ROOMS, SITE } from "@/lib/site";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { breadcrumbJsonLd, hotelRoomJsonLd } from "@/lib/jsonld";
+import { createPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return ROOMS.map((r) => ({ slug: r.slug }));
@@ -21,11 +26,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const room = ROOMS.find((r) => r.slug === slug);
   if (!room) return {};
-  return {
+  return createPageMetadata({
     title: `${room.name} in Kokar, Ranchi | ARK Hotels`,
-    description: `${room.name} at ARK Hotels, Kokar, Ranchi. ${room.short} AC room with free WiFi, work desk, hot water & vegetarian breakfast. Book direct on ${SITE.phone.display}.`,
-    alternates: { canonical: `${SITE.url}/rooms/${room.slug}` },
-  };
+    description: `${room.name} at ARK Hotels, Kokar, Ranchi. ${room.short} AC room with free WiFi, work desk, hot water & vegetarian breakfast. Call or WhatsApp to book.`,
+    path: `/rooms/${room.slug}`,
+    image: room.image.src,
+    imageAlt: room.image.alt,
+  });
 }
 
 export default async function RoomDetailPage({
@@ -57,6 +64,31 @@ export default async function RoomDetailPage({
           {room.size} · sleeps two, extra bed on request
         </p>
       </section>
+
+      {/* Mobile-only quick-decision strip — appears before scroll so the
+          guest's first action can be "ask rate" without hunting for the CTA */}
+      {'decision' in room && (() => {
+        const d = (room as { decision: { bestFor: string; upgradeNote: string } }).decision;
+        const waMsg = encodeURIComponent(`Hi, I'm looking at the ${room.name}. Please share today's direct rate and availability.`);
+        const waHref = `https://wa.me/${SITE.whatsapp.e164.replace("+", "")}?text=${waMsg}`;
+        return (
+          <div className="lg:hidden border-b border-stone-100 bg-parchment">
+            <div className="container-page py-5 space-y-3">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-stone-500">Best for</p>
+              <p className="text-[14px] text-ink-soft leading-[1.55] max-w-[48ch]">{d.bestFor}</p>
+              <p className="text-[12px] text-brass leading-[1.5] border-l-2 border-brass/30 pl-3">{d.upgradeNote}</p>
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full py-3.5 bg-[#25D366] text-white text-[14px] font-medium rounded-[2px] hover:bg-[#1ebe5d] transition-colors"
+              >
+                Ask today&apos;s rate on WhatsApp
+              </a>
+            </div>
+          </div>
+        );
+      })()}
 
       <section className="container-page pb-20 lg:pb-28">
         <RoomCarousel images={room.images} />
@@ -93,32 +125,51 @@ export default async function RoomDetailPage({
               </ul>
             </div>
 
-            <div className="mt-10 space-y-3">
-              <a
-                href={SITE.phone.tel}
-                className="block w-full text-center px-6 py-4 bg-brass text-paper text-[15px] font-medium rounded-[2px] hover:bg-brass-deep transition-colors"
-              >
-                Call front desk · {SITE.phone.display}
-              </a>
-              <a
-                href={whatsappHref()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-4 bg-[#25D366] text-white text-[15px] font-medium rounded-[2px] hover:bg-[#1ebe5d] transition-colors"
-              >
-                WhatsApp the front desk
-              </a>
-              <p className="pt-3 text-[12px] text-stone-500 leading-[1.6]">
-                Replies usually under 10 minutes during the day. Direct
-                bookings get the best available rate; no service fees.
-              </p>
-            </div>
+            {'decision' in room && (() => {
+              const d = (room as { decision: { bestFor: string; notFor: string; upgradeNote: string } }).decision;
+              const waMsg = encodeURIComponent(`Hi, I'm looking at the ${room.name}. Please share today's direct rate and availability.`);
+              const waHref = `https://wa.me/${SITE.whatsapp.e164.replace("+", "")}?text=${waMsg}`;
+              return (
+                <div className="mt-8 border-t-2 border-brass pt-4">
+                  <table className="w-full text-[13px] border-collapse">
+                    <tbody>
+                      <tr className="border-b border-stone-100">
+                        <td className="py-3 pr-4 text-[10px] uppercase tracking-[0.16em] text-stone-400 whitespace-nowrap align-top w-[38%]">Best for</td>
+                        <td className="py-3 text-ink-soft leading-[1.55]">{d.bestFor}</td>
+                      </tr>
+                      <tr className="border-b border-stone-100">
+                        <td className="py-3 pr-4 text-[10px] uppercase tracking-[0.16em] text-stone-400 whitespace-nowrap align-top">Why upgrade</td>
+                        <td className="py-3 text-brass leading-[1.55]">{d.upgradeNote}</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 pr-4 text-[10px] uppercase tracking-[0.16em] text-stone-400 whitespace-nowrap align-middle">Ask</td>
+                        <td className="py-3">
+                          <a
+                            href={waHref}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-ink underline decoration-brass decoration-1 underline-offset-4 hover:text-brass-deep hover:decoration-2 transition-all"
+                          >
+                            Today&apos;s direct rate →
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              );
+            })()}
+
+            <TrustStrip className="mt-8" />
+            <RoomCTAs roomName={room.name} />
+            <DirectBookingNotes />
           </div>
         </div>
       </section>
 
       {'amenities' in room && (
-        <section className="container-page py-16 lg:py-20 border-t border-stone-100">
+        <section className="border-t border-stone-100">
+          <div className="container-page py-16 lg:py-20">
           <h2 className="font-display text-[26px] lg:text-[32px] leading-[1.15] text-ink mb-10 lg:mb-14">
             Room Amenities
           </h2>
@@ -138,6 +189,7 @@ export default async function RoomDetailPage({
                 </ul>
               </div>
             ))}
+          </div>
           </div>
         </section>
       )}
@@ -162,17 +214,8 @@ export default async function RoomDetailPage({
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
-      />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(hotelRoomJsonLd(room))}
-      />
+      <JsonLd id={`${room.slug}-breadcrumb-jsonld`} data={breadcrumbs} />
+      <JsonLd id={`${room.slug}-room-jsonld`} data={hotelRoomJsonLd(room)} />
     </>
   );
 }
-

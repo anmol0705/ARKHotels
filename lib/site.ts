@@ -1,11 +1,15 @@
 // Single source of truth for hotel facts. Mirrors docs/01-brief.md.
 // Update both files together.
 
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || "https://arkhotelsranchi.in"
+).replace(/\/+$/, "");
+
 export const SITE = {
   name: "ARK Hotels",
   legalName: "ARK Hotels Ranchi",
   tagline: "A clean room. A hot meal. An early checkout. Handled.",
-  url: "https://arkhotelsranchi.in",
+  url: SITE_URL,
   locale: "en-IN",
 
   phone: {
@@ -31,17 +35,13 @@ export const SITE = {
     full: "Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi, Jharkhand 834001",
     googleMaps: "https://www.google.com/maps/place/ARK+Hotels/@23.3709389,85.3518747,17z",
     directions: "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
-    // Approximate Kokar coordinates — verify with property pin before launch.
-    geo: { lat: 23.4053, lng: 85.3344 },
   },
 
   hotel: {
     rooms: 23,
     floors: 3,
-    starRating: 3,
     checkIn: "12:00",
     checkOut: "11:30",
-    rating: { value: 4.8, count: 25 },
   },
 
   email: "stay@arkhotelsranchi.in",
@@ -72,9 +72,15 @@ export const FOOTER_LINKS = {
   Useful: [
     { label: "FAQs", href: "/contact#faqs" },
     { label: "GST & invoicing", href: "/business#billing" },
-    { label: "Cancellation policy", href: "/contact#policies" },
+    { label: "Contact the front desk", href: "/contact" },
   ],
 } as const;
+
+export const TRUST_SIGNALS = [
+  { label: "MakeMyTrip", value: "4.8★", detail: "Verified guest rating" },
+  { label: "Booking.com", value: "8.5/10", detail: "Guest score" },
+  { label: "JustDial", value: "4.7★", detail: "Local rating" },
+] as const;
 
 // Rates: Deluxe Double and Super Deluxe rates are sourced from EaseMyTrip
 // listing. Premium/Executive and Family Suite are described as "4 room types"
@@ -95,6 +101,11 @@ export const ROOMS = [
       "Work desk, free WiFi, LCD TV",
       "Private bath with hot water and fresh towels daily",
     ],
+    decision: {
+      bestFor: "One person, one bag, short business stay. No wasted space, no wasted cost.",
+      notFor: "Couples or guests travelling with extra luggage.",
+      upgradeNote: "Need a double bed or more room to spread out? The Deluxe Double is the next step up.",
+    },
     amenities: [
       {
         category: "Popular with Guests",
@@ -166,6 +177,11 @@ export const ROOMS = [
       "Work desk, free WiFi, LCD TV, tea/coffee tray",
       "Private bath with hot water and fresh towels daily",
     ],
+    decision: {
+      bestFor: "Most guests — solo travellers or couples, and the default choice for a 2–3 night work trip.",
+      notFor: "Solo travellers on a strict budget who don't need the extra space.",
+      upgradeNote: "For a noticeably larger room and bathroom, the Super Double is worth it for stays over two nights.",
+    },
     amenities: [
       {
         category: "Popular with Guests",
@@ -230,13 +246,18 @@ export const ROOMS = [
     size: "Larger than Deluxe",
     short: "A larger version of the Deluxe Double with more floor space and a more generous bathroom.",
     description:
-      "A good pick for longer stays, or anyone who'd rather not feel cramped after a 12-hour day.",
+      "More floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.",
     features: [
       "Larger floor area with wardrobe",
       "More spacious bathroom with hot water",
       "Work desk, free WiFi, LCD TV",
       "Tea and coffee tray, AC and room heater",
     ],
+    decision: {
+      bestFor: "Stays of 3+ nights, two guests, or anyone who wants more room after a long day.",
+      notFor: "One-night stopovers — the Deluxe Double is better value for a single night.",
+      upgradeNote: "This is our largest room. If you need anything more, call the front desk and we'll sort it.",
+    },
     amenities: [
       {
         category: "Popular with Guests",
@@ -317,7 +338,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80",
+      "/images/gallery/restaurant/restro2.png",
     alt: "ARK Kitchen vegetarian restaurant at ARK Hotels, Kokar",
     eyebrow: "ARK Kitchen · Pure veg · open all day",
     headline: "Home-style food, prepared with quiet care.",
@@ -433,3 +454,16 @@ export const FAQS = [
 export function whatsappHref() {
   return `https://wa.me/${SITE.whatsapp.e164.replace("+", "")}?text=${encodeURIComponent(SITE.whatsapp.message)}`;
 }
+
+export const REQUIRED_DATA = [
+  "Confirm final production domain and set NEXT_PUBLIC_SITE_URL in production.",
+  "Verify exact Google Maps pin latitude/longitude before adding geo coordinates to schema.",
+  "Add official Google Business Profile URL for sameAs once verified.",
+  "Add official booking engine URL if direct online booking becomes available.",
+  "Confirm room tariffs and tax policy before adding Offer or price schema.",
+  "Confirm official room occupancy rules before expanding room schema.",
+  "Confirm complete hotel policies: cancellation, children, ID proof, pets, smoking, and payment.",
+  "Confirm official social profile URLs before adding sameAs links.",
+  "Add Google Search Console verification token through environment/config when available.",
+  "Add analytics or tag manager IDs only after the business provides real property IDs.",
+] as const;

@@ -1,4 +1,4 @@
-import { SITE, FAQS } from "./site";
+import { FAQS, SITE } from "./site";
 
 type FAQItem = { q: string; a: string };
 
@@ -12,58 +12,41 @@ type RoomInput = {
 
 const BASE = SITE.url;
 
+const postalAddress = {
+  "@type": "PostalAddress",
+  streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
+  addressLocality: SITE.address.city,
+  addressRegion: SITE.address.region,
+  postalCode: SITE.address.postalCode,
+  addressCountry: SITE.address.country,
+};
+
 export const hotelJsonLd = {
   "@context": "https://schema.org",
   "@type": "Hotel",
   "@id": `${BASE}/#hotel`,
   name: SITE.name,
   description:
-    "Professional hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking, 24-hour front desk.",
+    "Professional hotel in Kokar, Ranchi, 9 km from Birsa Munda Airport, with a pure vegetarian restaurant, AC rooms, free WiFi, free parking, and 24-hour front desk.",
   url: `${BASE}/`,
   telephone: SITE.phone.e164,
   email: SITE.email,
-  priceRange: "₹₹",
-  currenciesAccepted: "INR",
-  paymentAccepted: "Cash, Credit Card, UPI, Bank Transfer",
-  starRating: { "@type": "Rating", ratingValue: SITE.hotel.starRating, bestRating: 5, worstRating: 1 },
   image: `${BASE}/images/hero_carousel/ark_out_image.webp`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
-    addressLocality: SITE.address.city,
-    addressRegion: SITE.address.region,
-    postalCode: SITE.address.postalCode,
-    addressCountry: SITE.address.country,
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: String(SITE.address.geo.lat),
-    longitude: String(SITE.address.geo.lng),
-  },
+  address: postalAddress,
   checkinTime: SITE.hotel.checkIn,
   checkoutTime: SITE.hotel.checkOut,
-  numberOfRooms: String(SITE.hotel.rooms),
-  petsAllowed: false,
-  smokingAllowed: false,
   amenityFeature: [
     { "@type": "LocationFeatureSpecification", name: "Free WiFi", value: true },
     { "@type": "LocationFeatureSpecification", name: "Free parking", value: true },
     { "@type": "LocationFeatureSpecification", name: "Air conditioning", value: true },
-    { "@type": "LocationFeatureSpecification", name: "Power backup", value: true },
     { "@type": "LocationFeatureSpecification", name: "24-hour front desk", value: true },
-    { "@type": "LocationFeatureSpecification", name: "100% pure vegetarian restaurant", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Pure vegetarian restaurant", value: true },
     { "@type": "LocationFeatureSpecification", name: "Room service", value: true },
     { "@type": "LocationFeatureSpecification", name: "Laundry service", value: true },
     { "@type": "LocationFeatureSpecification", name: "Luggage storage", value: true },
     { "@type": "LocationFeatureSpecification", name: "Airport shuttle (paid)", value: true },
     { "@type": "LocationFeatureSpecification", name: "GST invoice on checkout", value: true },
   ],
-  sameAs: [
-    SITE.address.googleMaps,
-  ],
-  // aggregateRating intentionally omitted until a verified review count is
-  // available from Google Business Profile or the OTA aggregate. Inventing one
-  // is a structured-data violation and can suppress the listing in SERP.
   hasMap: SITE.address.googleMaps,
 };
 
@@ -71,63 +54,15 @@ export const restaurantJsonLd = {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "@id": `${BASE}/#restaurant`,
-  name: "ARK Hotels Restaurant",
+  name: "ARK Kitchen",
   description:
-    "Pure-vegetarian, home-style North Indian restaurant inside ARK Hotels, Kokar, Ranchi. In-room dining and vegetarian breakfast available.",
+    "Pure vegetarian rooftop restaurant inside ARK Hotels, Kokar, Ranchi, with North Indian and Indo-Chinese food, breakfast, and in-room dining.",
   url: `${BASE}/dining`,
   telephone: SITE.phone.e164,
-  servesCuisine: ["North Indian", "Indian Vegetarian"],
+  servesCuisine: ["North Indian", "Indian Vegetarian", "Indo-Chinese"],
   acceptsReservations: true,
-  priceRange: "₹",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
-    addressLocality: SITE.address.city,
-    addressRegion: SITE.address.region,
-    postalCode: SITE.address.postalCode,
-    addressCountry: SITE.address.country,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "07:00",
-      closes: "22:30",
-    },
-  ],
+  address: postalAddress,
   isPartOf: { "@id": `${BASE}/#hotel` },
-};
-
-export const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": `${BASE}/#localbusiness`,
-  name: SITE.name,
-  url: `${BASE}/`,
-  telephone: SITE.phone.e164,
-  priceRange: "₹₹",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
-    addressLocality: SITE.address.city,
-    addressRegion: SITE.address.region,
-    postalCode: SITE.address.postalCode,
-    addressCountry: SITE.address.country,
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: String(SITE.address.geo.lat),
-    longitude: String(SITE.address.geo.lng),
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "00:00",
-      closes: "23:59",
-    },
-  ],
-  department: [{ "@id": `${BASE}/#hotel` }, { "@id": `${BASE}/#restaurant` }],
 };
 
 export const organizationJsonLd = {
@@ -139,14 +74,7 @@ export const organizationJsonLd = {
   url: `${BASE}/`,
   telephone: SITE.phone.e164,
   email: SITE.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: `${SITE.address.street}, ${SITE.address.locality}`,
-    addressLocality: SITE.address.city,
-    addressRegion: SITE.address.region,
-    postalCode: SITE.address.postalCode,
-    addressCountry: SITE.address.country,
-  },
+  address: postalAddress,
   contactPoint: [
     {
       "@type": "ContactPoint",
@@ -200,7 +128,7 @@ export const webSiteJsonLd = {
   name: SITE.name,
   url: `${BASE}/`,
   description:
-    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing.",
+    "ARK Hotels in Kokar, Ranchi, 9 km from Birsa Munda Airport, with pure vegetarian dining, AC rooms, free WiFi, free parking, and GST invoicing.",
   inLanguage: "en-IN",
 };
 
@@ -220,8 +148,4 @@ export function hotelRoomJsonLd(room: RoomInput) {
     })),
     containedInPlace: { "@id": `${BASE}/#hotel` },
   };
-}
-
-export function jsonLdScript(data: object) {
-  return { __html: JSON.stringify(data) };
 }

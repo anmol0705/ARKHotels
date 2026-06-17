@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { SITE } from "@/lib/site";
 
-export const runtime = "edge";
+export const dynamic = "force-static";
 export const alt = "ARK Kitchen — 100% Pure Vegetarian Restaurant, ARK Hotels Ranchi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -23,8 +23,8 @@ export default async function OG() {
         }}
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontSize: 28, fontWeight: 500, letterSpacing: "-0.01em" }}>
-            ARK <span style={{ color: "#8A6736" }}>Hotels</span>
+          <div style={{ display: "flex", gap: 8, fontSize: 28, fontWeight: 500, letterSpacing: "-0.01em" }}>
+            ARK Hotels
           </div>
           <div style={{ fontSize: 14, letterSpacing: "0.18em", textTransform: "uppercase", color: "#7A7468" }}>
             Kokar · Ranchi · Jharkhand
@@ -35,8 +35,9 @@ export default async function OG() {
           <div style={{ fontSize: 12, letterSpacing: "0.18em", textTransform: "uppercase", color: "#5C8A5A" }}>
             100% Pure Vegetarian · Rooftop · Open All Day
           </div>
-          <div style={{ fontSize: 96, fontWeight: 400, lineHeight: 0.92, letterSpacing: "-0.03em", color: "#1B1A17" }}>
-            ARK<br />Kitchen
+          <div style={{ display: "flex", flexDirection: "column", fontSize: 96, fontWeight: 400, lineHeight: 0.92, letterSpacing: "-0.03em", color: "#1B1A17" }}>
+            <span>ARK</span>
+            <span>Kitchen</span>
           </div>
           <div style={{ fontSize: 22, color: "#5A5650", maxWidth: 900, marginTop: 8 }}>
             North Indian · Indo-Chinese · Veg Breakfast · 100+ menu items
@@ -45,7 +46,7 @@ export default async function OG() {
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", borderTop: "1px solid #B8B0A0", paddingTop: 24 }}>
           <div style={{ fontSize: 18, color: "#3A3833" }}>
-            Call · {SITE.phone.display}
+            {`Call · ${SITE.phone.display}`}
           </div>
           <div style={{ fontSize: 16, color: "#7A7468" }}>
             arkhotelsranchi.in/dining

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { ContactClient } from "./Contact.client";
 import { SITE } from "@/lib/site";
-import { breadcrumbJsonLd, faqJsonLd, jsonLdScript } from "@/lib/jsonld";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { breadcrumbJsonLd, faqJsonLd } from "@/lib/jsonld";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Contact ARK Hotels Ranchi | Book a Room in Kokar",
-  description: `Book a room or ask a question — call ${SITE.phone.display} or WhatsApp ${SITE.whatsapp.display}. ARK Hotels, Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001. Direct bookings only, no fees.`,
-  alternates: { canonical: `${SITE.url}/contact` },
-};
+    description: `Book a room or ask a question — call ${SITE.phone.display} or WhatsApp ${SITE.whatsapp.display}. ARK Hotels, Don Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001.`,
+  path: "/contact",
+});
 
 export default function ContactPage() {
   const breadcrumbs = breadcrumbJsonLd([
@@ -18,16 +20,8 @@ export default function ContactPage() {
   return (
     <>
       <ContactClient />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
-      />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(faqJsonLd)}
-      />
+      <JsonLd id="contact-breadcrumb-jsonld" data={breadcrumbs} />
+      <JsonLd id="contact-faq-jsonld" data={faqJsonLd} />
     </>
   );
 }

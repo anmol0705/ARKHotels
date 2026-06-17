@@ -1,0 +1,6023 @@
+[
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 360,
+    "scrollHeight": 8494,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\nCHECK-IN\nCHECK-OUT\nAsk rate on WhatsApp\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, an LCD TV, and daily housekeeping. Explore below to find the right fit.\n\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a prod",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 371,
+      "h": 49,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 371,
+        "w": 320,
+        "h": 49,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 20,
+        "y": 432,
+        "w": 320,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 494,
+        "w": 320,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 2",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 164,
+        "y": 569,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 3",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 192,
+        "y": 569,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 4",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 220,
+        "y": 569,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -14,
+        "right": 374,
+        "width": 389
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -14,
+        "right": 374,
+        "width": 389
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "DIV",
+        "cls": "flex lg:hidden absolute inset-0 w-full h-full z-0",
+        "text": "",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "A",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent pointer-events-none",
+        "text": "",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "DIV",
+        "cls": "lg:hidden relative z-10 flex flex-col justify-end w-full h-full pb-12 pt-[40vh] px-4 sm:px-8",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 360,
+        "right": 720,
+        "width": 360
+      },
+      {
+        "tag": "DIV",
+        "cls": "bg-paper p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.15)] rounded-[4px] border border-stone-100 relative",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 376,
+        "right": 704,
+        "width": 328
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4",
+        "text": "02",
+        "left": 401,
+        "right": 679,
+        "width": 278
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[48px] sm:text-[56px] leading-[0.8] text-stone-300/80",
+        "text": "02",
+        "left": 401,
+        "right": 459,
+        "width": 58
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[28px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 401,
+        "right": 679,
+        "width": 278
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 360,
+    "scrollHeight": 5286,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file folder without crowding the room.\n\nDouble bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV, tea/coffee tray\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n03",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 1481,
+      "h": 74,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 343,
+        "right": 669,
+        "width": 326
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 669,
+        "right": 995,
+        "width": 326
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 669,
+        "right": 995,
+        "width": 326
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 360,
+    "scrollHeight": 5412,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usually under 10 minutes during the day. Direct bookings get the best available rate; no service fees.\n\nBOOK DIRECT\n\nDirect rate — no O",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1975,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 36,
+        "y": 513,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 284,
+        "y": 513,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 360,
+    "scrollHeight": 8967,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVegetarian noodles served at ARK Kitchen Ranchi\n\nVegetarian starter served at ARK Kitchen Ranchi\n\nREADY TO BOOK?\n\nLike what you see?",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 7561,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 226,
+        "y": 416,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 20,
+        "y": 416,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 85,
+        "y": 416,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 226,
+        "y": 416,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 20,
+        "y": 464,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 360,
+    "scrollHeight": 4788,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment offices and administrative zone.\n\nPassport Office\n~5 km\n·\n12–15 min\n\nRegional Passport Seva Kendra, Ranchi — for applicant visits a",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 564,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 20,
+        "y": 543,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 165,
+        "y": 543,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 345,
+        "y": 543,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "flex gap-8",
+        "text": "Bu ine  Hub \nLei ure & Day Trip \nGetting Here",
+        "left": 20,
+        "right": 441,
+        "width": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "relative pb-4 text-[16px] font-medium transition-colors whitespace-nowrap text-stone-400 hover:text-stone-600",
+        "text": "Getting Here",
+        "left": 345,
+        "right": 441,
+        "width": 97
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 360,
+      "vh": 640
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 360,
+    "scrollHeight": 4962,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept payment by NEFT or UPI within an agreed window.\n\nFOR GROUPS & WEDDINGS\n\nTeam booking or a long stay: call the front desk and we'",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 524,
+      "h": 53,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 225,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 460,
+        "w": 320,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 524,
+        "w": 320,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 20,
+        "y": 589,
+        "w": 320,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 105,
+        "y": 564,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 225,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 308,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 390,
+    "scrollHeight": 8797,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\nCHECK-IN\nCHECK-OUT\nAsk rate on WhatsApp\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, an LCD TV, and daily housekeeping. Explore below to find the right fit.\n\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a prod",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 575,
+      "h": 49,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 575,
+        "w": 350,
+        "h": 49,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 20,
+        "y": 636,
+        "w": 350,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 698,
+        "w": 350,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 2",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 179,
+        "y": 773,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 3",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 207,
+        "y": 773,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 4",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 235,
+        "y": 773,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -16,
+        "right": 406,
+        "width": 421
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -16,
+        "right": 406,
+        "width": 421
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "DIV",
+        "cls": "flex lg:hidden absolute inset-0 w-full h-full z-0",
+        "text": "",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "A",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent pointer-events-none",
+        "text": "",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "DIV",
+        "cls": "lg:hidden relative z-10 flex flex-col justify-end w-full h-full pb-12 pt-[40vh] px-4 sm:px-8",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 390,
+        "right": 780,
+        "width": 390
+      },
+      {
+        "tag": "DIV",
+        "cls": "bg-paper p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.15)] rounded-[4px] border border-stone-100 relative",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 406,
+        "right": 764,
+        "width": 358
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4",
+        "text": "02",
+        "left": 431,
+        "right": 739,
+        "width": 308
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[48px] sm:text-[56px] leading-[0.8] text-stone-300/80",
+        "text": "02",
+        "left": 431,
+        "right": 489,
+        "width": 58
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[28px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 431,
+        "right": 739,
+        "width": 308
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 390,
+    "scrollHeight": 5185,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file folder without crowding the room.\n\nDouble bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV, tea/coffee tray\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n03",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 1451,
+      "h": 74,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 373,
+        "right": 729,
+        "width": 356
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 729,
+        "right": 1085,
+        "width": 356
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 729,
+        "right": 1085,
+        "width": 356
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 390,
+    "scrollHeight": 5332,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usually under 10 minutes during the day. Direct bookings get the best available rate; no service fees.\n\nBOOK DIRECT\n\nDirect rate — no O",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1979,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 36,
+        "y": 531,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 314,
+        "y": 531,
+        "visible": true
+      },
+      {
+        "text": "Go to image 1",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 6,
+        "x": 169,
+        "y": 748,
+        "visible": true
+      },
+      {
+        "text": "Go to image 2",
+        "tag": "BUTTON",
+        "w": 6,
+        "h": 6,
+        "x": 201,
+        "y": 748,
+        "visible": true
+      },
+      {
+        "text": "Go to image 3",
+        "tag": "BUTTON",
+        "w": 6,
+        "h": 6,
+        "x": 215,
+        "y": 748,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 390,
+    "scrollHeight": 9459,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVegetarian noodles served at ARK Kitchen Ranchi\n\nVegetarian starter served at ARK Kitchen Ranchi\n\nREADY TO BOOK?\n\nLike what you see?",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 8099,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 226,
+        "y": 387,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 20,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 85,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 226,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 20,
+        "y": 434,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 390,
+    "scrollHeight": 4576,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment offices and administrative zone.\n\nPassport Office\n~5 km\n·\n12–15 min\n\nRegional Passport Seva Kendra, Ranchi — for applicant visits a",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 768,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 20,
+        "y": 543,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 165,
+        "y": 543,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 345,
+        "y": 543,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "flex gap-8",
+        "text": "Bu ine  Hub \nLei ure & Day Trip \nGetting Here",
+        "left": 20,
+        "right": 441,
+        "width": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "relative pb-4 text-[16px] font-medium transition-colors whitespace-nowrap text-stone-400 hover:text-stone-600",
+        "text": "Getting Here",
+        "left": 345,
+        "right": 441,
+        "width": 97
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 390,
+      "vh": 844
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 390,
+    "scrollHeight": 4834,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept payment by NEFT or UPI within an agreed window.\n\nFOR GROUPS & WEDDINGS\n\nTeam booking or a long stay: call the front desk and we'",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 524,
+      "h": 53,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 255,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 460,
+        "w": 350,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 524,
+        "w": 350,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 20,
+        "y": 589,
+        "w": 350,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 135,
+        "y": 768,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 255,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 338,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 430,
+    "scrollHeight": 8855,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\nCHECK-IN\nCHECK-OUT\nAsk rate on WhatsApp\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, an LCD TV, and daily housekeeping. Explore below to find the right fit.\n\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a prod",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 663,
+      "h": 49,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 663,
+        "w": 390,
+        "h": 49,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 20,
+        "y": 724,
+        "w": 390,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 786,
+        "w": 390,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 2",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 199,
+        "y": 861,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 3",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 227,
+        "y": 861,
+        "visible": true
+      },
+      {
+        "text": "Go to  lide 4",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 44,
+        "x": 255,
+        "y": 861,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -17,
+        "right": 447,
+        "width": 464
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -17,
+        "right": 447,
+        "width": 464
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "DIV",
+        "cls": "flex lg:hidden absolute inset-0 w-full h-full z-0",
+        "text": "",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "A",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent pointer-events-none",
+        "text": "",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "DIV",
+        "cls": "lg:hidden relative z-10 flex flex-col justify-end w-full h-full pb-12 pt-[40vh] px-4 sm:px-8",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 430,
+        "right": 860,
+        "width": 430
+      },
+      {
+        "tag": "DIV",
+        "cls": "bg-paper p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.15)] rounded-[4px] border border-stone-100 relative",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 446,
+        "right": 844,
+        "width": 398
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4",
+        "text": "02",
+        "left": 471,
+        "right": 819,
+        "width": 348
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[48px] sm:text-[56px] leading-[0.8] text-stone-300/80",
+        "text": "02",
+        "left": 471,
+        "right": 529,
+        "width": 58
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[28px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 471,
+        "right": 819,
+        "width": 348
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 430,
+    "scrollHeight": 5140,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file folder without crowding the room.\n\nDouble bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV, tea/coffee tray\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n03",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 1481,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 413,
+        "right": 809,
+        "width": 396
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 809,
+        "right": 1205,
+        "width": 396
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 809,
+        "right": 1205,
+        "width": 396
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 430,
+    "scrollHeight": 5308,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usually under 10 minutes during the day. Direct bookings get the best available rate; no service fees.\n\nBOOK DIRECT\n\nDirect rate — no O",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1975,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 36,
+        "y": 532,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 354,
+        "y": 532,
+        "visible": true
+      },
+      {
+        "text": "Go to image 1",
+        "tag": "BUTTON",
+        "w": 24,
+        "h": 6,
+        "x": 189,
+        "y": 773,
+        "visible": true
+      },
+      {
+        "text": "Go to image 2",
+        "tag": "BUTTON",
+        "w": 6,
+        "h": 6,
+        "x": 221,
+        "y": 773,
+        "visible": true
+      },
+      {
+        "text": "Go to image 3",
+        "tag": "BUTTON",
+        "w": 6,
+        "h": 6,
+        "x": 235,
+        "y": 773,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 430,
+    "scrollHeight": 10195,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVegetarian noodles served at ARK Kitchen Ranchi\n\nVegetarian starter served at ARK Kitchen Ranchi\n\nREADY TO BOOK?\n\nLike what you see?",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 8855,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 226,
+        "y": 387,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 20,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 85,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 226,
+        "y": 387,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 20,
+        "y": 434,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 430,
+    "scrollHeight": 4281,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment offices and administrative zone.\n\nPassport Office\n~5 km\n·\n12–15 min\n\nRegional Passport Seva Kendra, Ranchi — for applicant visits a",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 856,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 20,
+        "y": 513,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 165,
+        "y": 513,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 345,
+        "y": 513,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "flex gap-8",
+        "text": "Bu ine  Hub \nLei ure & Day Trip \nGetting Here",
+        "left": 20,
+        "right": 441,
+        "width": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "relative pb-4 text-[16px] font-medium transition-colors whitespace-nowrap text-stone-400 hover:text-stone-600",
+        "text": "Getting Here",
+        "left": 345,
+        "right": 441,
+        "width": 97
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 430,
+      "vh": 932
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 430,
+    "scrollHeight": 4726,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "0651 3100536\nDIRECTIONS\n↗\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept payment by NEFT or UPI within an agreed window.\n\nFOR GROUPS & WEDDINGS\n\nTeam booking or a long stay: call the front desk and we'",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 495,
+      "h": 53,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 295,
+        "y": 5,
+        "w": 115,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 20,
+        "y": 430,
+        "w": 390,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 20,
+        "y": 495,
+        "w": 390,
+        "h": 53,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 20,
+        "y": 559,
+        "w": 390,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 175,
+        "y": 856,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 96,
+        "h": 21,
+        "x": 20,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 115,
+        "h": 26,
+        "x": 295,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 378,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 768,
+    "scrollHeight": 9499,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\n←\n→\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\nCHECK-IN\nCHECK-OUT\nGUESTS\n1 guest\n2 guests\n3 guests\n4 guests\nASK AVAILABILITY ON WHATSAPP\n\nFront desk confirms room availability and rates on WhatsApp.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, an LCD TV, and daily housekeeping. Explore below to find the right fit.\n\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, effic",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 894,
+      "h": 51,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 32,
+        "y": 894,
+        "w": 175,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 223,
+        "y": 894,
+        "w": 138,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 378,
+        "y": 894,
+        "w": 286,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -31,
+        "right": 799,
+        "width": 829
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -31,
+        "right": 799,
+        "width": 829
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "DIV",
+        "cls": "flex lg:hidden absolute inset-0 w-full h-full z-0",
+        "text": "",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "A",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent pointer-events-none",
+        "text": "",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "DIV",
+        "cls": "lg:hidden relative z-10 flex flex-col justify-end w-full h-full pb-12 pt-[40vh] px-4 sm:px-8",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 768,
+        "right": 1536,
+        "width": 768
+      },
+      {
+        "tag": "DIV",
+        "cls": "bg-paper p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.15)] rounded-[4px] border border-stone-100 relative",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 800,
+        "right": 1504,
+        "width": 704
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4",
+        "text": "02",
+        "left": 833,
+        "right": 1471,
+        "width": 638
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[48px] sm:text-[56px] leading-[0.8] text-stone-300/80",
+        "text": "02",
+        "left": 833,
+        "right": 900,
+        "width": 67
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[28px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 833,
+        "right": 1471,
+        "width": 638
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 768,
+    "scrollHeight": 5302,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file folder without crowding the room.\n\nDouble bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV, tea/coffee tray\nView this room\nCall Front Desk\nAsk Room Av",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 1596,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 735,
+        "right": 1437,
+        "width": 702
+      },
+      {
+        "tag": "A",
+        "cls": "w-full h-full shrink-0 snap-center relative block",
+        "text": "",
+        "left": 1437,
+        "right": 2139,
+        "width": 702
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": 1437,
+        "right": 2139,
+        "width": 702
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 768,
+    "scrollHeight": 4873,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usually under 10 minutes during the day. Direct bookings get the best available rate; no service fees.\n\nBOOK D",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 2176,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 48,
+        "y": 747,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 680,
+        "y": 747,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 768,
+    "scrollHeight": 5586,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVegetarian noodles served at ARK Kitchen Ranchi\n\nVegetarian starter served at ARK Kitchen Ranchi\n\nREADY TO ",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 4522,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 238,
+        "y": 425,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 32,
+        "y": 425,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 97,
+        "y": 425,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 238,
+        "y": 425,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 332,
+        "y": 425,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 768,
+    "scrollHeight": 3162,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment offices and administrative zone.\n\nPassport Office\n~5 km\n·\n12–15 min\n\nRegional Passport Seva Kendra, Ranchi",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 948,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 32,
+        "y": 437,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 177,
+        "y": 437,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 357,
+        "y": 437,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 768,
+      "vh": 1024
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 768,
+    "scrollHeight": 4282,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nGET DIRECTIONS\n↗\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept payment by NEFT or UPI within an agreed window.\n\nFOR GROUPS & WEDDINGS\n\nTeam booking or a long stay: ca",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 438,
+      "h": 55,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 590,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 32,
+        "y": 438,
+        "w": 156,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 200,
+        "y": 438,
+        "w": 181,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 394,
+        "y": 438,
+        "w": 152,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "Get directions\n→",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 252,
+        "y": 989,
+        "w": 157,
+        "h": 49,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 513,
+        "y": 948,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 32,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 590,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Open menu",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 704,
+        "y": 49,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 1024,
+    "scrollHeight": 7909,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\nFRONT DESK · 24 HOURS · 0651 3100536\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\n←\n→\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\nCHECK-IN\nCHECK-OUT\nGUESTS\n1 guest\n2 guests\n3 guests\n4 guests\nASK AVAILABILITY ON WHATSAPP\n\nFront desk confirms room availability and rates on WhatsApp.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, a",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 606,
+      "h": 51,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 838,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 286,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 40,
+        "y": 606,
+        "w": 175,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 231,
+        "y": 606,
+        "w": 138,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 386,
+        "y": 606,
+        "w": 286,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 757,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 838,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 286,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 367,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 508,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 706,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 927,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -41,
+        "right": 1065,
+        "width": 1106
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -41,
+        "right": 1065,
+        "width": 1106
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1024,
+        "right": 2048,
+        "width": 1024
+      },
+      {
+        "tag": "DIV",
+        "cls": "hidden lg:flex w-full h-full container-page",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1024,
+        "right": 2048,
+        "width": 1024
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-1/2 flex flex-col justify-center pr-12 xl:pr-16 h-full py-16",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1064,
+        "right": 1536,
+        "width": 472
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4 sm:mb-6",
+        "text": "02",
+        "left": 1064,
+        "right": 1488,
+        "width": 424
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[56px] sm:text-[72px] lg:text-[88px] leading-[0.8] text-stone-300/60",
+        "text": "02",
+        "left": 1064,
+        "right": 1169,
+        "width": 105
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[26px] lg:text-[32px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 1064,
+        "right": 1488,
+        "width": 424
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "text": "Deluxe Double Room",
+        "left": 1064,
+        "right": 1375,
+        "width": 311
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[13px] text-stone-500",
+        "text": "Ideal for couple  or  olo traveler ",
+        "left": 1064,
+        "right": 1488,
+        "width": 424
+      },
+      {
+        "tag": "P",
+        "cls": "mt-4 text-[15px] sm:text-[16px] font-medium text-ink leading-[1.5] max-w-[44ch]",
+        "text": "The  tandard ARK room, and the one mo t bu ine  gue t  book.",
+        "left": 1064,
+        "right": 1488,
+        "width": 424
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[14px] sm:text-[15px] text-ink-soft leading-[1.65] max-w-[44ch]",
+        "text": "City-facing window, double bed, and a writing de k that fit  a laptop and a file",
+        "left": 1064,
+        "right": 1480,
+        "width": 416
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 1024,
+    "scrollHeight": 4483,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\nTARIFF VALID THROUGH 2026\n\nTo check room availability, call the front desk on 0651 3100536.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file f",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 0,
+      "h": 0,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 838,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 286,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 757,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 838,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 286,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 367,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 508,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 706,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 927,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 86,
+        "h": 16,
+        "x": 784,
+        "y": 602,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 1024,
+    "scrollHeight": 4349,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usuall",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1713,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 838,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 286,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 757,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 838,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 286,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 367,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 508,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 706,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 927,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 56,
+        "y": 601,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 928,
+        "y": 601,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 1024,
+    "scrollHeight": 4013,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVeg",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 3006,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 838,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 286,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 246,
+        "y": 482,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 757,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 838,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 286,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 367,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 508,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 706,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 927,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 40,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 105,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 246,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 340,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 1024,
+    "scrollHeight": 2878,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment of",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 680,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 838,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 286,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 757,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 838,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 286,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 367,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 508,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 706,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 927,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 40,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 185,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 365,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1024,
+      "vh": 768
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 1009,
+    "scrollHeight": 3955,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 504,
+      "h": 55,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 823,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 271,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 40,
+        "y": 504,
+        "w": 156,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 208,
+        "y": 504,
+        "w": 181,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 402,
+        "y": 504,
+        "w": 152,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 742,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 40,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 823,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 271,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 352,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 493,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 691,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 774,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 912,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 1351,
+    "scrollHeight": 7734,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\nFRONT DESK · 24 HOURS · 0651 3100536\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\n←\n→\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\nCHECK-IN\nCHECK-OUT\nGUESTS\n1 guest\n2 guests\n3 guests\n4 guests\nASK AVAILABILITY ON WHATSAPP\n\nFront desk confirms room availability and rates on WhatsApp.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, a",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 606,
+      "h": 51,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 86,
+        "y": 606,
+        "w": 175,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 277,
+        "y": 606,
+        "w": 138,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 431,
+        "y": 606,
+        "w": 286,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -54,
+        "right": 1405,
+        "width": 1459
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -54,
+        "right": 1405,
+        "width": 1459
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1351,
+        "right": 2702,
+        "width": 1351
+      },
+      {
+        "tag": "DIV",
+        "cls": "hidden lg:flex w-full h-full container-page",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1397,
+        "right": 2657,
+        "width": 1260
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-1/2 flex flex-col justify-center pr-12 xl:pr-16 h-full py-16",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1437,
+        "right": 2027,
+        "width": 590
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4 sm:mb-6",
+        "text": "02",
+        "left": 1437,
+        "right": 1963,
+        "width": 526
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[56px] sm:text-[72px] lg:text-[88px] leading-[0.8] text-stone-300/60",
+        "text": "02",
+        "left": 1437,
+        "right": 1542,
+        "width": 105
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[26px] lg:text-[32px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 1437,
+        "right": 1963,
+        "width": 526
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "text": "Deluxe Double Room",
+        "left": 1437,
+        "right": 1748,
+        "width": 311
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[13px] text-stone-500",
+        "text": "Ideal for couple  or  olo traveler ",
+        "left": 1437,
+        "right": 1963,
+        "width": 526
+      },
+      {
+        "tag": "P",
+        "cls": "mt-4 text-[15px] sm:text-[16px] font-medium text-ink leading-[1.5] max-w-[44ch]",
+        "text": "The  tandard ARK room, and the one mo t bu ine  gue t  book.",
+        "left": 1437,
+        "right": 1891,
+        "width": 454
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[14px] sm:text-[15px] text-ink-soft leading-[1.65] max-w-[44ch]",
+        "text": "City-facing window, double bed, and a writing de k that fit  a laptop and a file",
+        "left": 1437,
+        "right": 1853,
+        "width": 416
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 1351,
+    "scrollHeight": 4325,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\nTARIFF VALID THROUGH 2026\n\nTo check room availability, call the front desk on 0651 3100536.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file f",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 0,
+      "h": 0,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 86,
+        "h": 16,
+        "x": 1006,
+        "y": 505,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 1351,
+    "scrollHeight": 4359,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usuall",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1802,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Previou  image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 102,
+        "y": 668,
+        "visible": true
+      },
+      {
+        "text": "Next image",
+        "tag": "BUTTON",
+        "w": 40,
+        "h": 40,
+        "x": 1210,
+        "y": 668,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 1351,
+    "scrollHeight": 4422,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVeg",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 3476,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 291,
+        "y": 482,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 86,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 150,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 291,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 385,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 1351,
+    "scrollHeight": 2519,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment of",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 680,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 86,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 231,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 410,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1366,
+      "vh": 768
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 1351,
+    "scrollHeight": 3831,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 504,
+      "h": 55,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1120,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 567,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 86,
+        "y": 504,
+        "w": 156,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 254,
+        "y": 504,
+        "w": 181,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 447,
+        "y": 504,
+        "w": 152,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1084,
+        "y": 680,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 86,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1120,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 567,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 648,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 789,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 988,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1070,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1209,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "home",
+    "url": "/",
+    "title": "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+    "scrollWidth": 1425,
+    "scrollHeight": 7504,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport\nFRONT DESK · 24 HOURS · 0651 3100536\n\nKOKAR, RANCHI · 15 MIN FROM THE AIRPORT\n\nA smart, professional stay in Ranchi — handled with care.\n\n100% pure vegetarian kitchen, free parking, and a front desk awake when your flight lands. A clean, well-run hotel trusted by business travellers and families in Kokar.\n\nWhatsApp to Book\nView Rooms\nCall Front Desk\n· 0651 3100536\n←\n→\nSlide 1 of 4: Kokar, Ranchi · 15 min from the airport. A smart, professional stay in Ranchi — handled with care.\nCHECK-IN\nCHECK-OUT\nGUESTS\n1 guest\n2 guests\n3 guests\n4 guests\nASK AVAILABILITY ON WHATSAPP\n\nFront desk confirms room availability and rates on WhatsApp.\n\nKOKAR, RANCHI\n\nHonest rooms, reliable service, and a front desk that never sleeps.\n\n100% PURE VEG  ·  15 MIN FROM AIRPORT  ·  FREE WIFI  ·  FREE PARKING\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n\nROOMS\n\nThree room categories. Choose the right space for your stay.\n\nEvery room has air conditioning, a work desk, free WiFi, hot water, a",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 494,
+      "h": 51,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 123,
+        "y": 494,
+        "w": 175,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "View Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 314,
+        "y": 494,
+        "w": 138,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk\n· 0651 3100536",
+        "href": "tel:+916513100536",
+        "x": 468,
+        "y": 494,
+        "w": 286,
+        "h": 51,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": [
+      {
+        "tag": "DIV",
+        "cls": "absolute inset-0",
+        "text": "",
+        "left": -57,
+        "right": 1482,
+        "width": 1539
+      },
+      {
+        "tag": "IMG",
+        "cls": "object-cover",
+        "text": "",
+        "left": -57,
+        "right": 1482,
+        "width": 1539
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-full h-full shrink-0 snap-center relative flex flex-col lg:flex-row",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1425,
+        "right": 2850,
+        "width": 1425
+      },
+      {
+        "tag": "DIV",
+        "cls": "hidden lg:flex w-full h-full container-page",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1508,
+        "right": 2768,
+        "width": 1260
+      },
+      {
+        "tag": "DIV",
+        "cls": "w-1/2 flex flex-col justify-center pr-12 xl:pr-16 h-full py-16",
+        "text": "02\nDeluxe Double Room\n\nIdeal for couple  or  olo traveler \n\nThe  tandard ARK roo",
+        "left": 1548,
+        "right": 2138,
+        "width": 590
+      },
+      {
+        "tag": "DIV",
+        "cls": "mb-4 sm:mb-6",
+        "text": "02",
+        "left": 1548,
+        "right": 2074,
+        "width": 526
+      },
+      {
+        "tag": "SPAN",
+        "cls": "font-display italic text-[56px] sm:text-[72px] lg:text-[88px] leading-[0.8] text-stone-300/60",
+        "text": "02",
+        "left": 1548,
+        "right": 1653,
+        "width": 105
+      },
+      {
+        "tag": "H3",
+        "cls": "font-display text-[24px] sm:text-[26px] lg:text-[32px] leading-[1.15] text-ink hover:text-brass transition-colors",
+        "text": "Deluxe Double Room",
+        "left": 1548,
+        "right": 2074,
+        "width": 526
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "text": "Deluxe Double Room",
+        "left": 1548,
+        "right": 1859,
+        "width": 311
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[13px] text-stone-500",
+        "text": "Ideal for couple  or  olo traveler ",
+        "left": 1548,
+        "right": 2074,
+        "width": 526
+      },
+      {
+        "tag": "P",
+        "cls": "mt-4 text-[15px] sm:text-[16px] font-medium text-ink leading-[1.5] max-w-[44ch]",
+        "text": "The  tandard ARK room, and the one mo t bu ine  gue t  book.",
+        "left": 1548,
+        "right": 2002,
+        "width": 454
+      },
+      {
+        "tag": "P",
+        "cls": "mt-2 text-[14px] sm:text-[15px] text-ink-soft leading-[1.65] max-w-[44ch]",
+        "text": "City-facing window, double bed, and a writing de k that fit  a laptop and a file",
+        "left": 1548,
+        "right": 1964,
+        "width": 416
+      }
+    ]
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "rooms",
+    "url": "/rooms/",
+    "title": "Rooms in Kokar, Ranchi | Deluxe Single, Double & Super Double",
+    "scrollWidth": 1425,
+    "scrollHeight": 4281,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nROOMS & TARIFF\n\nThree room types. All air-conditioned, all quiet.\n\nAll rooms are AC, with work desk, free WiFi, hot water, LCD TV, tea and coffee tray, and daily housekeeping. The differences between categories are size, bedding, and how quiet a floor you're on.\n\nTARIFF VALID THROUGH 2026\n\nTo check room availability, call the front desk on 0651 3100536.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\n01\nDeluxe Single Room\n\nIdeal for solo travelers\n\nA comfortable, efficient space tailored for the solo business traveler.\n\nFeatures a single bed, a dedicated work desk, and all the essential amenities for a productive stay without the extra cost of a larger room.\n\nSingle bed, AC, room heater for winter\nCity-view window, blackout curtains\nWork desk, free WiFi, LCD TV\nView this room\nCall Front Desk\nAsk Room Availability on WhatsApp\n02\nDeluxe Double Room\n\nIdeal for couples or solo travelers\n\nThe standard ARK room, and the one most business guests book.\n\nCity-facing window, double bed, and a writing desk that fits a laptop and a file f",
+    "firstBookingCta": {
+      "text": "Ask Room Availability on WhatsApp",
+      "y": 0,
+      "h": 0,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "0651 3100536",
+        "tag": "A",
+        "w": 86,
+        "h": 16,
+        "x": 1043,
+        "y": 505,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "super-double",
+    "url": "/rooms/super-double/",
+    "title": "Super Double Room in Kokar, Ranchi | ARK Hotels",
+    "scrollWidth": 1425,
+    "scrollHeight": 4359,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTHE ROOM\n\nSuper Double Room\n\nLarger than Deluxe · sleeps two, extra bed on request\n\n1 / 3\nA larger version of the Deluxe Double with more floor space and a more generous bathroom.\n\nMore floor area, a wardrobe that fits a week's luggage, and a bathroom you won't feel rushed in. The room most returning guests upgrade to on their second stay.\n\nAll ARK rooms come with AC, room heater for winter, blackout curtains, work desk, free WiFi, daily housekeeping, hot water and 24-hour room service.\n\nWHAT THIS ROOM HAS\n\nLarger floor area with wardrobe\nMore spacious bathroom with hot water\nWork desk, free WiFi, LCD TV\nTea and coffee tray, AC and room heater\n\nBEST FOR\n\nStays of 3+ nights, two guests, or anyone who wants more room after a long day.\n\nNOT IDEAL IF\n\nOne-night stopovers — the Deluxe Double is better value for a single night.\n\nThis is our largest room. If you need anything more, call the front desk and we'll sort it.\n\n4.8★\nMAKEMYTRIP\n8.5/10\nBOOKING.COM\n4.7★\nJUSTDIAL\nCall front desk · 0651 3100536\nAsk rate on WhatsApp\n\nReplies usuall",
+    "firstBookingCta": {
+      "text": "Ask rate on WhatsApp",
+      "y": 1802,
+      "h": 57,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "gallery",
+    "url": "/gallery/",
+    "title": "Hotel Photos - Rooms, Restaurant & Lobby | ARK Hotels Ranchi",
+    "scrollWidth": 1425,
+    "scrollHeight": 4422,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nGALLERY\n\nThe rooms, the rooftop, the hotel.\n\nA focused look around ARK Hotels - from the rooms to ARK Kitchen upstairs.\n\nAll\nHotel & Lobby\nRooms\nARK Kitchen\n\nARK Hotels exterior in Kokar, Ranchi\n\nReception desk and lobby seating at ARK Hotels Ranchi\n\nStaircase and hallway at ARK Hotels Ranchi\n\nOpen terrace area at ARK Hotels Ranchi\n\nEvening rooftop dining area at ARK Kitchen Ranchi\n\nGarden-lit rooftop seating at ARK Hotels Ranchi\n\nDeluxe Double room at ARK Hotels Ranchi\n\nDouble room with seating at ARK Hotels Ranchi\n\nDeluxe Single room at ARK Hotels Ranchi\n\nSuper Double room at ARK Hotels Ranchi\n\nBathroom in an ARK Hotels room\n\nTea and coffee setup in an ARK Hotels room\n\nDouble room with work corner at ARK Hotels Ranchi\n\nRestaurant seating at ARK Kitchen Ranchi\n\nRooftop restaurant area at ARK Hotels Ranchi\n\nBaby corn chilli at ARK Kitchen Ranchi\n\nPaneer tikka platter at ARK Kitchen Ranchi\n\nPaneer butter masala served at ARK Kitchen Ranchi\n\nPaneer chilli served at ARK Kitchen Ranchi\n\nPaneer tikka served at ARK Kitchen Ranchi\n\nVeg",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 3476,
+      "h": 51,
+      "visible": false
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "",
+        "x": 328,
+        "y": 482,
+        "w": 86,
+        "h": 39,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "All",
+        "tag": "BUTTON",
+        "w": 57,
+        "h": 39,
+        "x": 123,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Hotel & Lobby",
+        "tag": "BUTTON",
+        "w": 133,
+        "h": 39,
+        "x": 187,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "BUTTON",
+        "w": 86,
+        "h": 39,
+        "x": 328,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "ARK Kitchen",
+        "tag": "BUTTON",
+        "w": 123,
+        "h": 39,
+        "x": 422,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "explore",
+    "url": "/explore/",
+    "title": "Explore Ranchi | Waterfalls, Temples, Business Hubs Near ARK Hotels",
+    "scrollWidth": 1425,
+    "scrollHeight": 2519,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\nExplore Ranchi — Places to Visit Near ARK Hotels, Kokar\n\nLOCAL GUIDE\n\nExplore Ranchi from Kokar.\n\nStay in Kokar and you are 15 minutes from the airport, 20 minutes from the railway station, and a short auto ride from Samford Hospital, the PSU belt, and Upper Bazar. When the day's work is done, Ranchi's waterfalls and hill temples are an hour away.\n\nBusiness Hubs\nLeisure & Day Trips\nGetting Here\n\nKokar puts you inside the commercial ring of Ranchi without the congestion of the city centre. PSU campuses, government offices, and industrial zones are all straightforward cab rides.\n\nSamford Hospital\n~1 km\n·\n3–5 min\n\nMajor multi-speciality hospital on Old HB Road — the closest referral facility to the hotel.\n\nKokar Industrial Area\n~1 km\n·\n5 min\n\nOn the doorstep — walking distance for vendors, suppliers, and factory visits.\n\nUpper Bazar\n~3 km\n·\n8–10 min\n\nRanchi's main wholesale and retail commercial market.\n\nLalpur\n~4 km\n·\n10–12 min\n\nKey offices, banks, and the commercial hub of central Ranchi.\n\nDipatoli\n~4 km\n·\n10–12 min\n\nGovernment of",
+    "firstBookingCta": {
+      "text": "WhatsApp the front desk",
+      "y": 532,
+      "h": 56,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Bu ine  Hub ",
+        "tag": "BUTTON",
+        "w": 113,
+        "h": 42,
+        "x": 123,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Lei ure & Day Trip ",
+        "tag": "BUTTON",
+        "w": 147,
+        "h": 42,
+        "x": 268,
+        "y": 482,
+        "visible": true
+      },
+      {
+        "text": "Getting Here",
+        "tag": "BUTTON",
+        "w": 97,
+        "h": 42,
+        "x": 447,
+        "y": 482,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  },
+  {
+    "viewport": {
+      "vw": 1440,
+      "vh": 620
+    },
+    "page": "contact",
+    "url": "/contact/",
+    "title": "Contact ARK Hotels Ranchi | Book a Room in Kokar",
+    "scrollWidth": 1425,
+    "scrollHeight": 3831,
+    "hasHorizontalOverflow": false,
+    "firstViewportText": "FRONT DESK, 24 HOURS\n0651 3100536\nKokar, Ranchi · Old HB Road\nGET DIRECTIONS\n↗\nRooms\nThe Restaurant\nFor Business Travellers\nGallery\nExplore Ranchi\nContact\n\nTALK TO THE FRONT DESK\n\nThe phone is faster than a form.\n\nFor bookings, GST invoices, group rates, airport pickup or anything else — call the front desk. We're open 24 hours, and most enquiries are settled in a single phone call.\n\nCall Front Desk\nWhatsApp to Book\nGet Directions\n\nTHE ADDRESS\n\nDon Bosco School Lane-1, Old HB Road, Kokar, Ranchi 834001\n\nOpen in Google Maps\n↗\nGet directions\n→\n\nBY PHONE\n\n0651 3100536\n\nFront desk · 24 hours\n\nON WHATSAPP\n\n+91 99558 88780\n\nReplies usually under 10 minutes during the day\n\nIN PERSON\n\nDon Bosco School Lane-1, Old HB Road\nKokar, Ranchi, Jharkhand 834001\n\nCopy address\n\nQUICK ENQUIRIES\n\nA 90-second WhatsApp gets a faster answer than email.\n\nTap below and the message is pre-filled with your dates and guest count slots — fill them in, send, and the front desk takes it from there.\n\nAsk Availability on WhatsApp\n\nFOR COMPANY-BILLED BOOKINGS\n\nMention “corporate booking” when you call. Share your company name and GSTIN at the time of booking; we hold the room against an email confirmation and accept",
+    "firstBookingCta": {
+      "text": "WhatsApp to Book",
+      "y": 504,
+      "h": 55,
+      "visible": true
+    },
+    "visibleCtas": [
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 1157,
+        "y": 5,
+        "w": 146,
+        "h": 26,
+        "visible": true
+      },
+      {
+        "text": "Rooms",
+        "href": "http://127.0.0.1:3000/rooms/",
+        "x": 604,
+        "y": 57,
+        "w": 49,
+        "h": 25,
+        "visible": true
+      },
+      {
+        "text": "Call Front Desk",
+        "href": "tel:+916513100536",
+        "x": 123,
+        "y": 504,
+        "w": 156,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp to Book",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 291,
+        "y": 504,
+        "w": 181,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "Get Directions",
+        "href": "https://www.google.com/maps/dir/?api=1&destination=ARK+Hotels+Don+Bosco+School+Lane+Kokar+Ranchi",
+        "x": 484,
+        "y": 504,
+        "w": 152,
+        "h": 55,
+        "visible": true
+      },
+      {
+        "text": "WhatsApp the front desk",
+        "href": "https://wa.me/919955888780?text=Hello%20ARK%20Hotels%2C%20I%27d%20like%20to%20enquire%20about%20a%20room.%20My%20dates%20are%20%5Barrival%5D%20to%20%5Bdeparture%5D%2C%20for%20%5Bnumber%5D%20guests.%20Please%20share%20availability%20and%20rate.%20Thanks.",
+        "x": 1158,
+        "y": 532,
+        "w": 235,
+        "h": 56,
+        "visible": true
+      }
+    ],
+    "smallTargets": [
+      {
+        "text": "FRONT DESK, 24 HOURS\n0651 3100536",
+        "tag": "A",
+        "w": 275,
+        "h": 21,
+        "x": 123,
+        "y": 7,
+        "visible": true
+      },
+      {
+        "text": "GET DIRECTIONS\n↗",
+        "tag": "A",
+        "w": 146,
+        "h": 26,
+        "x": 1157,
+        "y": 5,
+        "visible": true
+      },
+      {
+        "text": "Room ",
+        "tag": "A",
+        "w": 49,
+        "h": 25,
+        "x": 604,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "The Re taurant",
+        "tag": "A",
+        "w": 109,
+        "h": 25,
+        "x": 685,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "For Bu ine  Traveller ",
+        "tag": "A",
+        "w": 166,
+        "h": 25,
+        "x": 826,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Gallery",
+        "tag": "A",
+        "w": 51,
+        "h": 25,
+        "x": 1025,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Explore Ranchi",
+        "tag": "A",
+        "w": 106,
+        "h": 25,
+        "x": 1107,
+        "y": 57,
+        "visible": true
+      },
+      {
+        "text": "Contact",
+        "tag": "A",
+        "w": 57,
+        "h": 25,
+        "x": 1246,
+        "y": 57,
+        "visible": true
+      }
+    ],
+    "overflowing": []
+  }
+]

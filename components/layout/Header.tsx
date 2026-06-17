@@ -50,30 +50,50 @@ export function Header() {
     <>
       <header
         className={cn(
-          "sticky top-0 z-40 w-full transition-[background-color,border-color,box-shadow] duration-300",
+          "fixed inset-x-0 top-0 z-40 w-full transition-[background-color,border-color,box-shadow] duration-300",
           scrolled
             ? "bg-paper/95 backdrop-blur-sm border-b border-stone-200 shadow-sm"
-            : "bg-parchment/80 lg:bg-transparent"
+            : "bg-parchment/95 lg:bg-transparent lg:border-b-0"
         )}
+        /*
+         * viewport-fit=cover makes the viewport extend behind the Dynamic Island.
+         * This padding pushes the header's visible content (utility bar, logo, nav)
+         * below the safe area so nothing is obscured by the notch/Dynamic Island.
+         * The header's background-color visually fills the safe area zone above.
+         * env(safe-area-inset-top) is 0 on every non-notched device, so this is
+         * a no-op on Android and desktop.
+         */
+        style={{ paddingTop: "env(safe-area-inset-top, 0px)" }}
       >
         {/* Utility bar — all screen sizes */}
-        <div className="border-b border-stone-200/40">
+        <div className={cn(
+          "border-b transition-[border-color] duration-300",
+          scrolled ? "border-stone-200/60" : "border-stone-200/20 lg:border-paper/15"
+        )}>
           <div className="container-page flex h-9 items-center justify-between text-[13px]">
             <a
               href={SITE.phone.tel}
-              className="inline-flex items-center gap-2 text-ink-soft hover:text-brass-deep transition-colors"
+              className={cn(
+                "inline-flex items-center gap-2 -my-2 py-2 transition-colors",
+                scrolled
+                  ? "text-ink-soft hover:text-brass-deep"
+                  : "text-ink-soft hover:text-brass-deep lg:text-paper/75 lg:hover:text-paper"
+              )}
             >
               <span className="hidden sm:inline uppercase tracking-[0.18em] text-[11px] font-medium">
                 Front desk, 24 hours
               </span>
               <span className="font-medium tabular-nums">{SITE.phone.display}</span>
             </a>
-            <span className="hidden lg:block text-stone-500/80">{SITE.address.short}</span>
+            <span className={cn(
+              "hidden lg:block text-[13px] transition-colors duration-300",
+              scrolled ? "text-stone-500/80" : "text-paper/55"
+            )}>{SITE.address.short}</span>
             <a
               href={SITE.address.directions}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-brass text-paper text-[11px] font-medium uppercase tracking-[0.12em] hover:bg-brass-deep transition-colors"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 -my-1 rounded bg-brass text-paper text-[11px] font-medium uppercase tracking-[0.12em] hover:bg-brass-deep transition-colors min-h-[36px]"
             >
               <span className="hidden sm:inline">Get directions</span>
               <span className="sm:hidden">Directions</span>
@@ -101,21 +121,26 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-[15px] whitespace-nowrap font-medium text-ink hover:text-brass-deep transition-colors after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-0 after:bg-brass hover:after:w-full after:transition-all after:duration-200"
+                className={cn(
+                  "relative text-[15px] whitespace-nowrap font-medium transition-colors after:absolute after:left-0 after:bottom-[-6px] after:h-[2px] after:w-0 after:bg-brass hover:after:w-full after:transition-all after:duration-200",
+                  scrolled
+                    ? "text-ink hover:text-brass-deep"
+                    : "text-paper/90 hover:text-paper after:bg-paper"
+                )}
               >
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          {/* Hamburger */}
+          {/* Hamburger — 44px touch target (h-11 w-11) per WCAG */}
           <button
             ref={triggerRef}
             type="button"
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden -mr-2 flex h-10 w-10 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
+            className="lg:hidden -mr-2 flex h-11 w-11 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
           >
             <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden>
               <motion.rect
@@ -183,7 +208,7 @@ export function Header() {
                 <button
                   type="button"
                   onClick={close}
-                  className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
+                  className="-mr-2 flex h-11 w-11 items-center justify-center rounded-md text-ink hover:text-brass-deep transition-colors"
                   aria-label="Close menu"
                 >
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>

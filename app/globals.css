@@ -57,13 +57,42 @@
   --duration-slow: 520ms;
 }
 
+/* ─── Site-wide layout tokens ───────────────────────────────────── */
 :root {
   color-scheme: light;
+  /*
+   * Header height: utility bar (h-9 = 36px) + border (1px) + main bar (h-16 = 64px) = 101px,
+   * plus env(safe-area-inset-top) for viewport-fit=cover devices (iPhone 15 Dynamic Island ≈ 59px).
+   * On every non-notched device env() resolves to 0px, so this stays at 101px.
+   * Every hero/spacer calculation that subtracts --header-h is automatically correct
+   * on all devices without any extra conditional logic.
+   */
+  --header-h: calc(101px + env(safe-area-inset-top, 0px));
+
+  /*
+   * Fluid section vertical rhythm. Use padding-block: var(--section-y) on any
+   * section that needs consistent vertical breathing room.
+   */
+  --section-y: clamp(3.5rem, 8vw, 7.5rem);
+
+  /*
+   * Fluid inline gutter. Used by container-page and container-narrow.
+   * Evaluates to: ~20px at 320px | ~26px at 640px | ~40px at 1024px+
+   */
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
 }
 
+/* ─── Base resets ────────────────────────────────────────────────── */
 html {
   background: var(--color-paper);
+  /*
+   * clip: prevents horizontal scroll from content overflow without creating a
+   * new scroll container (unlike hidden). Keeps iOS Safari from creating a
+   * ghosted scrollbar when animations run.
+   */
   overflow-x: clip;
+  /* Smooth anchor navigation without affecting programmatic scroll */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,9 +102,25 @@ body {
   font-size: var(--text-body);
   line-height: 1.65;
   overflow-x: clip;
+  /* svh is stable — avoids min-height recalculating when iOS browser chrome animates */
+  min-height: 100vh;
+  min-height: 100svh;
+  /*
+   * Prevent individual long words (URLs, long hotel names, addresses) from
+   * breaking the grid at narrow viewports.
+   */
+  overflow-wrap: break-word;
+  word-break: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 1023px) {
+  body {
+    /* Reserve space for the bottom WhatsApp FAB at mobile breakpoints */
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
 }
 
 /* Headlines use the display font with tightened metrics */
@@ -90,6 +135,35 @@ p {
   text-wrap: pretty;
 }
 
+/* Images never exceed their container and remain intrinsically sized.
+ * Placed in @layer base so Tailwind utility classes (h-11, h-14, etc.)
+ * in @layer utilities correctly override this rule. Without the layer,
+ * plain CSS runs AFTER utilities in Tailwind v4 and overrides explicit
+ * height classes — which broke the header logo sizing. */
+@layer base {
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  svg {
+    max-width: 100%;
+  }
+}
+
+/* Very subtle paper grain — overlays the whole viewport, pointer-events: none
+ * so it never intercepts clicks. Opacity kept at 0.03 (nearly invisible) to
+ * add tactile texture without affecting text legibility or image appearance. */
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+}
+
 ::selection {
   background: var(--color-ink);
   color: var(--color-paper);
@@ -102,31 +176,99 @@ p {
   border-radius: 2px;
 }
 
-/* Reusable container helpers */
+/* ─── Grid / flex overflow safety ───────────────────────────────── */
+/*
+ * CSS grid cells have min-width: auto by default, meaning a cell can grow
+ * wider than its defined column width if content demands it. Setting min-width: 0
+ * restores the expected behavior — content clips or wraps at the cell boundary.
+ * This prevents a single long word or wide image from blowing out a 12-col layout.
+ */
+.grid > * {
+  min-width: 0;
+}
+
+/* ─── Container helpers ─────────────────────────────────────────── */
+/*
+ * Fluid padding-inline using clamp():
+ *   320px viewport → ~20px gutter
+ *   640px viewport → ~26px gutter (smooth interpolation)
+ *   1024px+ viewport → 40px gutter (capped)
+ * No breakpoint jumps — layout reflows gracefully at any zoom level.
+ */
 .container-page {
   width: 100%;
   max-width: var(--container-max);
   margin-inline: auto;
-  padding-inline: var(--spacing-gutter-mobile);
-}
-@media (min-width: 768px) {
-  .container-page { padding-inline: 2rem; }
-}
-@media (min-width: 1024px) {
-  .container-page { padding-inline: var(--spacing-gutter-desktop); }
+  padding-inline: var(--gutter);
 }
 
 .container-narrow {
   width: 100%;
   max-width: var(--container-narrow);
   margin-inline: auto;
-  padding-inline: var(--spacing-gutter-mobile);
-}
-@media (min-width: 1024px) {
-  .container-narrow { padding-inline: var(--spacing-gutter-desktop); }
+  padding-inline: var(--gutter);
 }
 
-/* Eyebrow utility — used across the site, worth a class */
+/* ─── Hero height utility ───────────────────────────────────────── */
+/*
+ * The header is position:fixed so it overlays content rather than pushing
+ * it down. A spacer div in layout.tsx holds the header's height in flow.
+ *
+ * Mobile (<768px): reserves ~200px below the hero for the identity rail +
+ * MobileBookingPanel so both fit above the fold on most phones.
+ * Tablet (768px–1023px): header spacer accounted for; hero fills rest of dvh.
+ * Desktop (1024px+): hero is pulled behind the transparent fixed header via
+ * .hero-bleed and spans the full viewport height.
+ */
+.h-hero {
+  /*
+   * svh = Small Viewport Height — the viewport height when ALL browser chrome
+   * (address bar, tab bar) is visible.  It is a STABLE value that never changes
+   * during scrolling, eliminating the jitter/reflow that dvh causes on iOS
+   * when the browser chrome animates in and out on scroll direction change.
+   *
+   * Cascade: 100vh (universal fallback) → 100svh (preferred, iOS 16+, Chrome 108+).
+   * dvh is intentionally avoided here.
+   */
+  height: calc(100vh - var(--header-h) - 200px);
+  height: calc(100svh - var(--header-h) - 200px);
+  min-height: 380px;
+}
+
+@media (min-width: 768px) {
+  .h-hero {
+    height: calc(100vh - var(--header-h));
+    height: calc(100svh - var(--header-h));
+    min-height: 560px;
+    max-height: 960px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .h-hero {
+    height: 100vh;
+    height: 100svh;
+    max-height: none;
+  }
+}
+
+/*
+ * Pull the hero section behind the transparent fixed header on desktop.
+ * The layout spacer pushes all content down by --header-h; this negative
+ * margin undoes that for the hero only so the image starts at the viewport
+ * top, creating the full-bleed editorial look.
+ */
+.hero-bleed {
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .hero-bleed {
+    margin-top: calc(-1 * var(--header-h));
+  }
+}
+
+/* ─── Eyebrow utility ───────────────────────────────────────────── */
 .eyebrow {
   font-family: var(--font-sans);
   font-size: var(--text-eyebrow);
@@ -149,7 +291,17 @@ p {
   vertical-align: middle;
 }
 
-/* Reduced motion — disable image zoom and reveals */
+/* ─── Scroll utilities ──────────────────────────────────────────────── */
+/* Hide scrollbar without disabling scroll — identity rail, tab strips. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─── Reduced motion ────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

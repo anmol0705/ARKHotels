@@ -104,7 +104,7 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                         href={SITE.phone.tel}
                                         className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-[2px] hover:border-ink hover:bg-stone-50 transition-all shadow-sm w-full"
                                     >
-                                        Call front desk
+                                        Call Front Desk
                                     </a>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@ export function RoomCarousel({ rooms }: { rooms: readonly Room[] }) {
                                         href={SITE.phone.tel}
                                         className="inline-flex items-center justify-center px-7 py-3.5 border border-stone-200 bg-paper text-ink text-[14px] font-medium tracking-wide rounded-sm hover:border-ink hover:bg-stone-50 transition-all shadow-sm"
                                     >
-                                        Call front desk
+                                        Call Front Desk
                                     </a>
                                 </div>
                             </div>

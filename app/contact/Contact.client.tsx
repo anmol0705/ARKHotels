@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Map } from "@/components/shared/Map";
 import { FAQS, SITE, whatsappHref } from "@/lib/site";
+import { trackEvent, GA_EVENTS } from "@/lib/analytics";
 
 const EASE = [0.22, 0.61, 0.36, 1] as const;
 
@@ -12,6 +13,24 @@ const fadeUp = {
   hidden: { opacity: 0, y: 18 },
   visible: { opacity: 1, y: 0 },
 };
+
+function CopyAddressButton({ address }: { address: string }) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(address).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+  return (
+    <button
+      onClick={handleCopy}
+      className="mt-4 inline-flex items-center gap-2 text-[13px] text-stone-500 hover:text-ink transition-colors border border-stone-200 hover:border-stone-400 px-4 py-2 rounded-[2px]"
+    >
+      {copied ? "Copied ✓" : "Copy address"}
+    </button>
+  );
+}
 
 export function ContactClient() {
   const reduce = useReducedMotion();
@@ -46,6 +65,37 @@ export function ContactClient() {
             else — call the front desk. We&apos;re open 24 hours, and most
             enquiries are settled in a single phone call.
           </motion.p>
+          <motion.div
+            variants={fadeUp}
+            transition={{ duration: 0.65, ease: EASE }}
+            className="mt-8 flex flex-col sm:flex-row gap-3"
+          >
+            <a
+              href={SITE.phone.tel}
+              className="inline-flex items-center justify-center px-6 py-3.5 bg-ink text-paper text-[15px] font-medium rounded-[2px] hover:bg-brass-deep transition-colors"
+              onClick={() => trackEvent(GA_EVENTS.PHONE_CLICK, { page: "contact_hero" })}
+            >
+              Call Front Desk
+            </a>
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3.5 bg-[#25D366] text-white text-[15px] font-medium rounded-[2px] hover:bg-[#1ebe5d] transition-colors"
+              onClick={() => trackEvent(GA_EVENTS.WHATSAPP_CLICK, { page: "contact_hero" })}
+            >
+              WhatsApp to Book
+            </a>
+            <a
+              href={SITE.address.directions}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3.5 border border-stone-200 bg-paper text-ink text-[15px] font-medium rounded-[2px] hover:border-ink hover:bg-stone-50 transition-colors"
+              onClick={() => trackEvent(GA_EVENTS.DIRECTIONS_CLICK, { page: "contact" })}
+            >
+              Get Directions
+            </a>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -80,6 +130,7 @@ export function ContactClient() {
               <a
                 href={SITE.phone.tel}
                 className="mt-3 block font-display text-[36px] lg:text-[44px] text-ink hover:text-brass-deep transition-colors tabular-nums"
+                onClick={() => trackEvent(GA_EVENTS.PHONE_CLICK, { page: "contact_details" })}
               >
                 {SITE.phone.display}
               </a>
@@ -101,6 +152,7 @@ export function ContactClient() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 block font-display text-[28px] lg:text-[32px] text-ink hover:text-brass-deep transition-colors tabular-nums"
+                onClick={() => trackEvent(GA_EVENTS.WHATSAPP_CLICK, { page: "contact_details" })}
               >
                 {SITE.whatsapp.display}
               </a>
@@ -123,6 +175,7 @@ export function ContactClient() {
                 {SITE.address.locality}, {SITE.address.city},{" "}
                 {SITE.address.region} {SITE.address.postalCode}
               </p>
+              <CopyAddressButton address={SITE.address.full} />
             </motion.div>
           </div>
 
@@ -149,8 +202,9 @@ export function ContactClient() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-brass text-paper text-[15px] font-medium rounded-[2px] hover:bg-brass-deep transition-colors"
+                onClick={() => trackEvent(GA_EVENTS.WHATSAPP_CLICK, { page: "contact_enquiry" })}
               >
-                Open WhatsApp
+                Ask Availability on WhatsApp
               </a>
             </motion.div>
 
@@ -287,4 +341,3 @@ function FaqRow({ q, a }: { q: string; a: string }) {
     </motion.li>
   );
 }
-

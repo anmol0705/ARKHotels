@@ -8,15 +8,15 @@ import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { RoomsIndexClient } from "@/components/home/RoomsIndex.client";
 import { BookingWidget } from "@/components/home/BookingWidget";
 import { ImageMarquee } from "@/components/shared/ImageMarquee";
+import { TrustStrip } from "@/components/shared/TrustStrip";
 import { ROOMS, NEARBY_BUSINESS, NEARBY_LEISURE } from "@/lib/site";
-import { faqJsonLd, jsonLdScript } from "@/lib/jsonld";
 
 export default function HomePage() {
   return (
     <>
       <h1 className="sr-only">ARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport</h1>
       <HeroCarousel />
-      <BookingWidget />
+      <div className="hidden md:block"><BookingWidget /></div>
       <IntroParagraph />
       <RoomsIndexClient rooms={ROOMS} />
       <DiningCallout />
@@ -25,11 +25,6 @@ export default function HomePage() {
       <GalleryTeaser />
       <PlacePlateDiptych />
       <LocationStrip />
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(faqJsonLd)}
-      />
     </>
   );
 }
@@ -50,6 +45,7 @@ function IntroParagraph() {
             <p className="mt-5 text-[12px] uppercase tracking-[0.2em] text-stone-500 font-medium">
               100% Pure Veg &nbsp;·&nbsp; 15 min from Airport &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free Parking
             </p>
+            <TrustStrip className="mt-6 justify-center" />
           </div>
         </Reveal>
       </div>
@@ -91,10 +87,9 @@ function DiningCallout() {
           <div className="col-span-12 lg:col-span-6 lg:col-start-7">
             <Link href="/dining" className="block hover:opacity-95 transition-opacity">
               <PlaceholderImage
-                src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80"
-                alt="North Indian vegetarian thali at ARK Hotels restaurant, Kokar"
+                src="/images/gallery/restaurant/restro.jpg"
+                alt="ARK Kitchen rooftop restaurant at ARK Hotels, Kokar Ranchi"
                 ratio="3/2"
-              // caption="Today's thali — dal, two seasonal sabzi, rice, four rotis, curd, salad, sweet."
               />
             </Link>
           </div>
@@ -107,8 +102,9 @@ function DiningCallout() {
 /* ─────────────────────────  For Business Travellers  ───────────────────────── */
 function BusinessSection() {
   return (
-    <section className="container-page py-14 lg:py-32">
-      <div className="grid grid-cols-12 gap-8 sm:gap-6 lg:gap-12 pr-4 sm:pr-6 lg:pr-0">
+    <section className="border-t border-stone-100">
+      <div className="container-page py-14 lg:py-32">
+        <div className="grid grid-cols-12 gap-8 sm:gap-6 lg:gap-12 pr-4 sm:pr-6 lg:pr-0">
         <div className="col-span-12 lg:col-span-4">
           <Eyebrow>For business travellers</Eyebrow>
           <h2 className="mt-4 font-display text-[28px] sm:text-[32px] lg:text-[44px] leading-[1.1] tracking-[-0.015em] text-ink hover:text-brass transition-colors">
@@ -166,6 +162,7 @@ function BusinessSection() {
               </li>
             ))}
           </ul>
+        </div>
         </div>
       </div>
     </section>
@@ -243,7 +240,7 @@ function GalleryTeaser() {
   if (images.length === 0) return null;
 
   return (
-    <section className="py-2 lg:py-4">
+    <section className="border-t border-stone-100 py-14 lg:py-20">
       <div className="container-page mb-8 flex items-end justify-between gap-4 pr-4 sm:pr-6 lg:pr-0">
         <div>
           <Eyebrow>Gallery</Eyebrow>
@@ -266,7 +263,8 @@ function GalleryTeaser() {
 /* ─────────────────────────  Pattern D — Place + Plate Diptych (5/7 asymmetric)  ───────────────────────── */
 function PlacePlateDiptych() {
   return (
-    <section className="container-page py-14 lg:py-32">
+    <section className="border-t border-stone-100">
+      <div className="container-page py-14 lg:py-32">
       <div className="grid grid-cols-12 gap-8 sm:gap-6 lg:gap-12 items-center pr-4 sm:pr-6 lg:pr-0">
         <div className="col-span-12 lg:col-span-5 flex flex-col">
           <Eyebrow tone="moss">From a recent guest</Eyebrow>
@@ -279,12 +277,12 @@ function PlacePlateDiptych() {
         </div>
         <div className="col-span-12 lg:col-span-7 lg:col-start-6">
           <PlaceholderImage
-            src="https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=1400&q=80"
-            alt="Breakfast service at ARK Hotels Kokar"
+            src="/images/gallery/restaurant/food.jpg"
+            alt="Vegetarian food at ARK Kitchen, ARK Hotels Kokar Ranchi"
             ratio="3/2"
-            // caption="Breakfast service, 7:30 AM."
           />
         </div>
+      </div>
       </div>
     </section>
   );
@@ -364,4 +362,3 @@ function LocationStrip() {
     </section>
   );
 }
-

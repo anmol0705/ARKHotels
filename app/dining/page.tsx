@@ -4,14 +4,18 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { SITE } from "@/lib/site";
-import { breadcrumbJsonLd, jsonLdScript } from "@/lib/jsonld";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { breadcrumbJsonLd } from "@/lib/jsonld";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "ARK Kitchen — 100% Pure Veg Restaurant in Kokar, Ranchi",
   description:
     "ARK Kitchen — 100% pure vegetarian restaurant at ARK Hotels, Kokar, Ranchi. Rooftop dining with North Indian, Indo-Chinese, veg breakfast. Open daily. Walk-ins welcome.",
-  alternates: { canonical: `${SITE.url}/dining` },
-};
+  path: "/dining",
+  image: "/images/DSC01243.webp",
+  imageAlt: "ARK Kitchen rooftop dining area at ARK Hotels Ranchi",
+});
 
 const HIGHLIGHTS = [
   {
@@ -49,7 +53,9 @@ export default function DiningPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="container-page pt-10 lg:pt-16 pb-10 lg:pb-14">
+      {/* overflow-hidden protects the layout from the display-scale heading at intermediate widths */}
+      <section className="overflow-hidden">
+        <div className="container-page pt-10 lg:pt-16 pb-10 lg:pb-14">
         <div className="border-b border-stone-100 pb-8 lg:pb-10 mb-8 lg:mb-10">
           <Eyebrow tone="moss">ARK Hotels · Kokar, Ranchi</Eyebrow>
           <h1 className="mt-5 font-display text-[72px] sm:text-[100px] lg:text-[140px] xl:text-[160px] leading-[0.9] tracking-[-0.03em] text-ink">
@@ -87,6 +93,7 @@ export default function DiningPage() {
               Exact timings confirmed at check-in.
             </p>
           </div>
+        </div>
         </div>
       </section>
 
@@ -206,11 +213,7 @@ export default function DiningPage() {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={jsonLdScript(breadcrumbs)}
-      />
+      <JsonLd id="dining-breadcrumb-jsonld" data={breadcrumbs} />
     </>
   );
 }

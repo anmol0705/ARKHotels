@@ -112,9 +112,10 @@ export function ExploreClient() {
           Explore Ranchi from Kokar.
         </h1>
         <p className="mt-8 text-[18px] text-ink-soft max-w-[60ch] leading-[1.65]">
-          ARK sits on Don Bosco School Lane-1, just off Old HB Road in Kokar —
-          well-connected to the airport, PSU campuses, commercial belts, and the
-          road out toward Jharkhand&apos;s waterfall country.
+          Stay in Kokar and you are 15 minutes from the airport, 20 minutes from
+          the railway station, and a short auto ride from Samford Hospital, the
+          PSU belt, and Upper Bazar. When the day&apos;s work is done, Ranchi&apos;s
+          waterfalls and hill temples are an hour away.
         </p>
       </section>
 
@@ -126,7 +127,7 @@ export function ExploreClient() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative pb-4 text-[16px] font-medium transition-colors whitespace-nowrap ${activeTab === tab.id ? "text-ink" : "text-stone-400 hover:text-stone-600"
+                className={`relative flex items-end pb-3 min-h-[44px] text-[16px] font-medium transition-colors whitespace-nowrap ${activeTab === tab.id ? "text-ink" : "text-stone-400 hover:text-stone-600"
                   }`}
               >
                 {tab.label}
