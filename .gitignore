@@ -43,6 +43,8 @@ next-env.d.ts
 # Large files
 public/images/*.zip
 public/images/*.crdownload
+public/images/**/*.ARW
+public/images/**/*.arw
 
 # scripts (local/dev-only utilities)
 /scripts
