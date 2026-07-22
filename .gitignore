@@ -43,3 +43,11 @@ next-env.d.ts
 # Large files
 public/images/*.zip
 public/images/*.crdownload
+
+# scripts (local/dev-only utilities)
+/scripts
+
+# prompt / planning docs
+*_PROMPT.md
+CHATGPT_UIUX_PROMPT.md
+SEO_REQUIRED_DATA.md
