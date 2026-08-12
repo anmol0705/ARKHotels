@@ -199,9 +199,9 @@ export default async function RoomDetailPage({
           <div className="grid grid-cols-12 gap-6 lg:gap-12 items-end">
             <div className="col-span-12 lg:col-span-6">
               <Eyebrow tone="moss">Or look at</Eyebrow>
-              <h3 className="mt-3 font-display text-[28px] lg:text-[36px] leading-[1.15] text-ink max-w-[20ch]">
+              <h2 className="mt-3 font-display text-[28px] lg:text-[36px] leading-[1.15] text-ink max-w-[20ch]">
                 {next.name} — {next.short.toLowerCase()}
-              </h3>
+              </h2>
             </div>
             <div className="col-span-12 lg:col-span-5 lg:col-start-8 flex flex-wrap items-baseline gap-x-4 gap-y-3">
               <LinkArrow href={`/rooms/${next.slug}`}>

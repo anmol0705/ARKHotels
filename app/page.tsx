@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Reveal } from "@/components/ui/Reveal";
@@ -7,12 +8,28 @@ import { RoomsIndexClient } from "@/components/home/RoomsIndex.client";
 import { BookingWidget } from "@/components/home/BookingWidget";
 import { ImageMarquee } from "@/components/shared/ImageMarquee";
 import { TrustStrip } from "@/components/shared/TrustStrip";
-import { ROOMS, NEARBY_BUSINESS, NEARBY_LEISURE } from "@/lib/site";
+import { ROOMS, NEARBY_BUSINESS, NEARBY_LEISURE, SITE } from "@/lib/site";
+import { createPageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/shared/JsonLd";
+import { breadcrumbJsonLd, hotelJsonLd, restaurantJsonLd } from "@/lib/jsonld";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
+  description:
+    "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing. Call or WhatsApp to book.",
+  path: "/",
+  image: "/images/hero_carousel/ark_out_image.webp",
+  imageAlt: "ARK Hotels — hotel exterior in Kokar, Ranchi",
+});
 
 export default function HomePage() {
+  const breadcrumbs = breadcrumbJsonLd([
+    { name: "Home", url: `${SITE.url}/` },
+  ]);
+
   return (
     <>
-      <h1 className="sr-only">ARK Hotels Ranchi — Hotel in Kokar, 9 km from Birsa Munda Airport</h1>
+      {/* h1 is rendered inside HeroCarousel as <motion.h1> — no duplicate here */}
       <HeroCarousel />
       <div className="hidden md:block"><BookingWidget /></div>
       <IntroParagraph />
@@ -23,6 +40,11 @@ export default function HomePage() {
       <GalleryTeaser />
       <PlacePlateDiptych />
       <LocationStrip />
+      {/* Hotel & Restaurant schemas belong on the homepage — the root layout
+          only carries WebSite + Organization (truly site-wide entities). */}
+      <JsonLd id="home-breadcrumb-jsonld" data={breadcrumbs} />
+      <JsonLd id="hotel-jsonld" data={hotelJsonLd} />
+      <JsonLd id="restaurant-jsonld" data={restaurantJsonLd} />
     </>
   );
 }

@@ -9,9 +9,7 @@ import { ScrollReset } from "@/components/layout/ScrollReset";
 import { SITE } from "@/lib/site";
 import { JsonLd } from "@/components/shared/JsonLd";
 import {
-  hotelJsonLd,
   organizationJsonLd,
-  restaurantJsonLd,
   webSiteJsonLd,
 } from "@/lib/jsonld";
 
@@ -40,9 +38,6 @@ export const metadata: Metadata = {
     "ARK Hotels in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi, free parking. GST invoicing. Call or WhatsApp to book.",
   applicationName: "ARK Hotels Ranchi",
   authors: [{ name: "ARK Hotels" }],
-  alternates: {
-    canonical: `${SITE.url}/`,
-  },
   icons: {
     icon: [{ url: "/images/logo/LOGO.webp", type: "image/webp" }],
     apple: "/images/logo/LOGO.webp",
@@ -58,7 +53,7 @@ export const metadata: Metadata = {
       "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure vegetarian restaurant, AC rooms, free WiFi & parking. GST invoicing. Call or WhatsApp to book.",
     images: [
       {
-        url: "/images/hero_carousel/ark_out_image.webp",
+        url: `${SITE.url}/images/hero_carousel/ark_out_image.webp`,
         width: 1200,
         height: 630,
         alt: "ARK Hotels — hotel exterior in Kokar, Ranchi",
@@ -67,10 +62,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@ARKHotelsRanchi",
     title: "ARK Hotels Ranchi | Hotel in Kokar — 9 km from Airport",
     description:
       "Hotel in Kokar, Ranchi — 9 km from Birsa Munda Airport. 100% pure veg restaurant, AC rooms, free WiFi & parking. Call or WhatsApp to book.",
-    images: ["/images/hero_carousel/ark_out_image.webp"],
+    images: [`${SITE.url}/images/hero_carousel/ark_out_image.webp`],
   },
   robots: { index: true, follow: true },
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
@@ -115,8 +111,6 @@ export default function RootLayout({
         <GoogleAnalytics gaId="G-5TEWHW5WG6" />
         <JsonLd id="website-jsonld" data={webSiteJsonLd} />
         <JsonLd id="organization-jsonld" data={organizationJsonLd} />
-        <JsonLd id="hotel-jsonld" data={hotelJsonLd} />
-        <JsonLd id="restaurant-jsonld" data={restaurantJsonLd} />
       </body>
     </html>
   );
