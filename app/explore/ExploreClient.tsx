@@ -108,9 +108,9 @@ export function ExploreClient() {
     <>
       <section className="container-page pt-12 lg:pt-20 pb-12">
         <Eyebrow>Local Guide</Eyebrow>
-        <h1 className="mt-4 font-display text-[34px] sm:text-[52px] lg:text-[64px] leading-[1.06] tracking-[-0.02em] text-ink max-w-[20ch]">
+        <p className="mt-4 font-display text-[34px] sm:text-[52px] lg:text-[64px] leading-[1.06] tracking-[-0.02em] text-ink max-w-[20ch]">
           Explore Ranchi from Kokar.
-        </h1>
+        </p>
         <p className="mt-8 text-[18px] text-ink-soft max-w-[60ch] leading-[1.65]">
           Stay in Kokar and you are 15 minutes from the airport, 20 minutes from
           the railway station, and a short auto ride from Samford Hospital, the

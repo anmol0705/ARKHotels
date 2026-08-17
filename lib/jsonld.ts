@@ -33,6 +33,19 @@ export const hotelJsonLd = {
   email: SITE.email,
   image: `${BASE}/images/hero_carousel/ark_out_image.webp`,
   address: postalAddress,
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 23.370910002846465,
+    longitude: 85.35443522967805,
+  },
+  priceRange: "₹1500 – ₹3500",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.6",
+    reviewCount: "134",
+    bestRating: "5",
+    worstRating: "1",
+  },
   checkinTime: SITE.hotel.checkIn,
   checkoutTime: SITE.hotel.checkOut,
   amenityFeature: [
@@ -61,6 +74,7 @@ export const restaurantJsonLd = {
   telephone: SITE.phone.e164,
   servesCuisine: ["North Indian", "Indian Vegetarian", "Indo-Chinese"],
   acceptsReservations: true,
+  priceRange: "₹150 – ₹450",
   address: postalAddress,
   isPartOf: { "@id": `${BASE}/#hotel` },
 };

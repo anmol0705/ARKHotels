@@ -1,0 +1,143 @@
+================================================================================
+                    ARK HOTELS RANCHI - SEO AUDIT REPORT
+================================================================================
+Target Site : https://arkhotelsranchi.in
+Repository  : git@github.com:anmol0705/ARKHotels.git
+Framework   : Next.js 16 (App Router) + React 19 + Tailwind CSS 4
+
+--------------------------------------------------------------------------------
+1. HEADING & SEMANTIC HTML STRUCTURE ISSUES
+--------------------------------------------------------------------------------
+1.1 Duplicate <h1> Tags on Homepage (/)
+    - Location: app/page.tsx (Line 15) & components/home/HeroCarousel.tsx (Line 187)
+    - Details: app/page.tsx renders <h1 className="sr-only"> while HeroCarousel.tsx simultaneously renders <motion.h1>. Two <h1> tags exist on the homepage.
+    - Impact: Confuses search engine crawlers regarding primary page topic focus.
+
+1.2 Duplicate <h1> Tags on Explore Page (/explore)
+    - Location: app/explore/page.tsx (Line 25) & app/explore/ExploreClient.tsx (Line 111)
+    - Details: Both files render an <h1> element on the /explore route.
+    - Impact: Violates single-H1 semantic guidelines and dilutes keyword weighting.
+
+1.3 Skipped Heading Levels (H1 -> H3)
+    - Location: app/rooms/[slug]/page.tsx (Lines 202, 276)
+    - Details: Section headings jump directly from <h2> / <h1> to <h3> without proper structural hierarchy.
+
+--------------------------------------------------------------------------------
+2. METADATA, CANONICAL & OPENGRAPH ISSUES
+--------------------------------------------------------------------------------
+2.1 Missing Explicit Metadata Export on Homepage
+    - Location: app/page.tsx
+    - Details: Lacks a dedicated metadata export and relies entirely on fallback metadata from app/layout.tsx.
+
+2.2 Relative OpenGraph Image URLs
+    - Location: app/layout.tsx (Line 61) & lib/seo.ts (Line 13)
+    - Details: openGraph.images properties use relative paths (/images/...) instead of absolute https:// URLs.
+    - Impact: Social media crawlers (WhatsApp, Facebook, Twitter, LinkedIn) fail to parse relative image URLs, creating broken preview cards.
+
+2.3 Missing Twitter Creator / Site Handles
+    - Location: lib/seo.ts
+    - Details: Twitter card metadata is defined as summary_large_image but omits site or creator handle tags (@username).
+
+2.4 Fallback Canonical URL Risk
+    - Location: app/layout.tsx
+    - Details: Hardcodes canonical URL to ${SITE.url}/. Any subpage without an explicit metadata export inherits the homepage canonical URL.
+
+--------------------------------------------------------------------------------
+3. STRUCTURED DATA (JSON-LD / SCHEMA.ORG) ISSUES
+--------------------------------------------------------------------------------
+3.1 Global Over-Injection of JSON-LD Schemas in Root Layout
+    - Location: app/layout.tsx (Lines 116-119)
+    - Details: Renders Hotel, Restaurant, Organization, and WebSite schemas globally on every page (including room details, gallery, and contact).
+    - Impact: Causes entity duplication and potential Search Console schema conflict warnings on subpages.
+
+3.2 Missing Geolocation Coordinates in Hotel Schema
+    - Location: lib/jsonld.ts (Line 24)
+    - Details: hotelJsonLd lacks @type: GeoCoordinates (latitude: 23.3709389, longitude: 85.3518747).
+    - Impact: Missing critical ranking signal for Google Maps and Local 3-Pack search results.
+
+3.3 Missing Recommended Hotel & Restaurant Schema Fields
+    - Location: lib/jsonld.ts
+    - Details: Missing priceRange (e.g. "₹1500 - ₹3500"), aggregateRating (star rating), and openingHoursSpecification for restaurant.
+    - Impact: Misses rich snippet enhancement opportunities (star ratings and price badges in Google SERPs).
+
+3.4 Missing Breadcrumb Schema on Homepage and Business Page
+    - Location: app/page.tsx, app/business/page.tsx
+    - Details: BreadcrumbList JSON-LD schema is present on /rooms, /dining, /gallery, /explore, /contact, but omitted on / and /business.
+
+--------------------------------------------------------------------------------
+4. IMAGE SEO & ACCESSIBILITY ISSUES
+--------------------------------------------------------------------------------
+4.1 Generic & Repetitive Image Alt Texts
+    - Location: components/shared/ImageMarquee.tsx (Line 47) & components/gallery/GalleryGrid.tsx
+    - Details: ImageMarquee repeats generic alt text ("ARK Hotels exterior — Kokar, Ranchi") 48 times across duplicated image elements.
+
+4.2 Cumulative Layout Shift (CLS) Risk on Image Components
+    - Location: components/gallery/GalleryGrid.tsx & components/ui/PlaceholderImage.tsx
+    - Details: Some grid images lack explicit fallback aspect ratios on slower network connections.
+
+4.3 Above-The-Fold Priority Image Preloading
+    - Location: components/home/HeroCarousel.tsx
+    - Details: Only slide 0 uses priority loading; subsequent slides load on-demand without pre-rendered placeholders.
+
+--------------------------------------------------------------------------------
+5. LINK STRUCTURE & ANCHOR TEXT ISSUES
+--------------------------------------------------------------------------------
+5.1 Generic / Non-Descriptive Internal Link Anchor Text
+    - Location: app/page.tsx, app/rooms/[slug]/page.tsx, components/layout/Footer.tsx
+    - Details: Internal links use non-descriptive labels: "See all photos →", "Full distances & map →", "See the menu", "Today's direct rate →".
+    - Impact: Reduces internal anchor text keyword signal strength.
+
+5.2 Missing Security Attributes on External Links
+    - Location: components/layout/Header.tsx (Line 93) & components/rooms/RoomShowcase.tsx
+    - Details: External target="_blank" links omit rel="noopener noreferrer".
+
+--------------------------------------------------------------------------------
+6. LOCAL SEO & CONTENT OPTIMIZATION ISSUES
+--------------------------------------------------------------------------------
+6.1 Under-Represented High-Intent Local Keywords
+    - Location: Titles, H1s, H2s across app/page.tsx, app/rooms/page.tsx
+    - Details: Missing targeted local keywords: "hotel near Ranchi airport", "pure veg hotel in Ranchi", "best hotel in Kokar Ranchi", "budget business hotel Ranchi", "hotel near HEC Ranchi".
+
+6.2 Un-semantic Address Markup
+    - Location: components/layout/Footer.tsx & app/contact/Contact.client.tsx
+    - Details: Address details are rendered using plain <p> tags instead of semantic HTML5 <address> tags.
+
+--------------------------------------------------------------------------------
+7. PERFORMANCE & CRAWLABILITY ISSUES
+--------------------------------------------------------------------------------
+7.1 Dynamic sitemap.ts lastModified Timestamp
+    - Location: app/sitemap.ts (Line 7)
+    - Details: Uses const now = new Date() dynamically on every request, signaling to search engines that all pages update constantly.
+
+7.2 Client-Side Rendering (CSR) Text Bloat
+    - Location: app/explore/ExploreClient.tsx, app/contact/Contact.client.tsx, components/home/RoomsIndex.client.tsx
+    - Details: Large blocks of text content rely on "use client" components, delaying initial SSR text indexability.
+
+--------------------------------------------------------------------------------
+8. PAGE SPEED, WEB PERFORMANCE & CORE WEB VITALS (CWV) AUDIT
+--------------------------------------------------------------------------------
+8.1 Disabled Next.js Image Optimization API (CRITICAL LCP ISSUE)
+    - Location: next.config.ts (Line 7) -> `images: { unoptimized: true }`
+    - Details: Setting `unoptimized: true` disables image compression, responsive sizing, and WebP/AVIF auto-conversions. Full-resolution, multi-megabyte images are served directly to mobile and desktop users.
+    - Impact: Massive Largest Contentful Paint (LCP) delays (3-10+ seconds on mobile 3G/4G networks).
+
+8.2 Uncompressed Raw Image Assets in /public/images/ (HEAVY PAYLOAD)
+    - Location: public/images/gallery/hotel/DSC01228.webp (3.58 MB), public/images/DSC01227.webp (2.75 MB), public/images/DSC01243.webp (2.67 MB)
+    - Details: Several raw WebP image assets range from 1 MB to 3.58 MB each.
+    - Impact: Total page payload exceeds 10MB+ per visit, resulting in severe speed penalties in Google PageSpeed Insights and mobile bounce rates.
+    - Recommendation: Compress all WebP images to <150 KB for hero banners and <80 KB for thumbnails.
+
+8.3 Excessive Continuous Animation & DOM Node Bloat (INP ISSUE)
+    - Location: components/shared/ImageMarquee.tsx (Lines 24, 33-38)
+    - Details: ImageMarquee quadruples the 12-image array (48 DOM image containers) and runs continuous JS/CSS loop animations.
+    - Impact: Causes continuous main-thread layout thrashing, frame drops on mobile GPUs, and higher Interaction to Next Paint (INP) latency.
+
+8.4 Missing Height/Width Dimension Guards (CLS ISSUE)
+    - Location: components/ui/PlaceholderImage.tsx & app/explore/ExploreClient.tsx (PhotoCard)
+    - Details: Images rely on `fill` inside fluid CSS wrappers without hardcoded fallback dimension reservations.
+    - Impact: Triggers Cumulative Layout Shift (CLS) when large image assets finish downloading asynchronously.
+
+8.5 Missing Asset Cache-Control Header Configurations
+    - Location: Static Export Build (`output: "export"`)
+    - Details: Static export HTML/JS/CSS builds rely on hosting web server configuration (Nginx, Netlify, Vercel) for Cache-Control.
+    - Impact: If static headers are not configured, repeat visitors cannot leverage long-term browser asset caching (`max-age=31536000, immutable`).

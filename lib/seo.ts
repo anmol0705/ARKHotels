@@ -13,8 +13,15 @@ type PageMetadataInput = {
 const defaultImage = "/images/hero_carousel/ark_out_image.webp";
 const defaultImageAlt = "ARK Hotels exterior in Kokar, Ranchi";
 
+/** Converts a root-relative path to an absolute https:// URL. */
 export function absoluteUrl(path: `/${string}` = "/") {
   return `${SITE.url}${path === "/" ? "/" : path}`;
+}
+
+/** Ensures an image path is always an absolute URL for OG/Twitter crawlers. */
+function absoluteImageUrl(image: string): string {
+  if (image.startsWith("http://") || image.startsWith("https://")) return image;
+  return `${SITE.url}${image.startsWith("/") ? image : `/${image}`}`;
 }
 
 export function createPageMetadata({
@@ -26,6 +33,7 @@ export function createPageMetadata({
   noIndex = false,
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
+  const absImage = absoluteImageUrl(image);
 
   return {
     title: { absolute: title },
@@ -40,7 +48,7 @@ export function createPageMetadata({
       description,
       images: [
         {
-          url: image,
+          url: absImage,
           width: 1200,
           height: 630,
           alt: imageAlt,
@@ -49,9 +57,10 @@ export function createPageMetadata({
     },
     twitter: {
       card: "summary_large_image",
+      site: "@ARKHotelsRanchi",
       title,
       description,
-      images: [image],
+      images: [absImage],
     },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
   };
